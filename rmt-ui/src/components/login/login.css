@@ -1,0 +1,31 @@
+.login-main {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.unauthorized-main {
+  margin-top: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-btn-main {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.login-btn {
+  color: white !important;
+  background-color: #4f2d7f !important;
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 2.5px !important;
+  border: 1px solid#4f2d7f !important;
+  text-transform: none !important;
+  font-size: large;
+  /* font-family: "GT Walsheim Pro, Medium " !important; */
+}

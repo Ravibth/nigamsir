@@ -1,0 +1,9 @@
+/* .title-container{
+    color: #4f2d7f;
+} */
+
+.title-container {
+    color: #4f2d7f;
+    font-size: 17px !important;
+    font-weight: 550 !important;
+  }

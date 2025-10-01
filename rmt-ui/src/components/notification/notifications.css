@@ -1,0 +1,34 @@
+.notification-popover {
+  min-height: 10vh !important;
+  max-height: 60vh !important;
+  width: 400px !important;
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable both-edges !important;
+  padding-right: 5px;
+}
+
+.showAllNotifications {
+  color: white !important;
+  background-color: #f26416 !important;
+}
+
+.notification-header {
+  font-size: 25px;
+  margin: 10px 0px !important;
+  font-weight: 600;
+  /* color: #4f2d7f; */
+}
+
+.m-b-10 {
+  margin-bottom: 10px !important;
+}
+.p-b-10 {
+  padding-bottom: 10px !important;
+}
+.notification-item {
+  cursor: pointer;
+  margin-bottom: 7px !important;
+  border-radius: 10px;
+  width: 95%;
+  word-wrap: break-word;
+}

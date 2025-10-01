@@ -1,0 +1,232 @@
+.react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd {
+  background-color: white !important;
+}
+
+.rct-sidebar-row {
+  line-height: 20px !important;
+}
+
+/* #timelineCalendar {
+    border-bottom: 1px solid gray;
+  } */
+
+.time-calender-main {
+  height: 60% !important;
+  padding: 10px !important;
+}
+
+/* 
+  .react-calendar-timeline {
+   
+    border: 2px solid gray;
+    border-radius: 20px !important;
+  } */
+
+.rct-outer {
+  height: 70vh !important;
+  min-height: 68vh !important;
+  overflow-y: scroll !important;
+  border-radius: 0px 0px 19px 19px !important;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+/* @media screen (max-height: 959px) {
+    .rct-outer {
+      height: 77vh !important;
+     
+      min-height: 75vh !important;
+    
+    }
+  }
+  
+  @media screen  (max-height: 960px) {
+    .rct-outer {
+      height: 87.5vh !important;
+     
+      min-height: 85vh !important;
+   
+    }
+  } */
+
+.rct-sidebar {
+  min-height: 70vh !important;
+  width: 311px !important;
+}
+
+.rct-scroll {
+  min-height: 70vh !important;
+  overflow-x: hidden !important;
+}
+
+.rct-vl {
+  min-height: 70vh !important;
+  border-left: 1px solid #dfdcdc !important;
+}
+
+.rct-items {
+  border-radius: 0% !important;
+}
+
+.keyboard-arrow-right {
+  cursor: pointer !important;
+}
+
+.employee-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background-color 0.3s ease;  
+  margin: 4px 0;
+}
+
+.employee-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* .filter-btn-container {
+  margin-top: 14px !important;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center !important;
+} */
+
+.filter-icon-margin {
+  margin-top: -16px !important;
+}
+
+
+/* Project row css */
+
+.project-row {
+    display: flex;
+}
+
+
+.project-content {
+  display: flex;
+  gap: 8px;
+}
+
+.project-icon {
+  color: var(--gt-teal-color);
+  margin-bottom: 40px;  
+  margin-left: 5px;
+  font-size: small;
+}
+
+.project-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .project-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project-title {
+    margin-right: 16px;    
+    /* mr-2 */
+  }
+}
+
+.project-title {
+  cursor: pointer;  
+  display: flex;
+  gap: 8px;  
+}
+
+.project-title-aligment {
+  margin-top: -13px !important;
+}
+
+.project-title-hrs {
+  font-size: small;
+}
+
+.projectrow-popover-box {
+  min-width: 200px;
+  max-width: 400px;
+  width: fit-content;
+  padding: 16px;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectrow-popover-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;  
+}
+
+.projectrow-popover-label {
+  flex: 0 0 100px;  
+  font-weight: 500;
+  color: #000;
+  word-break: break-word;
+}
+
+.projectrow-popover-value {
+  flex: 1;
+  color: #333;
+  word-break: break-word;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* prject row css end */
+
+#timelineCalendartimesheet .rct-item * {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptygridtimesheet {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.displayhide {
+  visibility: hidden;
+}
+
+.download-button {  
+    margin-top: 14px !important;
+    margin-left: 5px;
+    display: flex;
+    justify-content: flex-end !important;
+    padding-right: 16px;
+}
+
+ 

@@ -1,0 +1,12 @@
+.accordion-main-container {
+  display: flex;
+  align-items: center !important;
+}
+
+.req-expand-icon {
+  color: #000;
+}
+
+.requisition-detail-header {
+  color: #fff !important;
+}

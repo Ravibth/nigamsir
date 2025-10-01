@@ -1,0 +1,27 @@
+.search-employee-option {
+  width: 100%;
+}
+.search-employee-name {
+  width: 60%;
+}
+.search-employee-skills {
+  width: 50%;
+  padding-left: 100px;
+}
+
+.name-container .MuiOutlinedInput-notchedOutline {
+  border-radius: 10px 0 0 10px !important;
+}
+
+.search-container-multiple .MuiOutlinedInput-notchedOutline {
+  border-radius: 0 10px 10px 0 !important;
+  border-left: none !important;
+}
+
+.search-container-multiple {
+  width: 100% !important;
+}
+
+.search-container-single {
+  width: 100% !important;
+}

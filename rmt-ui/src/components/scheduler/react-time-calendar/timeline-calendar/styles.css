@@ -1,0 +1,65 @@
+.react-calendar-timeline .rct-sidebar .rct-sidebar-row.rct-sidebar-row-odd {
+  background-color: white !important;
+}
+/* #timelineCalendar {
+  border-bottom: 1px solid gray;
+} */
+
+.time-calender-main {
+  height: 60% !important;
+  padding: 10px !important;
+}
+/* 
+.react-calendar-timeline {
+ 
+  border: 2px solid gray;
+  border-radius: 20px !important;
+} */
+
+
+.rct-outer {
+  height: 70vh !important;
+  min-height: 68vh !important ;
+  overflow-y: scroll !important;
+  border-radius: 0px 0px 19px 19px !important;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+
+/* @media screen (max-height: 959px) {
+  .rct-outer {
+    height: 77vh !important;
+   
+    min-height: 75vh !important;
+  
+  }
+}
+
+@media screen  (max-height: 960px) {
+  .rct-outer {
+    height: 87.5vh !important;
+   
+    min-height: 85vh !important;
+ 
+  }
+} */
+
+.rct-sidebar {
+  min-height: 70vh !important;
+  width: 311px !important;
+}
+
+.rct-scroll {
+  min-height: 70vh !important;
+  overflow-x: hidden !important;
+}
+
+.rct-vl {
+  min-height: 70vh !important;
+  border-left: 1px solid #dfdcdc !important;
+}
+
+.rct-items {
+  border-radius: 0% !important;
+}

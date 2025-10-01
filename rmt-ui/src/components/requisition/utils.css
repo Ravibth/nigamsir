@@ -1,0 +1,77 @@
+.requisition-header-main {
+  display: flex;
+  justify-content: end;
+  color: #725799;
+  align-items: center;
+}
+.tool-requisition {
+  font-size: 20px !important;
+  color: #00a7b5 !important;
+  float: right;
+  margin-top: 4px;
+}
+
+.tab-container .MuiTabs-indicator {
+  background-color: #4f2d7f !important;
+}
+
+.edit-icon {
+  color: #4f2d7f !important;
+}
+.requisition-header-title {
+  display: flex;
+  justify-content: flex-start;
+  color: #4f2d7f;
+  align-items: center;
+  font-weight: 600;
+}
+
+.infoIcon-skill {
+  font-size: 20px !important;
+  color: #00a7b5 !important;
+}
+
+.parameters-main-container {
+  /* background-color: #f2f5ff !important; */
+  padding: 20px;
+}
+
+.icon-requisition {
+  font-size: 15px !important;
+  margin-right: 5px !important;
+}
+
+.icon-requisition-location {
+  font-size: 20px !important;
+  margin-right: 5px !important;
+}
+
+.data-container {
+  display: flex;
+  align-items: center;
+}
+
+/* .location-control .MuiAutocomplete-root {
+  background-color: #f2f5ff !important;
+} */
+
+.btn-back {
+  padding: 0px !important;
+}
+
+.parameters-header {
+  font-weight: 600 !important;
+  color: #725799 !important;
+}
+
+.schedule-header {
+  font-weight: 600 !important;
+}
+
+.job-style {
+  color: #725799 !important;
+}
+
+.info-para {
+  float: right;
+}

@@ -1,0 +1,87 @@
+.skill-master-heading {
+  font-size: 28px;
+  font-weight: 600;
+  background-color: #f6f2fc;
+  height: 50px;
+  padding: 0px 10px 0px 10px;
+  margin-top: -5px;
+}
+
+.skill-master-add {
+  width: 200px;
+  margin-left: auto;
+  padding: 15px 20px 10px 0px;
+}
+
+.skill-master-grid {
+  padding: 5px 20px 10px 20px;
+}
+
+.add-new-grid {
+  padding: 20px 20px 0px 25px;
+}
+
+.add-skill-link {
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  /* padding: 10px 0px 10px 30px; */
+  /* width: 15%; */
+  /* display: inline-block;
+  text-align: right; */
+}
+
+.skill-map-error {
+  width: 80%;
+  display: inline-block;
+  /* padding: 20px 30px 10px 30px; */
+  color: red;
+}
+
+.skill-error {
+  color: red;
+  padding-top: 10px;
+}
+
+.skill-mapping-modal {
+  font-size: 22px;
+  font-weight: 600;
+  color: #4f2d7f;
+  /* padding: 20px; */
+}
+
+/* .skill-mapping-save {
+} */
+.skill-mapping-desingation {
+  font-size: 19px !important;
+  color: #4f2d7f;
+  padding-left: 30px !important;
+}
+
+.competency-heading {
+  padding: 10px 0px 0px 30px;
+  font-weight: 600;
+  font-size: 20px;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  color: #4f2d7f;
+}
+
+.form-separator-hr {
+  border: 0.5px solid #4f2d7f !important;
+  width: 66.5%;
+  opacity: 2;
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  color: #ff0000;
+}
+
+.skill_addmapping_designation {
+  min-height: 50px;
+  max-height: 300px;
+  overflow: auto;
+}

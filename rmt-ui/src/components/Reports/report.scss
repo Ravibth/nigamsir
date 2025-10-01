@@ -1,0 +1,90 @@
+.main-toggle-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.report-dashboard-container {
+  display: flex;
+  flex-direction: row;
+}
+.report-tabs {
+  padding: 0px 20px 20px 10px;
+}
+.report-card {
+  max-width: 100%;
+  padding: 20px 20px 0px 0px;
+  // margin-bottom: 10px;
+}
+.report-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // margin-left: 20px;
+  // text-align: center;
+  // flex-direction: row-reverse;
+}
+.report-graph-container {
+  display: flex;
+  // flex-direction: column;
+  width: 100%;
+}
+.report-graphs {
+  padding: 20px 0px 0px 0px;
+  width: 100%;
+  display: flex;
+}
+.report-card-gauge {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  margin-right: 20px;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 20px 20px 0px 20px;
+  height: 413px;
+  justify-content: center;
+}
+.report-heading {
+  padding: 0px 0px 20px 15px;
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.report-dashboard-header {
+  display: flex;
+  justify-content: end;
+  padding: 20px 20px 0px 20px;
+}
+.report-toggle {
+  margin-left: 10px;
+  padding: 0px 20px 20px 0px;
+}
+
+.report-card .MuiCard-root {
+  min-width: 260px !important;
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.8) !important;
+}
+
+.report-card {
+  height: 105px !important;
+}
+
+.report-dashboard-container .MuiCardContent-root {
+  display: flex !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.report-dashboard-container .MuiPaper-root {
+  border-radius: 15px !important;
+}
+
+.speedometer-style-main {
+  padding-top: 50px;
+}

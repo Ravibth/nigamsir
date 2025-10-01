@@ -1,0 +1,21 @@
+.grid-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.clear-filter {
+  padding-left: 10px;
+}
+
+.download-icon {
+  display: flex;
+  padding-right: 20px;
+  padding-left: 10px;
+  cursor: pointer;
+  margin-top: -37px;
+  position: absolute;
+}
+
+.ag-theme-alpine {
+  --ag-odd-row-background-color: #f7f5f7 !important;
+}

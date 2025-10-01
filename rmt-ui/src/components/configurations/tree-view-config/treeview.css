@@ -1,0 +1,56 @@
+.config-container {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.experties-name {
+  padding: 5px 0px 0px 25px;
+}
+
+.bu-name {
+  font-size: 15px !important;
+  /* font-family: "GT Walsheim Pro" !important; */
+  font-weight: 550 !important;
+  background-color: #f9f5ff !important;
+  padding: 10px !important;
+  border-radius: 8px;
+}
+
+.bu-container {
+  min-width: 500px;
+  padding: 10px 10px !important;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+.mr-15 {
+  margin-right: 20px;
+}
+
+.main-preference-container-config {
+  background-color: #fff;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.main-preference-container-config .MuiGrid-container {
+  background-color: #f9f5ff;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.config-pre-textfield .MuiTextField-root {
+  background-color: #fff;
+}
+
+.main-el-container-config .MuiGrid-container {
+  background-color: #f9f5ff;
+  padding: 10px;
+  border-radius: 8px;
+}

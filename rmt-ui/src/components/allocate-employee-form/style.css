@@ -1,0 +1,19 @@
+.form-container-main {
+  min-width: 50% !important;
+  max-height: 350px;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.form-container-main::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.form-error-container {
+  margin-top: -3%;
+  padding-left: 20px;
+}
+.add-icon-style .MuiSvgIcon-root {
+  margin-bottom: 10px !important;
+}

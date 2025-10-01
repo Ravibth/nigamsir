@@ -1,0 +1,13 @@
+.loader {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: column;
+  position: fixed;
+  background: #000;
+  opacity: 0.4;
+  z-index: 9999 !important;
+}

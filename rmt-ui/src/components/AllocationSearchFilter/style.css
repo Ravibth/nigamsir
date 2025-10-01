@@ -1,0 +1,27 @@
+.timeline-popup {
+  .rct-outer {
+    height: 46vh !important;
+    min-height: 46vh !important;
+  }
+}
+
+.primary-button {
+  background-color: #4f2d7f !important;
+  color: white !important;
+  font-size: 14px !important;
+  text-transform: initial !important;
+  border-color: #b8b8b8 !important;
+  /* font-family: GT Walsheim Pro !important; */
+  width: 90px;
+  margin-left: 20px !important;
+}
+.secondary-button {
+  color: #4f2d7f !important;
+  border-color: #4f2d7f !important;
+  font-size: 14px !important;
+  background-color: #ffffff !important;
+  /* font-family: GT Walsheim Pro !important; */
+}
+.button-container {
+  padding-left: 10% !important;
+}

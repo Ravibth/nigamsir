@@ -1,0 +1,21 @@
+.stack {
+  padding-left: 18px;
+}
+.box {
+  padding-left: 20px;
+  text-decoration: none !important;
+}
+
+.wcgt-url {
+  color: #4f2d7f;
+}
+
+.wcgtHeader {
+  color: #725799 !important;
+  font-weight: 600;
+}
+
+.titleHeader {
+  color: #725799 !important;
+  font-weight: 550;
+}

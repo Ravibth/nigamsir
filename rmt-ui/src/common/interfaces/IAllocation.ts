@@ -1,0 +1,152 @@
+import { IRequisitionMaster } from "./IRequisition";
+
+export interface IResourceAllocationDetailsMaster {
+  id?: string;
+  requisitionId?: string;
+  empEmail?: string;
+  pipelineCode?: string;
+  pipelineName?: string;
+  jobCode?: string;
+  jobName?: string;
+  empName?: string;
+  description?: string;
+  totalEffort?: number;
+  allocationStatus?: string;
+  startDate?: Date;
+  endDate?: Date;
+  confirmedAllocationDate?: Date;
+  isActive?: boolean;
+  createdBy?: string;
+  modifiedBy?: string;
+  createdAt?: Date;
+  modifiedAt?: Date;
+  allocationVersion?: number;
+  requisition?: IRequisitionMaster;
+  skills?: IResourceAllocationSkillEntityMaster[];
+  resourceAllocations?: IResourceAllocationMaster[];
+  type?: string;
+  isUpdated?: boolean;
+  consumedHours?: number;
+  // id?: number;
+  // guid?: string;
+  // pipelineCode?: string;
+  // jobCode?: string;
+  // // projectCode?: string;
+  // jobName?: string;
+  // pipelineName?: string;
+  // empEmail?: string;
+  // empName?: string;
+  // requisitionId?: number;
+  // requisitions?: IRequisitionMaster;
+  // recordType?: string;
+  // isContinuousAllocation?: boolean;
+  // description?: string;
+  // totalEffort?: number;
+  // allocationStartDate?: Date;
+  // allocationEndDate?: Date;
+  // allocationStatus?: string;
+  // createdDate?: Date;
+  // modifiedDate?: Date;
+  // createdBy?: string;
+  // modifiedBy?: string;
+  // isActive?: boolean;
+  // suspendedAt?: Date;
+  // resourceAllocation?: IResourceAllocationMaster[];
+  // resourceAllocationSkillEntity?: IResourceAllocationSkillEntityMaster[];
+}
+export interface IResourceAllocationSkillEntityMaster {
+  id?: string;
+  pipelineCode?: string;
+  pipelineName?: string;
+  jobCode?: string;
+  jobName?: string;
+  requisitionId?: string;
+  unPublishedResAllocDetailsId?: string;
+  publishedResAllocDetailsId?: string;
+  skillName?: string;
+  skillCode?: string;
+  requisition?: IRequisitionMaster;
+  resAllocDetails?: IResourceAllocationDetailsMaster;
+  type?: string;
+
+  // id?: number;
+  // requisitionId?: number;
+  // resAllocDetID?: number;
+  // skillName?: string;
+  // createdDate?: Date;
+  // modifiedDate?: Date;
+  // createdBy?: string;
+  // modifiedBy?: string;
+  // resourceAllocationDetails?: IResourceAllocationDetailsMaster;
+}
+
+export interface IResourceAllocationMaster {
+  id?: string;
+  empEmail?: string;
+  pipelineCode?: string;
+  pipelineName?: string;
+  jobCode?: string;
+  jobName?: string;
+  requisitionId?: string;
+  publishedResAllocDetailsId?: string;
+  unPublishedResAllocDetailsId?: string;
+  startDate?: Date;
+  endDate?: Date;
+  efforts?: number;
+  isPerDayAllocation?: boolean;
+  ratePerHour?: any;
+  totalWorkingDays?: number;
+  currency?: string;
+  resourceAllocationDays?: ResourceAllocationDay[];
+  type?: string;
+  requisition?: IRequisitionMaster;
+
+  // id?: number;
+  // pipelineCode?: string;
+  // jobCode?: string;
+  // projectCode?: string;
+  // jobName?: string;
+  // pipelineName?: string;
+  // empEmail?: string;
+  // empName?: string;
+  // clientName?: string;
+  // confirmedAllocationStartDate?: Date;
+  // confirmedAllocationEndDate?: Date;
+  // confirmedPerDayHours?: number;
+  // isPerDayHourAllocation?: boolean;
+  // resAllocDetailsId?: number;
+  // resourceAllocationDetails?: IResourceAllocationDetailsMaster;
+  // requisitionId?: number;
+  // requisitions?: IRequisitionMaster;
+  // allocationStatus?: string;
+  // recordType?: string;
+  // totalWorkingDays?: number;
+  // createdDate?: Date;
+  // modifiedDate?: Date;
+  // createdBy?: string;
+  // modifiedBy?: string;
+  // suspendedAt?: Date;
+  // isActive?: boolean;
+  // isPublish?: boolean;
+  // skills?: IResourceAllocationSkillEntityMaster[];
+  // ratePerHour?: number;
+}
+
+export interface ResourceAllocationDay {
+  id: string;
+  pipelineName: string;
+  jobName: string;
+  emailId: string;
+  pipelineCode: string;
+  jobCode: string;
+  ratePerHour: number;
+  currency: string | null;
+  requisitionId: string;
+  unPublishedResAllocId: string | null;
+  publishedResAllocId: string;
+  efforts: number;
+  allocationDate: string; 
+  type: "Published" | "Unpublished";
+  requisition: any | null; 
+}
+

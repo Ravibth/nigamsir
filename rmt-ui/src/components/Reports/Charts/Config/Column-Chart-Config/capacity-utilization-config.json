@@ -1,0 +1,13 @@
+{
+  "name": "Capacity Utilization Chart",
+  "RoleAxisConfigurations": {
+    "Admin": "Business Unit",
+    "BULeader": "Expertise",
+    "ExpertiseLeader": "SMEG"
+  },
+  "SelectedFilterValue": {
+    "businessUnit": "expertise",
+    "expertise": "sme_group_name",
+    "smeg": "sme_group_name"
+  }
+}

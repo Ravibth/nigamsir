@@ -1,0 +1,50 @@
+.Information-Icon {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  color: #4f2d7f !important;
+  margin-right: 8px !important;
+  font-size: 12px;
+}
+.btn-container-main {
+  margin-left: auto !important;
+}
+
+.preferences-modal-title-header {
+  display: flex;
+  justify-content: center;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  font-size: 25px !important;
+  font-weight: 600 !important;
+}
+
+.preferences-modal-content {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  font-size: 20px !important;
+  display: flex;
+  justify-content: center;
+  margin: 10px !important;
+}
+
+.preferences-modal-note {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px !important;
+  color: #939393;
+}
+
+.preference-info-icon {
+  color: #00A7B5;
+  font-size: 20px !important;
+}
+
+.main-preference-container {
+  margin-top: 0px !important;
+  margin-bottom: 10px !important;
+  font-size: 28px !important;
+  font-weight: 600 !important;
+  height: 50px !important;
+  /* padding: 0px 10px 0px 10px !important; */
+  display: flex;
+  justify-content: flex-start;
+  color: #4f2d7f;
+  align-items: center;
+}

@@ -1,0 +1,56 @@
+.buttonContainer {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+}
+
+.btn:hover {
+  background-color: #f2f5ff !important;
+  color: #4f2d7f !important;
+}
+.job-name-container {
+  align-items: center;
+}
+.job-name-container span {
+  line-height: 1.2;
+}
+/* .RequisitionClosure{
+    display:flex
+} */
+
+.market-calender-control .MuiOutlinedInput-notchedOutline {
+  border-radius: 10px !important;
+}
+
+.market-calender-control .MuiFormControl-root {
+  background-color: #f9f5ff !important;
+  border-radius: 15px !important;
+}
+
+.masking-field-container {
+  display: flex !important;
+  margin-bottom: 10px !important;
+}
+
+.check-container {
+  display: flex !important;
+  align-items: center !important ;
+}
+
+.masking-field-name {
+  padding-left: 5px !important;
+  word-break: "break-word";
+}
+
+/* .back-projectName-container {
+  display: flex;
+} */
+
+.project-details-btn-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}

@@ -1,0 +1,10 @@
+.my-skills-ag-grid {
+  /* font-family: "GT Walsheim Pro, Medium " !important; */
+}
+.my-skills-ag-grid .MuiFormControl-root {
+  margin: -7px !important;
+}
+.my-skills-ag-grid .MuiOutlinedInput-notchedOutline {
+  border: 0 !important;
+  box-shadow: none !important;
+}

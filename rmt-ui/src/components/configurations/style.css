@@ -1,0 +1,55 @@
+.config-title-container {
+  /* font-family: "GT Walsheim Pro" !important; */
+  font-weight: 600 !important;
+  /* font-size: 21px !important; */
+}
+.header-container {
+  margin-top: 8px !important;
+  margin-bottom: 4px !important;
+}
+
+.configMainContainer .MuiContainer-root {
+  max-width: 100% !important;
+}
+
+.config-textfield-colr .MuiTextField-root {
+  background-color: #fff !important;
+}
+
+/* .config-bu-name .MuiTextField-root {
+   background-color: #fff !important;
+ } */
+
+.label-cofig {
+  font-weight: 550;
+}
+
+.config-text-ml {
+  margin-left: 25px !important;
+  font-weight: 550 !important;
+}
+
+.main-data-container .MuiGrid-container {
+  overflow: auto !important;
+}
+
+.system-config-main {
+  flex-wrap: nowrap !important;
+  overflow: auto !important;
+  padding-bottom: 10px;
+}
+
+.config-bu-name {
+  font-size: 15px !important;
+  font-weight: 550 !important;
+  display: flex;
+  padding: 5px 0px 2px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 150px;
+  text-transform: capitalize !important;
+}
+
+.Only-toggle-main .MuiButton-root {
+  display: none !important;
+}

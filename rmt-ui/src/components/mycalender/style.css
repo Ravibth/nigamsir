@@ -1,0 +1,6 @@
+.my-calendar-main-container {
+  padding: 20px;
+}
+.my-calendar-control .MuiAutocomplete-tag {
+  max-width: calc(80% - 6px) !important;
+}

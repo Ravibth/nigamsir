@@ -1,0 +1,13 @@
+start RMT.Allocations.bat
+start RMT.Configuration.bat
+start RMT.Employee.bat
+start RMT.Gateway.bat
+start RMT.Identity.bat
+start RMT.Workflow.bat
+start RMT.Projects.bat
+start RMT.WCGT.bat
+start RMT.MarketPlace.bat
+start RMT.Notification.bat
+start rmt-ui.bat
+start RMT.Skill.bat
+start RMT.Report.bat

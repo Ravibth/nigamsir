@@ -1,0 +1,25 @@
+.ViewMoreDetails {
+  text-decoration: none;
+  /* color: GlobalConstant.GT_DESIGN_PARAMETERS.GtPrimaryColor; */
+  /* textDecoration: none ; 
+    color: GlobalConstant.GT_DESIGN_PARAMETERS.GtPrimaryColor */
+}
+.end-date-warning {
+  color: red !important;
+  padding-left: 5px !important;
+  padding-top: 4px !important;
+}
+
+.main-pop-container {
+  display: "flex" !important;
+  justify-content: flex-end !important;
+}
+
+.view-more-btn {
+  margin-right: 10px !important;
+}
+
+.card-content-main {
+  min-height: 390px !important;
+  min-width: 450px !important;
+}

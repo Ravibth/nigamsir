@@ -1,0 +1,15 @@
+.filter-header-common .MuiTypography-root {
+  font-size: 24px !important;
+  font-weight: 600;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  display: flex !important;
+  justify-content: center !important;
+  margin-top: 9px;
+  /* margin-bottom: 9px; */
+}
+
+.filter-btn-container {
+  margin-top: 18px !important;
+  display: flex;
+  justify-content: center !important;
+}

@@ -1,0 +1,4 @@
+.required_field label::after {
+  content: "*" !important;
+  color: red !important;
+}

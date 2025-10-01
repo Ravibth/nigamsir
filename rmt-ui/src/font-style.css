@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "GtWalsheimFont";
+  src: url("./common/fonts/GT-Fonts/GT-Walsheim-Pro-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GtWalsheimFont";
+  src: url("./common/fonts/GT-Fonts/GT-Walsheim-Pro-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GtWalsheimFont";
+  src: url("./common/fonts/GT-Fonts/GT-Walsheim-Pro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GtWalsheimFont";
+  src: url("./common/fonts/GT-Fonts/GT-Walsheim-Pro-Bold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+html,
+body,
+input,
+select,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+* {
+  font-family: "GtWalsheimFont", sans-serif, Arial;
+  font-weight: 400;
+}

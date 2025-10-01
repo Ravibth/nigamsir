@@ -1,0 +1,359 @@
+.rolePermissionMain {
+  padding: 0px 0px 10px 0px;
+}
+
+.headerMainContainer {
+  display: flex;
+  padding: 6px 5px 5px 5px;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5px;
+}
+
+/* splitter start */
+
+.splitter {
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  position: relative;
+}
+
+.Resizer {
+  background: #d1d1d1;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+.Resizer.vertical {
+  width: 20px;
+  margin: 0 -5px;
+  border-left: 5px solid rgba(255, 255, 255, 0);
+  border-right: 5px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+}
+
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+/* splitter end */
+
+.simulationDiv {
+  width: 100%;
+  height: 100%;
+  min-width: 10px;
+}
+
+.header-custom .ag-header-cell-comp-wrapper {
+  display: flex !important;
+  justify-content: end !important;
+}
+
+.statisticsDiv {
+  width: 100%;
+  min-width: 10px;
+}
+
+.font-style {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+  font-weight: 400 !important;
+}
+
+.MuiInputLabel-root {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+  font-weight: 400 !important;
+}
+
+.ag-theme-alpine .ag-header {
+  font-size: 15px;
+}
+
+.ag-header-icon.ag-header-cell-menu-button {
+  opacity: 1 !important;
+}
+
+/* Assign role modal start */
+
+.search-icon-btn {
+  color: #4f2d7f;
+  border: none;
+  background-color: transparent;
+  font-size: xx-large;
+  cursor: pointer;
+  margin-top: -2px !important;
+  padding-right: 0px !important;
+}
+
+.user-not-found-error {
+  color: #d32f2f !important;
+  font-size: medium;
+  display: flex;
+  padding-left: 10px !important;
+  margin-top: 5px;
+}
+
+.usernot-found-icon {
+  padding: 0px 5px;
+}
+
+.assign-user-input-field {
+  padding-left: 10px !important;
+}
+
+.assign-user-input-field .MuiInputBase-input {
+  height: 1.1876em !important;
+  background-color: white !important;
+}
+
+.assign-user-input-field .MuiTextField-root {
+  width: 49.2% !important;
+  border-radius: 0px !important;
+}
+
+.search-icon .MuiInputAdornment-root {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.two-tables-display {
+  display: flex !important;
+  margin-top: 20px !important;
+}
+
+.header-name {
+  color: #000 !important;
+  font-weight: bold !important;
+  margin-bottom: 30px !important;
+}
+
+.user-details-table {
+  margin-right: 10px;
+  margin-left: 10px;
+  height: 100% !important;
+  width: 50% !important;
+}
+.user-details-table-card {
+  width: 100% !important;
+  height: 340px !important;
+}
+
+.user-details-table-card ul {
+  width: 95% !important;
+  margin-left: 16px;
+}
+
+.email-id-overflow {
+  text-overflow: ellipsis !important;
+  overflow: hidden !important;
+}
+
+.padding-18 {
+  padding-bottom: 18px !important;
+}
+
+.assign-roles-table {
+  height: 100% !important;
+  width: 48%;
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.assign-roles-table-card {
+  width: 100% !important;
+  height: 340px !important;
+}
+.overflow-card {
+  display: flex !important;
+  overflow-y: scroll !important;
+}
+
+.roles-check-main {
+  display: flex;
+  align-items: center;
+}
+
+.assign-modal-header {
+  font-size: 22px !important;
+  font-weight: 550 !important;
+  display: flex;
+  justify-content: space-between;
+  /* font-family: "GT Walsheim Pro, Medium" !important ; */
+  border-radius: 15px !important;
+}
+
+.header-style {
+  margin-left: 10px !important;
+}
+
+.button-on-add-update-user-popup {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px !important;
+  margin-right: 10px;
+}
+
+.cancel-button-on-add-update-user-popup button {
+  color: #725799 !important;
+  background-color: #fff !important;
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 0px !important;
+  border: 1px solid#725799 !important;
+  text-transform: none !important;
+  font-size: large;
+  /* font-family: "GT Walsheim Pro, Medium"; */
+  border-radius: 10px !important;
+}
+
+.submit-button-on-add-update-user-popup button {
+  margin-left: 10px !important;
+  color: white !important;
+  background-color: #725799 !important;
+  width: 100% !important;
+  height: 40px !important;
+  border-radius: 0px !important;
+  border: 1px solid#725799 !important;
+  text-transform: none !important;
+  font-size: large;
+  /* font-family: "GT Walsheim Pro, Medium"; */
+  border-radius: 10px !important;
+}
+
+.confrim-btn {
+  margin-left: 10px !important;
+}
+
+.col-3 {
+  flex: 0 0 auto !important;
+  width: 25% !important;
+}
+.col-9 {
+  flex: 0 0 auto !important;
+  width: 75% !important;
+}
+
+.user-box-item {
+  display: flex !important;
+}
+
+/* Assign role modal end */
+
+.checkColor {
+  color: #d1d1d1 !important;
+}
+
+.role-table-half-height {
+  height: 32vh !important;
+  width: 100% !important;
+}
+
+.role-table-full-height,
+.user-table {
+  height: 86vh !important;
+  width: 100% !important;
+}
+
+/* Apply confrimation modal start*/
+
+.confrim-btn-main {
+  margin-top: 10px !important;
+  display: flex !important;
+  justify-content: flex-end !important;
+  /* justify-content: center !important; */
+}
+/* Apply confrimation modal end*/
+
+.MuiSelect-selectMenu {
+  font-size: 14px !important;
+  min-height: 1.7em !important;
+}
+
+.user-ag-grid .MuiFormControl-root {
+  margin: 0px !important;
+}
+
+.user-ag-grid {
+  height: 86vh !important;
+  width: 100% !important;
+}
+
+.user-table-roles-dropdown .MuiCheckbox-colorPrimary.Mui-checked {
+  color: #4f2d7f !important;
+}
+
+.user-table-roles-dropdown .MuiCheckbox-colorPrimary.Mui-checked :disabled {
+  color: #d1d1d1 !important;
+}
+
+.user-table-roles-dropdown .Mui-disabled {
+  opacity: 0.55 !important;
+}
+
+.user-table .MuiOutlinedInput-notchedOutline {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.user-table .MuiOutlinedInput-input {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 0px !important;
+  /* font-family: "GT Walsheim Pro, Medium"; */
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+  color: #4f2d7f !important;
+}
+
+.MuiButtonBase-root-MuiCheckbox-root.Mui-checked {
+  color: #4f2d7f !important;
+}
+
+.main-container-aggrids {
+  padding: 0px 10px;
+}
+
+.role-aggrid .ag-root-wrapper {
+  border-radius: 10px 0px 0px 10px !important;
+}
+
+.user-ag-grid .ag-root-wrapper {
+  border-radius: 0px 10px 10px 0px !important;
+}
+
+.user-box-style .MuiPaper-root {
+  border-radius: 10px !important;
+}
+
+.role-box-style .MuiPaper-root {
+  border-radius: 10px !important;
+}
+
+.module-aggrid .ag-root-wrapper {
+  border-radius: 0 0 0 10px !important;
+}
+
+.MuiTypography-root {
+  /* color: #2b2b2b !important; */
+  font-weight: 400;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+}
+
+.user-management-heading {
+  margin-left: 5px !important;
+}
+
+MuiOutlinedInput-root {
+  font-size: 14px !important;
+}

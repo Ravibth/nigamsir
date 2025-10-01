@@ -1,0 +1,12 @@
+.custom-system-suggestion-tooltip {
+  .MuiTooltip-tooltip {
+    background-color: rgba(238, 238, 238, 255) !important;
+    color: black !important;
+    border: 1px solid rgba(216, 216, 216, 255);
+    max-width: none !important;
+    width: "min-content" !important;
+  }
+  .MuiTooltip-tooltip .MuiTooltip-arrow {
+    color: rgba(238, 238, 238, 255) !important;
+  }
+}

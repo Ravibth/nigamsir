@@ -1,0 +1,18 @@
+﻿using Microsoft.Extensions.Logging;
+using ServiceLayer.DTOs;
+using ServiceLayer.DTOs.Budget;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ServiceLayer.Services.WCGT
+{
+    public interface IWCGTHttpService
+    {
+        //Task<List<GTJobDTO>> GetJobsListFromWCGT();
+
+        //Task<List<string>> GetProjectBudgetByModifiedDateRange(string currentToken, DateTime startDate, DateTime endDate, ILogger _logger);
+    }
+}

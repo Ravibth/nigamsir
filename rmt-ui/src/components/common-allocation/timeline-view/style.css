@@ -1,0 +1,40 @@
+.custom-system-suggestion-tooltip {
+  .MuiTooltip-tooltip {
+    background-color: rgba(238, 238, 238, 255) !important;
+    color: black !important;
+    border: 1px solid rgba(216, 216, 216, 255);
+    max-width: none !important;
+    width: "min-content" !important;
+  }
+  .MuiTooltip-tooltip .MuiTooltip-arrow {
+    color: rgba(238, 238, 238, 255) !important;
+  }
+}
+
+.commonAllocation {
+  .rct-outer {
+    height: 61vh !important;
+    min-height: 50vh !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+  }
+  .rct-sidebar {
+    height: 61vh !important;
+    overflow-y: auto !important;
+    min-height: 50vh !important;
+  }
+  .rct-scroll {
+    height: 61vh !important;
+    min-height: 50vh !important;
+    overflow-y: auto !important;
+  }
+  .rct-item-content {
+    text-align: center !important;
+    display: flow !important;
+  }
+}
+
+.commonAllocation .MuiTypography-root {
+  border-radius: 20px !important;
+  border: none !important;
+}

@@ -1,0 +1,245 @@
+@import "font-style.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* font-family: "GT Walsheim Pro, Medium"; */
+}
+
+.error_msg {
+  padding-right: 10px;
+  padding-top: 10px;
+  color: red;
+}
+
+.required {
+  color: red;
+  /* position: absolute; */
+  padding-top: 2px;
+  padding-left: 4px;
+}
+
+.named-resource-timeline {
+  height: 650px !important;
+}
+.rmt-action-button {
+  background-color: #725799 !important;
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+}
+
+.ag-header {
+  background-color: #f6f2fc !important;
+}
+
+.rmt-assignresource-button {
+}
+.rmt-grp-cal-button {
+}
+.rmt-calenderview-button {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+}
+.rmt-login-button {
+}
+.rmt-preference-button {
+}
+.rmt-manage-save-button {
+}
+.rmt-prjtype-button {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+}
+/* .MuiSvgIcon-root, */
+.Mui-checked {
+  /* color: #00a7b5 !important; */
+}
+.MuiCheckbox-root {
+  color: #00a7b5 !important;
+}
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #4f2d7f !important;
+}
+.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: #d32f2f !important;
+}
+a:hover {
+  text-decoration: underline;
+  color: #f26416 !important;
+}
+a {
+  text-decoration: none;
+  color: #4f2d7f !important;
+}
+/* Header of Page Menu Listing */
+.header-main a:hover {
+  text-decoration: underline !important;
+  color: white !important;
+}
+.Mui-error .Mui-focused .MuiInputLabel-outlined {
+  color: #d32f2f !important;
+}
+.Mui-focused .MuiInputLabel-outlined,
+.MuiInputLabel-outlined {
+  color: #4f2d7f !important;
+}
+.Mui-error {
+  color: #d32f2f !important;
+}
+.MuiSlider-root {
+  color: #00a7b5 !important;
+}
+/* .MuiSlider-root .Mui-disabled {
+  color: #c5c2c2 !important;
+} */
+
+.MuiSlider-root .Mui-disabled {
+  color: #c5c2c2 !important;
+}
+.Mui-disabled .MuiCheckbox-root {
+  color: #c5c2c2 !important;
+}
+.chips-render span {
+  font-size: medium;
+  color: #4f2d7f;
+  font-weight: 500 !important;
+}
+.chips-render .MuiChip-outlined {
+  background-color: #f6f2fc;
+}
+.chips-render .MuiChip-deleteIcon {
+  color: #4f2d7f !important;
+}
+
+.chips-highlight span {
+  font-size: medium;
+  color: #00a7b5;
+  font-weight: 500 !important;
+}
+.chips-highlight .MuiChip-outlined {
+  background-color: #f6f2fc;
+}
+.chips-highlight .MuiChip-deleteIcon {
+  color: #00a7b5 !important;
+}
+
+.MuiInputLabel-root {
+  font-size: 1.14rem !important;
+}
+.MuiSwitch-track {
+  /* background: #00a7b5 !important; */
+}
+.MuiBadge-badge {
+  background-color: #008000 !important;
+}
+.labelColor {
+  color: #4f2d7f !important;
+}
+
+.rmt-action-disabled {
+  background-color: #c5c2c2 !important;
+  color: white !important;
+}
+.Mui-disabled .MuiSvgIcon-root {
+  color: #a3a3a3 !important;
+}
+.justification-text {
+  font-size: 16px;
+  padding: 0px 0px 20px 0px;
+  font-weight: 600;
+}
+.justification-submit {
+  width: 200px;
+  padding: 30px 0px 0px 0px;
+  margin: 0 auto;
+}
+#budgetResourceGraph {
+  * {
+    /* font-family: "GT Walsheim Pro, Medium"; */
+    font-style: normal !important;
+  }
+}
+
+/* .MuiOutlinedInput-notchedOutline {
+  border-color: #4f2d7f !important;
+} */
+
+html,
+body,
+input,
+select,
+button,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+* {
+  font-family: "GtWalsheimFont", sans-serif, Arial;
+  font-weight: 400;
+}
+
+.MuiTypography-root {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+  font-weight: 400;
+}
+
+.MuiInputBase-input,
+.MuiMenuItem-root,
+.MuiGrid-item,
+.MuiButton-root,
+.MuiTab-root,
+.MuiFormLabel-root,
+.MuiToggleButton-root,
+.MuiAvatar-root {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+}
+
+.rct-day-0,
+.rct-day-6 {
+  background-color: #f3f2f7 !important;
+}
+
+.MuiTooltip-tooltip {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+  /* background-color: rgba(238, 238, 238, 255) !important; */
+  color: #4f2d7f !important;
+  font-size: 13px !important;
+}
+
+.ag-tooltip {
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+}
+
+.ag-root-wrapper {
+  border-radius: 10px !important;
+}
+
+.infoIconStyle {
+  color: #00a7b5 !important;
+  font-size: 20px;
+}
+
+.MuiTooltip-tooltip {
+  background-color: #f9f5ff !important;
+}
+
+.MuiTooltip-tooltip .MuiTooltip-arrow {
+  color: #f9f5ff !important;
+}
+
+.MuiRadio-root {
+  color: #00a7b5 !important;
+}
+
+.MuiSlider-mark {
+  color: #fff;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+}
+
+.MuiSlider-track {
+  height: 6px !important;
+}

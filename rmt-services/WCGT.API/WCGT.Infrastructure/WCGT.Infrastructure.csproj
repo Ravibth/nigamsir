@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTOs\GTProjectDTO.cs" />
+    <Compile Remove="DTOs\GTProjectJobCodeDTO.cs" />
+    <Compile Remove="DTOs\GTProjectRoleDTO.cs" />
+    <Compile Remove="Migrations\20231212202123_dataseed-docker.cs" />
+    <Compile Remove="Migrations\20231212202123_dataseed-docker.Designer.cs" />
+    <Compile Remove="Migrations\20240213150518_working-days-query.cs" />
+    <Compile Remove="Migrations\20240213152241_work-day-qre.cs" />
+    <Compile Remove="Migrations\20240213152241_work-day-qre.Designer.cs" />
+    <Compile Remove="Migrations\20240304071935_budgetFieldUpdates.cs" />
+    <Compile Remove="Migrations\20240304071935_budgetFieldUpdates.Designer.cs" />
+    <Compile Remove="Repositories\WcgtConsumerRepository.cs" />
+    <Compile Remove="Repositories\WcgtRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WCGT.Domain\WCGT.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,239 @@
+[
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "GetLoggedInUserAllNotificationsCount",
+    "RelativePath": "api/Notification/GetLoggedInUserAllNotificationsCount",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "GetLoggedInUserNotifications",
+    "RelativePath": "api/Notification/GetLoggedInUserNotifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagination",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Notification.Application.Responses.UserNotificationsResponse, RMT.Notification.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "GetNotificationSubscription",
+    "RelativePath": "api/Notification/GetNotificationSubscription",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "module",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "subscription_role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "user_emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Notification.Application.RequestDTO.NotificationSubscriptionDTO, RMT.Notification.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "GetNotificationTemplate",
+    "RelativePath": "api/Notification/GetNotificationTemplate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "type",
+        "Type": "System.String[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Notification.Application.Responses.GetNotificationTemplateResponse, RMT.Notification.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "MarkAllNotificationsAsRead",
+    "RelativePath": "api/Notification/MarkAllNotificationsAsRead",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "MarkNotificationsAsRead",
+    "RelativePath": "api/Notification/MarkNotificationsAsRead",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "PostNewNotification",
+    "RelativePath": "api/Notification/PostNewNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "RMT.Notification.Application.RequestDTO.PostNewNotificationRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "SendNotification",
+    "RelativePath": "api/Notification/SendNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Notification.Domain.DTO.SendNotificationRequest, RMT.Notification.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Notification.API.Controllers.NotificationController",
+    "Method": "SubscribeToNotification",
+    "RelativePath": "api/Notification/SubscribeToNotification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "RMT.Notification.Application.RequestDTO.NotificationSubscriptionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Notification.Application.RequestDTO.NotificationSubscriptionDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

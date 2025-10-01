@@ -1,0 +1,8 @@
+.common-control-container .MuiFormControl-root {
+  background-color: #f9f5ff !important;
+  border-radius: 10px !important;
+}
+
+.common-control-container .MuiOutlinedInput-notchedOutline {
+  border-radius: 10px !important;
+}

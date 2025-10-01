@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTOs\GetDTOs\**" />
+    <Compile Remove="DTOs\UpdateDTOs\**" />
+    <Compile Remove="Handlers\CommandHandlers\**" />
+    <Compile Remove="Handlers\QueryHandlers\**" />
+    <Compile Remove="Responses\**" />
+    <EmbeddedResource Remove="DTOs\GetDTOs\**" />
+    <EmbeddedResource Remove="DTOs\UpdateDTOs\**" />
+    <EmbeddedResource Remove="Handlers\CommandHandlers\**" />
+    <EmbeddedResource Remove="Handlers\QueryHandlers\**" />
+    <EmbeddedResource Remove="Responses\**" />
+    <None Remove="DTOs\GetDTOs\**" />
+    <None Remove="DTOs\UpdateDTOs\**" />
+    <None Remove="Handlers\CommandHandlers\**" />
+    <None Remove="Handlers\QueryHandlers\**" />
+    <None Remove="Responses\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\CMDHandler\ProjectCommandHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Handlers\QueryHandlers\GetBUTreeMappingByMIDQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetClientLegalEntityQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetBUTreeMappingListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetClientListByJobCodeQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetCompetencyListQuery.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetSuperCoachQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetEmployeesBySuperCoachOrCSCQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetEmployeesForPortfolioReportQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetPortfolioFiltersOptionsQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetEmployeesForPortfolioQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetHolidaysByParamListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetJobByJobCodeQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetJobListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetLeavesByCreateDateQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetLeavesInfoQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetPipelineListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetLeavesByParamListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetEmployeeByParamListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetEmployeeListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetLeaveListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetHolidayListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetProjectBudgetByModifiedDateRangeQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetRateDesignationQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetResignedAndAbscondedUsersQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetResourceTimesheetGroupQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetSectorIndustryListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetDesignationListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetLocationListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetClientListQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetTimesheetGroupQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetTimesheetQueryHandler.cs" />
+    <Compile Include="Handlers\QueryHandlers\GetUserLeaveHolidayResponseQueryHandler.cs" />
+    <Compile Include="Responses\BudgetResponse.cs" />
+    <Compile Include="Responses\ClientLegalEntityListResponse.cs" />
+    <Compile Include="Responses\BUTreeMappingListResponse.cs" />
+    <Compile Include="Responses\CompetencyResponse.cs" />
+    <Compile Include="Responses\DesignationRateMasterResponse.cs" />
+    <Compile Include="Responses\EmployeeListResponse.cs" />
+    <Compile Include="Responses\GTBUEfficiencyLeaderResponse.cs" />
+    <Compile Include="Responses\JobListResponse.cs" />
+    <Compile Include="Responses\ProjectListResponse.cs" />
+    <Compile Include="Responses\PipelineListResponse.cs" />
+    <Compile Include="Responses\LeaveListResponse.cs" />
+    <Compile Include="Responses\HolidayListResponse.cs" />
+    <Compile Include="Responses\SectorIndustryListResponse.cs" />
+    <Compile Include="Responses\DesignationListResponse.cs" />
+    <Compile Include="Responses\LocationListResponse.cs" />
+    <Compile Include="Responses\ClientListResponse.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.0.1" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WCGT.Infrastructure\WCGT.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,225 @@
+[
+  { "CompetencyId": "CMPT0057", "Competency": "GOA", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0032",
+    "Competency": "Enterprise Applications",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0033",
+    "Competency": "Business Consulting",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0034",
+    "Competency": "New and Emerging Tech",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0035",
+    "Competency": "Data Analytics",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0036",
+    "Competency": "FS Consulting",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0037", "Competency": "Infra", "IsActive": true },
+  { "CompetencyId": "CMPT0038", "Competency": "Social", "IsActive": true },
+  { "CompetencyId": "CMPT0039", "Competency": "DigiGov", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0040",
+    "Competency": "National TRF Office",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0053",
+    "Competency": "IKCC BPS - Indore",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0054",
+    "Competency": "IKCC Audit - Indore",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0055", "Competency": "Staff (F3)", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0041",
+    "Competency": "IKCC BPS - DEH",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0042",
+    "Competency": "IKCC Audit - DEH",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0043",
+    "Competency": "Workplace Enablement",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0044",
+    "Competency": "Expertise Digitization",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0045",
+    "Competency": "Fin Acct and Payroll",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0046",
+    "Competency": "Information Technology Services",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0047",
+    "Competency": "Knowledge Management",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0048",
+    "Competency": "Legal and Risk Management",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0049",
+    "Competency": "Market Ecosystems",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0050",
+    "Competency": "National Management",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0051",
+    "Competency": "People & Culture",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0052",
+    "Competency": "Quality and Risk Management",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0005",
+    "Competency": "Due Diligence",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0006",
+    "Competency": "Lead Advisory",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0007",
+    "Competency": "Recovery & Reorganisation",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0008",
+    "Competency": "Transaction Tax",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0009", "Competency": "Valuations", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0016",
+    "Competency": "Deals Global Delivery",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0017", "Competency": "GRC", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0018",
+    "Competency": "Global Audit Delivery",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0019", "Competency": "Indus", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0020",
+    "Competency": "National Global Delivery Office",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0056",
+    "Competency": "Global Tax Delivery",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0021", "Competency": "BFSI Tax", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0022",
+    "Competency": "Business Process Solution",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0023", "Competency": "Direct Tax", "IsActive": true },
+  { "CompetencyId": "CMPT0024", "Competency": "FRAS", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0025",
+    "Competency": "Global People Solutions",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0026",
+    "Competency": "Indirect Tax",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0027",
+    "Competency": "Learning Solutions",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0028",
+    "Competency": "National Tax Office",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0029",
+    "Competency": "Private Client Service",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0030",
+    "Competency": "Transfer Pricing",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0031", "Competency": "US Tax", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0058",
+    "Competency": "Forensic - Incubation",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0010",
+    "Competency": "Corporate Intelligence",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0011",
+    "Competency": "Cyber & IT Risk (Cyber)",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0012", "Competency": "ESG", "IsActive": true },
+  { "CompetencyId": "CMPT0013", "Competency": "Forensic", "IsActive": true },
+  { "CompetencyId": "CMPT0014", "Competency": "FS Risk", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0015",
+    "Competency": "Governance Risk & Operations (GRO)",
+    "IsActive": true
+  },
+  {
+    "CompetencyId": "CMPT0004",
+    "Competency": "National Audit Office",
+    "IsActive": true
+  },
+  { "CompetencyId": "CMPT0001", "Competency": "Audit -GLB", "IsActive": true },
+  { "CompetencyId": "CMPT0002", "Competency": "Audit -PC", "IsActive": true },
+  { "CompetencyId": "CMPT0003", "Competency": "Audit -PIE", "IsActive": true },
+  {
+    "CompetencyId": "CMPT0059",
+    "Competency": "National E&RC Office",
+    "IsActive": true
+  }
+]

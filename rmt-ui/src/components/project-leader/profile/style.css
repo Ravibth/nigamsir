@@ -1,0 +1,11 @@
+.profileName-aligment {
+  margin-top: -6px !important;
+}
+
+.name {
+  color: "black" !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}

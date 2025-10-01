@@ -1,0 +1,6669 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RMT.Projects.API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Project/GetAll": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllProjectsForBudgetByJobCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllProjectsForBudget": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllProjectByBUandExpertise": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "BU",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Expertise",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Offerings",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "EndDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllProjectByCreationDate": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "creationDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectListDataByEmailId": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListByEmailDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListByEmailDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListByEmailDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListByEmailDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectListDataByUser": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListRequestDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectListRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/ProjectActivationStatusChange": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectActivationStatusChangeRequestDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectActivationStatusChangeRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectActivationStatusChangeRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProjectActivationStatusChangeRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetBasiProjectDetailRequestorByPipelineCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BasicProjectDetailsRequestorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectFullDetailsByPipelineCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/AddProjectUserWithRole": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddProjectUserCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddProjectUserCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddProjectUserCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddProjectUserCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/RemoveProjectUserWithRole": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RemoveProjectUserCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RemoveProjectUserCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RemoveProjectUserCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RemoveProjectUserCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/ReplaceProjectsSuperCoachRole": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplaceProjectsSuperCoachRoleCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplaceProjectsSuperCoachRoleCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplaceProjectsSuperCoachRoleCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReplaceProjectsSuperCoachRoleCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/UpdateProjectDetails": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/RefreshProjectCompetency": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/RefreshProjectCompetencyRequestDTO"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/RefreshProjectCompetencyRequestDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/RefreshProjectCompetencyRequestDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/RefreshProjectCompetencyRequestDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectCompetency"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectCompetency"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectCompetency"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/CreateProject": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateProjectCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectByCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Project"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectDetailsForRequestor": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsRequestorDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsRequestorDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsRequestorDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectDetailsForEmployee": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsEmployeeDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsEmployeeDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectDetailsEmployeeDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectDetailsAsPerPipelineCodeAndUserRole": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "PipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "JobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProjectDetailsByUserRole"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProjectDetailsByUserRole"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetProjectDetailsByUserRole"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectFilterOptionsQuery": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectFilterOptionsResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectFilterOptionsResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectFilterOptionsResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/AddSuperCoachProjectRole": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSuperCoachProjectRoleRequestDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSuperCoachProjectRoleRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSuperCoachProjectRoleRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddSuperCoachProjectRoleRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetEmployeeListingProjectDataByPipelineCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListingProjectData"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListingProjectData"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListingProjectData"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/UpdateProjectRollOverStatus": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolledOverCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolledOverCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolledOverCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolledOverCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllEmployeesExcludingEmployessWithRoles": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesListWithMatchQueryRequestDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesListWithMatchQueryRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesListWithMatchQueryRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesListWithMatchQueryRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/UpdateProjectSuspensionStatus": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectSuspensionStatusQuery"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectSuspensionStatusQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectSuspensionStatusQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectSuspensionStatusQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetRolesEmailByPipelineCodesAndRoles": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAppRolesEmailByPipelineCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetEmployeeRoleByByPipelineJobCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RoleEmailsByPipelineCodeResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetResourceReviewerEmailsByPipelineCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllProjectRolesByCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PipelineCodeAndRolesDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetResourceRequestorEmailsByPipelineCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetRequestorEmailsForAllocationWorkflow": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "workflowStartedBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRolesResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetResourceRequestorEmailsListByPipelineCode": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResouceRequestorEmailListByPipelineCodesResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResouceRequestorEmailListByPipelineCodesResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResouceRequestorEmailListByPipelineCodesResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetMultipleProjectsByCodes": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Project"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Project"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Project"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/SetIsRequisitionCreationallowed": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetIsRequisitionCreationAllowedCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetIsRequisitionCreationAllowedCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetIsRequisitionCreationAllowedCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SetIsRequisitionCreationAllowedCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/SetPublishedToMarketPlace": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdatePublishedToMarketPlaceDTO"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdatePublishedToMarketPlaceDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdatePublishedToMarketPlaceDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdatePublishedToMarketPlaceDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetActiveFieldForMarketPlace": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FieldForMarketPlace"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FieldForMarketPlace"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/FieldForMarketPlace"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/CreateOrUpdateActiveFieldForMarketPlace": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateActiveFieldForMarketPlaceCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateActiveFieldForMarketPlaceCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateActiveFieldForMarketPlaceCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdateActiveFieldForMarketPlaceCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/FieldForMarketPlace"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FieldForMarketPlace"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FieldForMarketPlace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetPublishedFieldByprojectCodeForMarketPlace": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/CreateOrUpdatePublishedFieldForMarketPlace": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdatePublishedFieldForMarketPlaceCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdatePublishedFieldForMarketPlaceCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdatePublishedFieldForMarketPlaceCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrUpdatePublishedFieldForMarketPlaceCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublishedFieldForMarketPlace"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectBudget": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectBudgetDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectBudgetDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectBudgetDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/AddUpdateProjectRequisitionAllocationCommand": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProjectRequisitionAllocationRequestDTO"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProjectRequisitionAllocationRequestDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProjectRequisitionAllocationRequestDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/ProjectRequisitionAllocationRequestDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/UpdateProjectBudgetStatus": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdateBudgetStatusDTO"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdateBudgetStatusDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdateBudgetStatusDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/UpdateBudgetStatusDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/AddJustification": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JustificationTextDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JustificationTextDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/JustificationTextDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/JustificationTextDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProjectResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllUsersExcludingEmployessWithRoles": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllUsersListWithMatchRequestDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllUsersListWithMatchRequestDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllUsersListWithMatchRequestDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetAllUsersListWithMatchRequestDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/ChangeCodeForProject": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCodeDTO"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCodeDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCodeDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChangeCodeDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangeCodeResponseDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangeCodeResponseDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChangeCodeResponseDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/ProjectActualBudgetOverShoot": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectActualBudgetResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectActualBudgetResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectActualBudgetResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/UpdateProjectRolesForSupercoachDelegate": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolesForSupercoachDelegateCommand"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolesForSupercoachDelegateCommand"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolesForSupercoachDelegateCommand"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateProjectRolesForSupercoachDelegateCommand"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectRoles"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetAllJobCodesForPipelineCode": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "SameTeamAllocation",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectFullDetailsByUniqueCodes": {
+      "get": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/StringStringKeyValuePair"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ProjectFullDetailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetProjectRolesByEmails": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetProjectRolesByEmailsResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetProjectRolesByEmailsResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetProjectRolesByEmailsResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Project/GetOfferingSolutionsByJobCode": {
+      "post": {
+        "tags": [
+          "Project"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOfferingSolutionsByJobCodeResponseDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOfferingSolutionsByJobCodeResponseDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetOfferingSolutionsByJobCodeResponseDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddProjectUserCommand": {
+        "type": "object",
+        "properties": {
+          "addProjectUserRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddProjectUserRole"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddProjectUserRole": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegateUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegateEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddSuperCoachProjectRoleRequestDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "superCoachInformation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SuperCoachInformation"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BasicProjectDetailsRequestorResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeCodeDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "newJobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "newJobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "newMovedAlloactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ChangeCodeResponseUser"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeCodeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "newJobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "newJobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "newPipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocationMoved": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "notificationActions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ChangeCodeResponseUser": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocationStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateOrUpdateActiveFieldForMarketPlaceCommand": {
+        "type": "object",
+        "properties": {
+          "internalName": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateOrUpdatePublishedFieldForMarketPlaceCommand": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "fieldNameList": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "isActiveList": {
+            "type": "array",
+            "items": {
+              "type": "boolean"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateProjectCommand": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "resourceRequestor": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CurrentUserRoles": {
+        "type": "object",
+        "properties": {
+          "projectRoleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "additionalElName": {
+            "type": "string",
+            "nullable": true
+          },
+          "additionalDelegateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "additionalElEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "additionalDelegateEmail": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeListingProjectData": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "$ref": "#/components/schemas/Project"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "role_ids": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "fname": {
+            "type": "string",
+            "nullable": true
+          },
+          "lname": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "is_existing": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "role_list": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "supercoach": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "empCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "serviceLine": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegate_details": {
+            "$ref": "#/components/schemas/SupercoachDelegate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Expertises": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FieldForMarketPlace": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "internalName": {
+            "type": "string",
+            "nullable": true
+          },
+          "displayName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FilterQueryParameters": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "expertises": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "smes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "smegs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "offerings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "solutions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "industry": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "subIndustry": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "pipelineCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "jobCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "jobName": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "projectStatus": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "marketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectChargeType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isAllocatedHoursRequired": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetAllUsersListWithMatchRequestDTO": {
+        "type": "object",
+        "properties": {
+          "inputEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "currentUserRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CurrentUserRoles"
+            },
+            "nullable": true
+          },
+          "usersNotToInclude": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetEmployeesListWithMatchQueryRequestDTO": {
+        "type": "object",
+        "properties": {
+          "inputEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "usersNotToInclude": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetOfferingSolutionsByJobCodeResponseDTO": {
+        "type": "object",
+        "properties": {
+          "solution": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringId": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetProjectDetailsByUserRole": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "sector": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectAllocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStage": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "legalEntity": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "gtRefferenceCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "subindustry": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectFulFilledDemands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "isBudgetRequired": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "viewType": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isRequisitionCreationallowed": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "suspendedModifyAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isSuspended": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectDemands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "projectClosureState": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectActivationStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectActivationAndClosureState": {
+            "type": "string",
+            "nullable": true
+          },
+          "resourceRequestorNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectRolesView": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRolesView"
+            },
+            "nullable": true
+          },
+          "projectRequisitionAllocations": {
+            "$ref": "#/components/schemas/ProjectRequisitionAllocation"
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isConfidential": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetProjectRolesByEmailsResponse": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetResouceRequestorEmailListByPipelineCodesResponse": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "resourceRequestors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "JustificationTextDto": {
+        "type": "object",
+        "properties": {
+          "justificationText": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Offerings": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PipelineCodeAndRolesDto": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectAllocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStage": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "legalEntity": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "deliveryLocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "gtRefferenceCountry": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "subindustry": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectFulFilledDemands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "justificationToAllocate": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishedToMarketPlaceDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "marketPlaceExpirationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isRequisitionCreationallowed": {
+            "type": "boolean",
+            "default": true,
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "suspendedModifyAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isSuspended": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectClosureState": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectActivationStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectDemands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "projectCompetencies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectCompetency"
+            },
+            "nullable": true
+          },
+          "projectBudget": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectBudget"
+            },
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectRolesView": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRolesView"
+            },
+            "nullable": true
+          },
+          "projectRequisitionAllocations": {
+            "$ref": "#/components/schemas/ProjectRequisitionAllocation"
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isConfidential": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectActivationStatusChangeRequestDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "isJobClosed": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectActualBudgetResponse": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectName": {
+            "type": "string",
+            "nullable": true
+          },
+          "sender_for_notification": {
+            "type": "string",
+            "nullable": true
+          },
+          "consumedTimesheetBudgetPct": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectAllocatedHoursRatioDto": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "requistionTotalHours": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocatedTotalHours": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectBudget": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "ratePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "budgetedHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "originalRatePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "originalBudgetedHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectBudgetDto": {
+        "type": "object",
+        "properties": {
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "ratePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "budgetedHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "originalRatePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "originalBudgetedHour": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectCompetency": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectDemand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "noOfResources": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "projectDemandSkills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemandSkills"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectDemandSkills": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectDemandId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectDemand": {
+            "$ref": "#/components/schemas/ProjectDemand"
+          },
+          "skillName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectDetailsEmployeeDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectAllocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStage": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectFulFilledDemands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectRolesView": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRolesView"
+            },
+            "nullable": true
+          },
+          "projectDemand": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectDetailsRequestorDto": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectAllocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStage": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "subindustry": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectFulFilledDemands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "justificationToAllocate": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishedToMarketPlaceDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "projectClosureState": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectActivationStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isRequisitionCreationallowed": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectRolesView": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRolesView"
+            },
+            "nullable": true
+          },
+          "projectDemands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "projectSkills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectSkills"
+            },
+            "nullable": true
+          },
+          "projectCompetencies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectCompetency"
+            },
+            "nullable": true
+          },
+          "resourceRequestorNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isConfidential": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectFilterOptionsResponse": {
+        "type": "object",
+        "properties": {
+          "distinctClientNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctBUSet": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctExpertises": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Expertises"
+            },
+            "nullable": true
+          },
+          "distinctSmes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Smes"
+            },
+            "nullable": true
+          },
+          "distinctSmegs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Smegs"
+            },
+            "nullable": true
+          },
+          "distinctOfferings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Offerings"
+            },
+            "nullable": true
+          },
+          "distinctSolutions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Solutions"
+            },
+            "nullable": true
+          },
+          "distinctPipelines": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctJobs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctJobNames": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "status": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "projectType": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "marketPlaceType": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctIndustry": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "distinctSubIndustry": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SubIndustry"
+            },
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/RevenueUnit"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectFullDetailsResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectAllocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStage": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectType": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "subindustry": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectFulFilledDemands": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "marketClosed": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectClosureState": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "projectActivationStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "marketPlaceExpirationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "projectDemands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectRolesView": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRolesView"
+            },
+            "nullable": true
+          },
+          "projectAllocatedHoursRatio": {
+            "$ref": "#/components/schemas/ProjectAllocatedHoursRatioDto"
+          },
+          "projectRequisitionAllocations": {
+            "$ref": "#/components/schemas/ProjectRequisitionAllocation"
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          },
+          "total": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectListByEmailDTO": {
+        "type": "object",
+        "properties": {
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagination": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectListRequestDTO": {
+        "type": "object",
+        "properties": {
+          "userEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "limit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pagination": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "searchQuery": {
+            "type": "string",
+            "nullable": true
+          },
+          "searchRoles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "orderBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "filterQueryParameters": {
+            "$ref": "#/components/schemas/FilterQueryParameters"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectPipelineCodeJobCode": {
+        "type": "object",
+        "properties": {
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "piplelineCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRequisitionAllocation": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "requisitionCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "allocationCount": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRequisitionAllocationRequestDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "requisitionCountAdded": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "allocationCountAdded": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectResponse": {
+        "type": "object",
+        "properties": {
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobId": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientName": {
+            "type": "string",
+            "nullable": true
+          },
+          "clientGroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "resourceRequestor": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isPublishedToMarketPlace": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "jobName": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "chargableType": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "businessUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "smeg": {
+            "type": "string",
+            "nullable": true
+          },
+          "revenueUnit": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "subindustry": {
+            "type": "string",
+            "nullable": true
+          },
+          "suspendedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "delegateAssignmentDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "delegateAssignedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "userRequesting": {
+            "type": "string",
+            "nullable": true
+          },
+          "userAssignmentDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "newAdditionalEls": {
+            "type": "string",
+            "nullable": true
+          },
+          "newAdditionalDelegates": {
+            "type": "string",
+            "nullable": true
+          },
+          "actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "employeeReleasedDueToProjectSuspend": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientId": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRoles": {
+        "required": [
+          "role"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "user": {
+            "type": "string",
+            "format": "email",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "delegateUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegateEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationRole": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "parentEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRolesResponseDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationRole": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegateUserName": {
+            "type": "string",
+            "nullable": true
+          },
+          "delegateEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectRolesView": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationRole": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProjectSkills": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectId": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "project": {
+            "$ref": "#/components/schemas/Project"
+          },
+          "skillName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PublishedFieldForMarketPlace": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "fieldName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RefreshProjectCompetencyRequestDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RemoveProjectUserCommand": {
+        "type": "object",
+        "properties": {
+          "addProjectUserRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddProjectUserRole"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReplaceProjectsSuperCoachRoleCommand": {
+        "type": "object",
+        "properties": {
+          "previouseUser": {
+            "type": "string",
+            "nullable": true
+          },
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "projectCodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectPipelineCodeJobCode"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RevenueUnit": {
+        "type": "object",
+        "properties": {
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RoleEmailsByPipelineCodeResponse": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "rolesEmails": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SetIsRequisitionCreationAllowedCommand": {
+        "type": "object",
+        "properties": {
+          "isRequisitionCreationallowed": {
+            "type": "boolean"
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Smegs": {
+        "type": "object",
+        "properties": {
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Smes": {
+        "type": "object",
+        "properties": {
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Solutions": {
+        "type": "object",
+        "properties": {
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "StringStringKeyValuePair": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "nullable": true
+          },
+          "value": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SubIndustry": {
+        "type": "object",
+        "properties": {
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SuperCoachInformation": {
+        "type": "object",
+        "properties": {
+          "superCoachEmailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "superCoachName": {
+            "type": "string",
+            "nullable": true
+          },
+          "prevAllocationSuperCoachDelegateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "newAllocationSuperCoachDelegateName": {
+            "type": "string",
+            "nullable": true
+          },
+          "prevAllocationSuperCoachDelegateEmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "newAllocationSuperCoachDelegateEmail": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SupercoachDelegate": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocation_delegate_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocation_delegate_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocation_delegate_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "skill_delegate_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "skill_delegate_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "skill_delegate_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "updated_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateBudgetStatusDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "budgetStatus": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProjectCommand": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "projectCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isConfidential": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "projectDemands": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectDemand"
+            },
+            "nullable": true
+          },
+          "projectRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectRoles"
+            },
+            "nullable": true
+          },
+          "projectSkills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ProjectSkills"
+            },
+            "nullable": true
+          },
+          "projectEndDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isEndDateChanged": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProjectRolesForSupercoachDelegateCommand": {
+        "type": "object",
+        "properties": {
+          "supercoach_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "prev_allocation_delegate_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "new_allocation_delegate_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "new_allocation_delegate_name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProjectRolledOverCommand": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "isRollover": {
+            "type": "boolean"
+          },
+          "rolloverDays": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateProjectSuspensionStatusQuery": {
+        "type": "object",
+        "properties": {
+          "projectCodes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/StringStringKeyValuePair"
+            },
+            "nullable": true
+          },
+          "isSuspended": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdatePublishedToMarketPlaceDTO": {
+        "type": "object",
+        "properties": {
+          "isPublishedToMarketPlace": {
+            "type": "boolean"
+          },
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "marketPlaceExpirationDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

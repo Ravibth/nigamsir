@@ -1,0 +1,59 @@
+.MuiDataGrid-footerContainer {
+  display: none;
+}
+
+.MuiDataGrid-columnHeader {
+  background-color: #4f2d7f !important;
+  color: white;
+}
+.MuiDataGrid-row {
+  background-color: #d4cfdb !important;
+  /* color: white; */
+}
+
+.MuiDataGrid-columnHeader,
+.MuiDataGrid-cell {
+  border: 1px solid white;
+}
+.gridCenterAlign {
+  display: flex !important;
+  align-items: center !important;
+}
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+.headerItem {
+  font-weight: 600;
+  font-size: large;
+  color: #4f2d7f !important;
+  margin-top: 10px !important;
+}
+.gridJustifyEnd {
+  justify-content: flex-end !important;
+  justify-items: flex-end !important;
+  margin-top: 10px;
+}
+
+.system-card-content-values-display {
+  max-width: 100%;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+.card-main-container .MuiPaper-root {
+  border-radius: 10px !important;
+}
+
+.card-empName-header {
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #333333 !important;
+}
+
+.scoreCategoryValue {
+  color: #000 !important;
+  background-color: #f6f2fc !important;
+  border-radius: 10px;
+  padding: 1px 15px !important;
+}

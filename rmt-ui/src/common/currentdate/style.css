@@ -1,0 +1,23 @@
+.dateContainer {
+  display: inline;
+}
+
+.dateContainer .MuiFormControl-root {
+  width: 45%;
+  border-radius: 40px !important;
+  border: transparent !important;
+}
+
+.currentdatebutton {
+  font-size: 14px;
+  background-color: white;
+  color: #4f2d7f;
+  padding: 10px 20px;
+  border: 1px solid #b8b8b8;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.currentDateArrowHide {
+  visibility: hidden !important;
+}

@@ -1,0 +1,9 @@
+.main-container-marketplace .MuiContainer-root {
+  max-width: 100% !important;
+}
+
+.sub-main-container-marketplace .MuiContainer-root {
+  height: 90vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}

@@ -1,0 +1,251 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+/* #timelineCalendar {
+
+
+} */
+/* :global {
+.rct-sidebar-row-even {
+  height: auto !important ;
+  line-height: normal !important;
+}
+} */
+
+/* .rct-sidebar-row-even {
+height: auto !important ;
+line-height: auto !important;
+}
+
+.rct-sidebar {
+height: auto !important ;
+}
+.rct-outer {
+height: auto !important;
+}
+
+.react-calendar-timeline .rct-scroll{
+overflow-x: hidden !important;
+} */
+
+.react-calendar-timeline .rct-dateHeader-primary {
+  /* background-color: #f0f0f0 !important; */
+  color: black !important;
+}
+
+.react-calendar-timeline .rct-header-root {
+  background-color: #f9f5ff !important;
+  color: black !important;
+}
+
+.rct-sidebar-row-rct-sidebar-row-odd {
+  background-color: white !important;
+}
+
+.item-color {
+  background-color: "#f26416" !important;
+  /* border-color: orange !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-leave {
+  background-color: rgb(237, 83, 103) !important;
+  /* border-color: rgb(237, 83, 103) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-holiday {
+  background-color: rgb(237, 83, 103) !important;
+  /* border-color: rgb(237, 83, 103) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-gray {
+  background-color: rgb(203, 196, 188) !important;
+  /* border-color: rgb(250, 249, 247) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-rolloverproposed {
+  background-color: rgb(149, 129, 178) !important;
+  /* border-color: rgb(235, 247, 214) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: white !important;
+}
+
+.item-suspended {
+  background-color: rgb(229, 225, 221) !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-allocation {
+  background-color: rgb(102, 202, 211) !important;
+  /* border-color: rgb(102, 202, 211) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.item-rolloverallocation {
+  background-color: rgb(102, 202, 211) !important;
+  /* border-color: rgb(102, 202, 211) !important; */
+  border-color: lightgray !important;
+  opacity: 100% !important;
+  color: black !important;
+}
+
+.expired {
+  background-color: rgb(128, 128, 128) !important;
+  opacity: 100% !important;
+}
+
+.rct-item {
+  background-color: orange;
+  /* border-color: orange; */
+  border-color: lightgray !important;
+  margin-top: 12px;
+  line-height: 21.5px !important;
+  color: black;
+  /* background-color: transparent;
+  border-color: transparent !important; */
+}
+
+.rct-item .rct-item-content {
+  vertical-align: top;
+  margin-top: 0px;
+  overflow-wrap: anywhere;
+}
+
+.item-pipeline {
+  background-color: rgb(255, 203, 165) !important;
+  /* border-color: rgb(255, 203, 165) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-job {
+  background-color: rgb(185, 171, 204) !important;
+  /* border-color: rgb(185, 171, 204) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-employee {
+  background-color: rgb(102, 202, 211) !important;
+  /* border-color: rgb(102, 202, 211) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-jobduration {
+  background-color: rgb(185, 171, 204) !important;
+  /* border-color: rgb(185, 171, 204) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-pipelineduration {
+  background-color: rgb(255, 203, 165) !important;
+  /* border-color: rgb(255, 203, 165) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-suspended {
+  background-color: rgb(151, 150, 149) !important;
+  /* border-color: rgb(255, 203, 165) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+.item-available {
+  background-color: rgb(175, 223, 91) !important;
+  /* border-color: rgb(175, 223, 91) !important; */
+  border-color: lightgray !important;
+  color: black !important;
+}
+
+/* .item-expired {
+  background-color: lightgray !important;
+  border-color: lightgray !important;
+} */
+
+/* .item-proposed {
+  background-color: rgb(145, 154, 238) !important;
+  border-color: rgb(145, 154, 238) !important;
+} */
+
+.rct-sidebar-row-rct-sidebar-row-odd {
+  background-color: white !important;
+}
+
+.react-calendar-timeline .rct-horizontal-lines .rct-hl-odd {
+  border: none !important;
+  background: white !important;
+}
+
+.react-calendar-timeline .rct-horizontal-lines .rct-hl-even {
+  border: none !important;
+}
+
+.react-calendar-timeline .rct-dateHeader-primary {
+  padding-left: "18%" !important;
+}
+
+.rct-sidebar-row {
+  padding: 0px !important;
+  min-height: 50px !important;
+}
+
+.job-header {
+  padding-left: 10px !important;
+  /* background-color: #f0dcfc !important; */
+}
+
+.rct-dateHeader-primary {
+  font-weight: 550;
+  font-size: 16px !important;
+  border-left: none !important;
+}
+.rct-dateHeader {
+  border-left: none !important;
+}
+
+.rct-calendar-header {
+  border-bottom: none !important;
+  border-radius: 0px 18px 0px 0px !important;
+  background-color: #f9f5ff !important;
+}
+
+.project-type-main {
+  border-top: 1px solid !important;
+}
+
+.selected-ProjectItem {
+  /* border: 2px solid yellow; */
+  background-color: #002bff4a;
+}
+
+.allocation-title-header {
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+
+.project-arrow-right {
+  cursor: pointer !important;
+}
+.project-arrow-down {
+  cursor: pointer !important;
+}

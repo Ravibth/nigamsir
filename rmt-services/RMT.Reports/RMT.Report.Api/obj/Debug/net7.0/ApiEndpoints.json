@@ -1,0 +1,167 @@
+[
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "CapacityUtilizationOverviewChart",
+    "RelativePath": "api/Reports/v1/capacity-utilization-overview-chart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Reports.Application.DTO.Request.CapacityUtiliationOverviewRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Reports.Application.DTO.Response.CapacityUtilizationOverviewResponseDto, RMT.Reports.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "GetAllEmployeeAllocation",
+    "RelativePath": "api/Reports/v1/employee-allocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designation_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "business_unit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "start_date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "end_date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Reports.Domain.Entities.EmployeeAllocationTimeSheetEntity, RMT.Reports.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "RefreshEmployeeAllocation",
+    "RelativePath": "api/Reports/v1/refresh-employee-allocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "RefreshMateriliezedView",
+    "RelativePath": "api/Reports/v1/refresh-materilized-views",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "materializedViewNames",
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "ScheduledVsActualVarianceChart",
+    "RelativePath": "api/Reports/v1/scheduled-vs-variance-chart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Reports.Application.DTO.Request.ScheduledVsActualVarianceChartRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Reports.Application.DTO.Response.ScheduledVsActualVarianceChartResponseDto, RMT.Reports.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Report.Api.Controllers.ReportsController",
+    "Method": "SummaryStatisticsChart",
+    "RelativePath": "api/Reports/v1/summary-statistics-chart",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Reports.Application.DTO.Request.SummaryStatisticsChartRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Reports.Application.DTO.Response.SummaryStatisticsChartResponseDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

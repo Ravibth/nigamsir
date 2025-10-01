@@ -1,0 +1,15 @@
+.tab-container .MuiTabs-indicator {
+  background-color: #4f2d7f !important;
+}
+
+.custom_tab_padding {
+  padding: 10px 16px 24px 16px !important;
+}
+
+.active_grid {
+  padding: 10px 16px !important;
+}
+
+.tab-content-container {
+  width: 100%;
+}

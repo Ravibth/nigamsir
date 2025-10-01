@@ -1,0 +1,71 @@
+CREATE EXTENSION IF NOT EXISTS dblink;
+CREATE MATERIALIZED VIEW IF NOT EXISTS employee_working_days TABLESPACE pg_default AS
+SELECT ewd.employee_mid,
+    ewd.employee_code,
+    ewd.employee_name,
+    ewd.email_id,
+	ewd.proposed_lwd,
+	ewd.resignation_date,
+    ewd.department,
+    ewd.location,
+    ewd.working_date,
+    ewd.week_day_number,
+    ewd.designation_name,
+    ewd.grade,
+    ewd.business_unit,
+    ewd.competency,
+    ewd.hourly_rate
+FROM dblink(
+        'host=localhost port=5432 user=postgres password=root dbname=WCGT',
+        '
+
+                Select "emp"."employee_mid" "employee_mid", "emp"."employee_code" "employee_code", "emp"."name" "employee_name",
+							"emp"."proposed_lwd" ,"emp"."resignation_date" , 
+                            "emp"."email_id" "email_id", "emp"."department" "department", "lc"."location_name" "location", "wd"."working_date"::Date "working_date", extract(isodow FROM "wd"."working_date") "week_day_number",
+                            "dg"."designation_name" "designation_name", "dg"."grade" "grade", "bu"."bu" "business_unit", "competency"."CompetencyName" "competency",
+                                COALESCE((Select "RatePerHour" from "RateDesignationMaster" "rmd" where "rmd"."grade" =  "dg"."grade" limit 1),0) as "hourly_rate"
+
+                            from "Employees" "emp"
+
+                            left join "Locations" "lc" on  "lc"."location_id" = "emp"."location_id"
+
+                            left join "Designations" "dg" on  "dg"."designation_id" = "emp"."designation_id"
+
+                            left join (Select distinct bu_id, bu from "BUTreeMappings" as TempBU) as "bu" on  "bu"."bu_id" = "emp"."business_unit_id"
+                                        left join (Select distinct "CompetencyId", "CompetencyName" from "Competencies" as TempCOMPETENCY) "competency" on  "competency"."CompetencyId" = "emp"."CompetencyId"
+                
+                                CROSS JOIN generate_series(current_date - interval ''6 month'', current_date + interval ''6 months'', ''1 day'') AS wd(working_date)
+                                WHERE "emp"."isactive"= true and
+                                extract(isodow FROM wd.working_date) NOT IN (6, 7)
+	 
+                            '::text
+    ) ewd(
+        employee_mid text,
+        employee_code text,
+        employee_name text,
+		proposed_lwd DATE,
+		resignation_date DATE,
+        email_id text,
+        department text,
+        location text,
+        working_date date,
+        week_day_number numeric,
+        designation_name text,
+        grade text,
+        business_unit text,
+        competency text,
+        hourly_rate numeric
+    ) WITH DATA;
+CREATE UNIQUE INDEX employee_working_days_index ON employee_working_days (
+    employee_mid,
+    employee_code,
+    email_id,
+	proposed_lwd ,
+	resignation_date,
+    working_date,
+    designation_name,
+    grade,
+    business_unit,
+    location,
+    department
+);

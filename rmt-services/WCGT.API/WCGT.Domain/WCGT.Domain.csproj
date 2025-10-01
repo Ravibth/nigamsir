@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\BusinessUnit.cs" />
+    <Compile Remove="Entities\Clients.cs" />
+    <Compile Remove="Entities\Expertise.cs" />
+    <Compile Remove="Entities\Holidays.cs" />
+    <Compile Remove="Entities\Industry.cs" />
+    <Compile Remove="Entities\Jobs.cs" />
+    <Compile Remove="Entities\Leaves.cs" />
+    <Compile Remove="Entities\Project.cs" />
+    <Compile Remove="Entities\ProjectJobCode.cs" />
+    <Compile Remove="Entities\ProjectRole.cs" />
+    <Compile Remove="Entities\RevenueUnit.cs" />
+    <Compile Remove="Entities\Sector.cs" />
+    <Compile Remove="Entities\Skills.cs" />
+    <Compile Remove="Entities\SME.cs" />
+    <Compile Remove="Entities\SubSector.cs" />
+    <Compile Remove="Entities\Timesheet.cs" />
+    <Compile Remove="IRepositories\IWcgtConsumerRepository.cs" />
+    <Compile Remove="IRepositories\IWcgtRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

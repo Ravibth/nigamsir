@@ -1,0 +1,15 @@
+{
+  "RoleMapping": {
+    "ResourceRequestor": [
+      "{{ResourceRequestor}}",
+      "{{Resource_Requestor}}",
+      "{{EngagementLeader}}",
+      "{{EO}}",
+      "{{JobManager}}"
+    ],
+    "Delegate": ["{{Delegate}}"],
+    "AdditionalEl": ["{{AdditionalEl}}}"],
+    "Employee": ["{{Employee}}"],
+    "Admin": ["{{Admin}}"]
+  }
+}

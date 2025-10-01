@@ -1,0 +1,54 @@
+.descriptionHeader {
+  color: #0d0c22 !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 18px !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+}
+.descriptionBody {
+  color: rgba(20, 20, 20, 0.7) !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+}
+
+.editButton {
+  color: #4f2d7f !important;
+}
+
+.btnStyle {
+  font-size: 14px !important;
+  text-transform: initial !important;
+  background-color: #725799 !important  ;
+  color: white !important;
+  margin-left: 12px !important;
+  height: 22px;
+  border-radius: 10px !important;
+}
+
+.cancelbtnStyle {
+  font-size: 14px !important;
+  text-transform: initial !important;
+  /* background-color: #fff !important  ; */
+  color: #725799 !important;
+  border: 1px solid #725799 !important;
+  margin-left: 12px !important;
+  height: 22px;
+  border-radius: 10px !important;
+}
+
+.descriptionDiv {
+  margin-left: -8px;
+}
+
+.desc-edit-container button {
+  padding: 8px 10px 6px 10px !important;
+  line-height: 14px;
+  height: 30px;
+  margin: 10px 15px 0 0 !important;
+}
+.desc-edit-container button .css-1d6wzja-MuiButton-startIcon {
+  margin-right: 5px;
+  width: 16px;
+}

@@ -1,0 +1,1435 @@
+[
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "AddJustification",
+    "RelativePath": "api/Project/AddJustification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "justtificationRequest",
+        "Type": "RMT.Projects.Application.DTOs.JustificationTextDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "AddProjectUserWithRole",
+    "RelativePath": "api/Project/AddProjectUserWithRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.AddProjectUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.ProjectRoles[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "AddSuperCoachProjectRole",
+    "RelativePath": "api/Project/AddSuperCoachProjectRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "RMT.Projects.Domain.DTOs.Request.AddSuperCoachProjectRoleRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "AddUpdateProjectRequisitionAllocation",
+    "RelativePath": "api/Project/AddUpdateProjectRequisitionAllocationCommand",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectRequisitionAllocationRequestDTOs",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.DTOs.Request.ProjectRequisitionAllocationRequestDTO, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "ChangeCodeForProject",
+    "RelativePath": "api/Project/ChangeCodeForProject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changeCodeDTO",
+        "Type": "RMT.Projects.Application.DTOs.ChangeCodeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ChangeCodeResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "CreateOrUpdateActiveFieldForMarketPlace",
+    "RelativePath": "api/Project/CreateOrUpdateActiveFieldForMarketPlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.CreateOrUpdateActiveFieldForMarketPlaceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.FieldForMarketPlace",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "CreateOrUpdatePublishedFieldForMarketPlace",
+    "RelativePath": "api/Project/CreateOrUpdatePublishedFieldForMarketPlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.CreateOrUpdatePublishedFieldForMarketPlaceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.PublishedFieldForMarketPlace",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "CreateProject",
+    "RelativePath": "api/Project/CreateProject",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.CreateProjectCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetActiveFieldForMarketPlace",
+    "RelativePath": "api/Project/GetActiveFieldForMarketPlace",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.Entities.FieldForMarketPlace, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "Get",
+    "RelativePath": "api/Project/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllEmployeesExcludingEmployessWithRolesInProject",
+    "RelativePath": "api/Project/GetAllEmployeesExcludingEmployessWithRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Projects.Application.DTOs.GetEmployeesListWithMatchQueryRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.HttpServices.DTOs.EmployeeResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllJobCodesForPipelineCode",
+    "RelativePath": "api/Project/GetAllJobCodesForPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SameTeamAllocation",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllProjectByBUandExpertise",
+    "RelativePath": "api/Project/GetAllProjectByBUandExpertise",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BU",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Expertise",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Offerings",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllProjectProjectsByCreateDate",
+    "RelativePath": "api/Project/GetAllProjectByCreationDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "creationDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllProjectRolesByCodes",
+    "RelativePath": "api/Project/GetAllProjectRolesByCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodeJobDto",
+        "Type": "RMT.Projects.Application.DTOs.PipelineCodeAndRolesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectRolesResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllProjectsForBudget",
+    "RelativePath": "api/Project/GetAllProjectsForBudget",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.BasicProjectDetailsRequestorResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllProjectsForBudgetByJobCodes",
+    "RelativePath": "api/Project/GetAllProjectsForBudgetByJobCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.BasicProjectDetailsRequestorResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAllUsersExcludingEmployessWithRolesInProject",
+    "RelativePath": "api/Project/GetAllUsersExcludingEmployessWithRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.GetAllUsersListWithMatchRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.HttpServices.DTOs.EmployeeResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetAppRolesEmailByPipelineCodes",
+    "RelativePath": "api/Project/GetAppRolesEmailByPipelineCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodeAndRolesDto",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.PipelineCodeAndRolesDto, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.RoleEmailsByPipelineCodeResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetBasicProjectDetailRequestorByPipelineCode",
+    "RelativePath": "api/Project/GetBasiProjectDetailRequestorByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.BasicProjectDetailsRequestorResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetEmployeeListingProjectDataByPipelineCodes",
+    "RelativePath": "api/Project/GetEmployeeListingProjectDataByPipelineCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodes",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[RMT.Projects.Application.DTOs.EmployeeListingProjectData, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetEmployeeRoleByByPipelineJobCodes",
+    "RelativePath": "api/Project/GetEmployeeRoleByByPipelineJobCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodeJobDto",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.PipelineCodeAndRolesDto, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.RoleEmailsByPipelineCodeResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetMultipleProjectsByCodes",
+    "RelativePath": "api/Project/GetMultipleProjectsByCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectCode",
+        "Type": "System.Collections.Generic.List\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.Entities.Project, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetOfferingSolutionsByJobCode",
+    "RelativePath": "api/Project/GetOfferingSolutionsByJobCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.DTOs.Response.GetOfferingSolutionsByJobCodeResponseDTO, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectBudget",
+    "RelativePath": "api/Project/GetProjectBudget",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.ProjectBudgetDto, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectByCode",
+    "RelativePath": "api/Project/GetProjectByCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.Project",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectDetailsAsPerPipelineCodeAndUserRole",
+    "RelativePath": "api/Project/GetProjectDetailsAsPerPipelineCodeAndUserRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.DTOs.Response.GetProjectDetailsByUserRole",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectDetailsForEmployee",
+    "RelativePath": "api/Project/GetProjectDetailsForEmployee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.DTOs.ProjectDetailsEmployeeDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectDetailsForRequestor",
+    "RelativePath": "api/Project/GetProjectDetailsForRequestor",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.DTOs.ProjectDetailsRequestorDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectFilterOptions",
+    "RelativePath": "api/Project/GetProjectFilterOptionsQuery",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectFilterOptionsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectFullDetailsByPipelineCode",
+    "RelativePath": "api/Project/GetProjectFullDetailsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.Project",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectFullDetailsByUniqueCodes",
+    "RelativePath": "api/Project/GetProjectFullDetailsByUniqueCodes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectUniqueCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectListDataByEmailId",
+    "RelativePath": "api/Project/GetProjectListDataByEmailId",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectListRequestDTO",
+        "Type": "RMT.Projects.Application.DTOs.ProjectListByEmailDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectListDataByUser",
+    "RelativePath": "api/Project/GetProjectListDataByUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectListRequestDTO",
+        "Type": "RMT.Projects.Application.DTOs.ProjectListRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectFullDetailsResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetProjectRolesByEmails",
+    "RelativePath": "api/Project/GetProjectRolesByEmails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emails",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.DTOs.Response.GetProjectRolesByEmailsResponse, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetPublishedFieldByprojectCodeForMarketPlace",
+    "RelativePath": "api/Project/GetPublishedFieldByprojectCodeForMarketPlace",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.Entities.PublishedFieldForMarketPlace, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetRequestorEmailsForAllocationWorkflow",
+    "RelativePath": "api/Project/GetRequestorEmailsForAllocationWorkflow",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "workflowStartedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectRolesResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetResourceRequestorEmailByPipelineCode",
+    "RelativePath": "api/Project/GetResourceRequestorEmailsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectRolesResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetResourceRequestorEmailListByPipelineCodes",
+    "RelativePath": "api/Project/GetResourceRequestorEmailsListByPipelineCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.GetResouceRequestorEmailListByPipelineCodesResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetResourceReviewerEmailByPipelineCode",
+    "RelativePath": "api/Project/GetResourceReviewerEmailsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectRolesResponseDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "GetRolesEmailByPipelineCodesAndRoles",
+    "RelativePath": "api/Project/GetRolesEmailByPipelineCodesAndRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodeAndRolesDto",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.PipelineCodeAndRolesDto, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.RoleEmailsByPipelineCodeResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "ProjectActivationStatusChange",
+    "RelativePath": "api/Project/ProjectActivationStatusChange",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "RMT.Projects.Application.DTOs.ProjectActivationStatusChangeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "ProjectActualBudgetOverShoot",
+    "RelativePath": "api/Project/ProjectActualBudgetOverShoot",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.ProjectActualBudgetResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "RefreshProjectCompetency",
+    "RelativePath": "api/Project/RefreshProjectCompetency",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDto",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.DTOs.Request.RefreshProjectCompetencyRequestDTO, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.Entities.ProjectCompetency, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "RemoveProjectUserWithRole",
+    "RelativePath": "api/Project/RemoveProjectUserWithRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.RemoveProjectUserCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.ProjectRoles[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "ReplaceProjectsSuperCoachRole",
+    "RelativePath": "api/Project/ReplaceProjectsSuperCoachRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.ReplaceProjectsSuperCoachRoleCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Domain.Entities.ProjectRoles[]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "SetIsRequisitionCreationAllowed",
+    "RelativePath": "api/Project/SetIsRequisitionCreationallowed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.SetIsRequisitionCreationAllowedCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "SetPublishedToMarketPlace",
+    "RelativePath": "api/Project/SetPublishedToMarketPlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "unpublishToMarketplaceDto",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.DTOs.Request.UpdatePublishedToMarketPlaceDTO, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "UpdateProjectBudgetStatus",
+    "RelativePath": "api/Project/UpdateProjectBudgetStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "projectRequest",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.DTOs.UpdateBudgetStatusDTO, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Application.Responses.ProjectResponse, RMT.Projects.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "UpdateProjectDetails",
+    "RelativePath": "api/Project/UpdateProjectDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.UpdateProjectCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "UpdateProjectRolesForSupercoachDelegate",
+    "RelativePath": "api/Project/UpdateProjectRolesForSupercoachDelegate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.UpdateProjectRolesForSupercoachDelegateCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Projects.Domain.Entities.ProjectRoles, RMT.Projects.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "UpdateProjectRollOverStatus",
+    "RelativePath": "api/Project/UpdateProjectRollOverStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.CommandHandlers.UpdateProjectRolledOverCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Projects.API.Controllers.ProjectController",
+    "Method": "UpdateProjectSuspensionStatus",
+    "RelativePath": "api/Project/UpdateProjectSuspensionStatus",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.Projects.Application.Handlers.QueryHandlers.UpdateProjectSuspensionStatusQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Projects.Application.Responses.ProjectResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

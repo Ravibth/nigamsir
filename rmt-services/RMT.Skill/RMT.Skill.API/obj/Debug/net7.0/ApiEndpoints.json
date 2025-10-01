@@ -1,0 +1,359 @@
+[
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetAllSkill",
+    "RelativePath": "api/Skill/GetAllSkill",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.Entities.Skills, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetAllSkillCodeName",
+    "RelativePath": "api/Skill/GetAllSkillNameCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Application.DTOs.SkillCodeNameDTO, RMT.Skill.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetMandetorySkill",
+    "RelativePath": "api/Skill/GetMandatorySkill",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Competency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompetencyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Designation",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Application.DTOs.SkillCodeNameDTO, RMT.Skill.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetSkiilCategoryMaster",
+    "RelativePath": "api/Skill/GetSkiilCategoryMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.Entities.SkillCategoryMaster, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetSkillByName",
+    "RelativePath": "api/Skill/GetSkillByName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Skill.Domain.Entities.Skills",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "GetUserApprovedSkillByEmail",
+    "RelativePath": "api/Skill/GetUserApprovedSkillByEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpEmails",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.DTOs.UserSkillsResponseWithSkillDTO, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "SearchSkillsByNameOrCode",
+    "RelativePath": "api/Skill/SearchSkillsByNameOrCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillNames",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.Entities.UserSkills, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "AddSkills",
+    "RelativePath": "api/Skill/SubmitSKill",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillSubmit",
+        "Type": "RMT.Skill.Domain.DTOs.SkillSubmitDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "UpdateSkill",
+    "RelativePath": "api/Skill/UpdateSkill",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillSubmit",
+        "Type": "RMT.Skill.Domain.DTOs.SkillSubmitDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.SkillController",
+    "Method": "UpdateSkillStatus",
+    "RelativePath": "api/Skill/UpdateSkillStatus",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillSubmit",
+        "Type": "RMT.Skill.Domain.DTOs.UpdateSkillStatusDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.UserSkillsController",
+    "Method": "AddUpdateUserSkill",
+    "RelativePath": "api/UserSkills/AddUpdateUserSkill",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "skillsToAdd",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Application.Requests.AddUpdateUserSkillsRequestDTO, RMT.Skill.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.DTOs.Responses.AddUpdateNewUserSkill, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.UserSkillsController",
+    "Method": "GetUserSkillsByEmail",
+    "RelativePath": "api/UserSkills/GetUserSkillsByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "approvals",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.DTOs.Responses.GetUserSkillsByEmailResponse, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.UserSkillsController",
+    "Method": "GetUserSkillsByID",
+    "RelativePath": "api/UserSkills/GetUserSkillsByID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "approvals",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.DTOs.Responses.GetUserSkillsByEmailResponse, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.UserSkillsController",
+    "Method": "GetUserSkillsWithProficiency",
+    "RelativePath": "api/UserSkills/GetUserSkillsWithProficiency",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.Entities.UserSkills, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Skill.API.Controllers.UserSkillsController",
+    "Method": "UpdateUserSkillStatusAfterWorkflow",
+    "RelativePath": "api/UserSkills/UpdateUserSkillStatusAfterWorkflow",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.DTOs.UpdateUserSkillStatusAfterWorkflowRequestDTO, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Skill.Domain.Entities.UserSkills, RMT.Skill.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Migrations\20231212201504_dataseed-docker.cs" />
+	  <Compile Remove="Migrations\20231212201504_dataseed-docker.Designer.cs" />
+	  <Compile Remove="Migrations\20240123101736_fixed-seed-data.cs" />
+	  <Compile Remove="Migrations\20240201113950_1feb_contextMenuData.cs" />
+	  <Compile Remove="Migrations\20240207004451_schedularLogs.cs" />
+	  <Compile Remove="Migrations\20240207004451_schedularLogs.Designer.cs" />
+	  <Compile Remove="Migrations\20240207010138_SchedularChangeschanges.cs" />
+	  <Compile Remove="Migrations\20240207010138_SchedularChangeschanges.Designer.cs" />
+	  <Compile Remove="Migrations\20240207011806_SchedularChangeschanges_1.cs" />
+	  <Compile Remove="Migrations\20240207011806_SchedularChangeschanges_1.Designer.cs" />
+	  <Compile Remove="Migrations\20240210091552_delete_revenue_unit.cs" />
+	  <Compile Remove="Migrations\20240210091552_delete_revenue_unit.Designer.cs" />
+	  <Compile Remove="Migrations\20240210095021_rename_sector_to_industry.cs" />
+	  <Compile Remove="Migrations\20240210095021_rename_sector_to_industry.Designer.cs" />
+	  <Compile Remove="Migrations\20240219171432_skill-seed.cs" />
+	  <Compile Remove="Migrations\20240219171432_skill-seed.Designer.cs" />
+	  <Compile Remove="Migrations\20241022182912_config_schema_update_v1.cs" />
+	  <Compile Remove="Migrations\20241022182912_config_schema_update_v1.Designer.cs" />
+	  <Compile Remove="Repositories\MasterRepository.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\RMT.Configuration.Domain\RMT.Configuration.Domain.csproj" />
+	</ItemGroup>
+
+</Project>

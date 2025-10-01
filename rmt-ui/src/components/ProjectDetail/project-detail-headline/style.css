@@ -1,0 +1,105 @@
+.projectDetailsHeadlineTitle {
+  margin: 3px 0px;
+  color: #000 !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+  display: flex;
+}
+.projectDetailsHeadlineData {
+  margin: 3px 0px;
+  color: #4f2d7f !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 13px !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+}
+
+.projectDetailsAccordian {
+  margin-top: 12px !important;
+  box-shadow: none !important;
+  background: #f2f5ff !important;
+}
+.projectDetailsAccordianTitle {
+  color: #4f2d7f;
+  /* font-family: GT Walsheim Pro !important;
+   */
+  font-size: 17px !important;
+  font-weight: 550 !important;
+}
+
+.projectDetailsHeadlineTitle .MuiButtonBase-root {
+  padding: 0px 5px !important;
+}
+
+.editIcon-btn .MuiSvgIcon-root {
+  height: 15px !important;
+  width: 15px !important;
+  margin-top: -1px !important;
+}
+.header-accordion-container {
+  width: 100%;
+}
+
+.header-accordion-container .header-accordion-title {
+  align-items: center;
+  padding: 10px 16px;
+}
+.header-accordion-container .header-accordion-title.Mui-expanded {
+  min-height: unset;
+}
+.header-accordion-container
+  .header-accordion-title
+  .MuiAccordionSummary-content {
+  margin: 0;
+  min-height: unset;
+}
+.MuiAccordion-region > div {
+  padding-top: 0;
+}
+
+.end-date-controller {
+  width: 26% !important;
+  margin-top: 4px !important;
+}
+
+.end-date-controller .MuiInputBase-input {
+  padding: 2px 0px 0px 4px;
+  font-size: 12px !important;
+}
+
+.end-date-controller .MuiSvgIcon-root {
+  font-size: 18px !important;
+  padding: 0px;
+  padding-top: 1px;
+}
+
+.end-date-controller .MuiIconButton-root {
+  padding: 0px !important;
+  padding-right: 2px;
+}
+
+.main-headers-container {
+  display: flex;
+  /* border-right: thick solid #ff0000; */
+  /* justify-content: space-between; */
+}
+
+/* todo */
+/* .main-headers-container .MuiGrid-root {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+} */
+
+.projectDetailsAccordianTitle-error-msg {
+  padding-left: 48px;
+}
+
+.project-header-icons-style {
+  height: 17px;
+  width: 17px;
+  margin-right: 5px;
+}

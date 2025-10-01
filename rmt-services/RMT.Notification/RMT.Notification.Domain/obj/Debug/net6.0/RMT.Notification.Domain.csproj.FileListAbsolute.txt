@@ -1,0 +1,12 @@
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\bin\Debug\net6.0\RMT.Notification.Domain.deps.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\bin\Debug\net6.0\RMT.Notification.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\bin\Debug\net6.0\RMT.Notification.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.AssemblyInfoInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.AssemblyInfo.cs
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.csproj.CoreCompileInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.sourcelink.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\refint\RMT.Notification.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\RMT.Notification.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Notification\RMT.Notification.Domain\obj\Debug\net6.0\ref\RMT.Notification.Domain.dll

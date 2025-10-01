@@ -1,0 +1,17 @@
+.title-header {
+  font-size: 20px !important;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+}
+
+.code-container {
+  padding: 17px 0px;
+}
+
+.btn-main-container {
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.content-main .MuiCardContent-root {
+  padding: 0px !important;
+}

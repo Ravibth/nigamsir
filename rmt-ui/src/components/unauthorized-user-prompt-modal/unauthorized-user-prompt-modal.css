@@ -1,0 +1,59 @@
+.box-style-unauthorized-user-prompt-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  background-color: white;
+  box-shadow: 24;
+  padding: 20px;
+}
+
+.heading-unauthorized-user-prompt-modal {
+  position: relative;
+  font-size: x-large !important;
+  font-weight: 500 !important;
+  display: flex !important;
+  justify-content: center !important;
+  margin-bottom: 10px !important;
+}
+
+.close-icon-unauthorized-user-prompt-modal {
+  font-size: xx-large !important;
+  display: flex;
+  justify-content: end !important;
+}
+
+.close-icon-unauthorized-user-prompt-modal svg {
+  cursor: pointer;
+  font-size: xx-large !important;
+}
+
+.modal-description-unauthorized-user-prompt-modal {
+  margin-top: 10px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  font-weight: 500 !important;
+  justify-content: center !important;
+  font-size: large !important;
+}
+
+.go-todashboard-unauthorized-user-prompt-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.go-todashboard-unauthorized-user-prompt-modal button {
+  margin-top: 20px;
+  color: white !important;
+  background-color: #f26416 !important;
+  width: 40% !important;
+  height: 40px !important;
+  border-radius: 2px !important;
+  border: 1px solid #f26416 !important;
+}
+
+.display-inner-description-user-prompt-modal {
+  display: grid !important;
+  text-align: center !important;
+}

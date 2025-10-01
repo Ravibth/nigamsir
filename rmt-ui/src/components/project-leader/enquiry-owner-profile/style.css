@@ -1,0 +1,29 @@
+.enquiryOwner {
+  color: #0d0c22 !important;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 550 !important;
+  line-height: 120% !important;
+}
+
+.enquiry-header {
+  display: flex !important;
+  align-items: flex-end;
+}
+
+.enquiry-container {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 5px;
+}
+
+.enquiry-container .css-v91nba-MuiTypography-root {
+  white-space: normal !important;
+}
+
+@media screen and (max-width: 850px) {
+  .enquiry-container {
+    flex-flow: wrap;
+  }
+}

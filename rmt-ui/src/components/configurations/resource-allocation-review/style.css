@@ -1,0 +1,7 @@
+.config-name {
+  font-size: 13px !important;
+  /* font-family: "GT Walsheim Pro" !important; */
+  font-weight: 550 !important;
+  margin-right: 15px !important;
+  text-transform: capitalize !important;
+}

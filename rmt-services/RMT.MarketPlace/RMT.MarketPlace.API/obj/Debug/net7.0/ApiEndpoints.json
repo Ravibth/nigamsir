@@ -1,0 +1,400 @@
+[
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "AddProjectToMarketPlace",
+    "RelativePath": "api/MarketPlace/AddProjectToMarketPlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.MarketPlace.Application.Handlers.CommandHandlers.AddProjectToMarketPlaceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.MarketPlace.Application.Responses.MarketPlaceProjectDetailResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "CreateOrUpdateEmpProjectInterestScore",
+    "RelativePath": "api/MarketPlace/CreateOrUpdateEmpProjectInterestScore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.Handlers.CommandHandlers.EmpProjectInterestScoreRequest, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.Responses.EmpProjectInterestScoreResponse, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetAllEmpProjectInterestScoreByPipelineCode",
+    "RelativePath": "api/MarketPlace/GetAllEmpProjectInterestScore",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.DTO.EmpProjectInterestScoreDTO, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetAllMarketPlaceFilters",
+    "RelativePath": "api/MarketPlace/GetAllMarketPlaceFilters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "RMT.MarketPlace.Application.Handlers.QueryHandlers.GetAllMarketPlaceFiltersQuery",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.MarketPlace.Application.DTO.MarketPlaceFiltersDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetAllMarketPlaceProjectDetailsIntrest",
+    "RelativePath": "api/MarketPlace/GetAllMarketPlaceProjectDetailsIntrest",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Domain.DTOs.Response.MarketPlaceProjectDetaillsIntrestDTO, RMT.MarketPlace.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetAllProjectDetailsForMarketPlace",
+    "RelativePath": "api/MarketPlace/GetAllProjectDetailsForMarketPlace",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.MarketPlace.Application.Handlers.CommandHandlers.GetAllProjectDetailsForMarketPlaceCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.DTO.MarketPlaceProjectDetailDTO, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetAllRequisitionByProjectCode",
+    "RelativePath": "api/MarketPlace/GetAllRequisitionByProjectCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagination",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentEmp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ScoreCalculationForRequisitionIdsAllowed",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsRequsitionFilterByProjectRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.Responses.GetAllRequisitionByProjectCodeResponse, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetListOfUsersInterestedByPipelineCode",
+    "RelativePath": "api/MarketPlace/GetListOfUsersInterestedByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetProjectDetailsByPipelineCode",
+    "RelativePath": "api/MarketPlace/GetProjectDetailsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.MarketPlace.Domain.Entities.MarketPlaceProjectDetail",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "GetProjectListedInMarketplaceByProjectListingDate",
+    "RelativePath": "api/MarketPlace/GetProjectListedInMarketplaceByProjectListingDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "MarketPlacePublishDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.DTO.MarketPlaceProjectDetailDTO, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "RefreshEmpProjectInterestScore",
+    "RelativePath": "api/MarketPlace/RefreshEmpProjectInterestScore",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RMT.MarketPlace.Application.DTO.RefreshEmpProjectInterestScoreRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "SubmitEmpProjectInterest",
+    "RelativePath": "api/MarketPlace/SubmitEmpProjectInterest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.MarketPlace.Application.Handlers.CommandHandlers.EmpProjectInterestCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.MarketPlace.Application.Responses.EmpProjectInterestResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "UpdateExpiredMarketPlaceProjects",
+    "RelativePath": "api/MarketPlace/UpdateExpiredMarketPlaceProjects",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.MarketPlace.Application.Handlers.CommandHandlers.UpdateExpiredMarketPlaceProjectsCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.MarketPlace.Application.Responses.MarketPlaceProjectDetailResponse, RMT.MarketPlace.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.MarketPlace.API.Controllers.MarketPlaceController",
+    "Method": "UpdateMarketPlaceProjectDetails",
+    "RelativePath": "api/MarketPlace/UpdateMarketPlaceProjectDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "RMT.MarketPlace.Application.Handlers.CommandHandlers.UpdateMarketPlaceProjectCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.MarketPlace.Application.Responses.MarketPlaceProjectDetailResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

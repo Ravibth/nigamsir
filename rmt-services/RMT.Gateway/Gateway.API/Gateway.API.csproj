@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\Action.cs" />
+    <Compile Remove="Dtos\Banner.cs" />
+    <Compile Remove="Dtos\BatchInfoDTO.cs" />
+    <Compile Remove="Dtos\BatchUpdateDto.cs" />
+    <Compile Remove="Dtos\ModuleActionMapping.cs" />
+    <Compile Remove="Dtos\NotificationConfigDTO.cs" />
+    <Compile Remove="Dtos\RequestHeaderDetails.cs" />
+    <Compile Remove="Dtos\Role.cs" />
+    <Compile Remove="Dtos\User.cs" />
+    <Compile Remove="Dtos\UserDetailsDto.cs" />
+    <Compile Remove="Middlewares\ActionOnRequestMiddleware.cs" />
+    <Compile Remove="Middlewares\ActionOnResponseMiddleware.cs" />
+    <Compile Remove="Middlewares\AWSMiddleware.cs" />
+    <Compile Remove="Middlewares\ErrorHandling.cs" />
+    <Compile Remove="Middlewares\ErrorHandlingMiddleware.cs" />
+    <Compile Remove="Middlewares\HttpContextItemsTelemetryInitializer.cs" />
+    <Compile Remove="Middlewares\RequestResponseLoggingMiddleware.cs" />
+    <Compile Remove="Middlewares\RoutePermissionMiddleware.cs" />
+    <Compile Remove="Middlewares\ValueMiddleware.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.16.2" />
+	<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.15" />
+	<PackageReference Include="Microsoft.AspNetCore.SignalR.Client" Version="7.0.13" />
+		<PackageReference Include="Microsoft.Extensions.Azure" Version="1.7.1" />
+	<PackageReference Include="Microsoft.Extensions.Http.Polly" Version="7.0.13" />
+	<PackageReference Include="Microsoft.Identity.Web" Version="2.15.3" />
+	<PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="7.3.1" />
+	<PackageReference Include="Microsoft.IdentityModel.Protocols.OpenIdConnect" Version="7.0.3" />
+	<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.3.1" />
+	<PackageReference Include="MMLib.SwaggerForOcelot" Version="8.1.0" />
+	<PackageReference Include="Ocelot" Version="22.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="configuration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="RoutePermissionMapping.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\GTRMS\GTRMS\rmt-services\RMT.Gateway\Gateway.API\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\GTRMS\GTRMS\rmt-services\RMT.Gateway\Gateway.API\.editorconfig" />
+  </ItemGroup>
+
+</Project>

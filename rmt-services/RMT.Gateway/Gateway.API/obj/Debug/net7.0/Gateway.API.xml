@@ -1,0 +1,812 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Gateway.API</name>
+    </assembly>
+    <members>
+        <member name="T:Gateway.API.Constants">
+            <summary>
+            This static class contains constants which are used in our application.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.UserInfoCustomHeader">
+            <summary>
+            UserInfoCustomHeader
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.UserInfoV4CustomHeader">
+            <summary>
+            UserInfoV4CustomHeader
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.UserModulePermissionsCustomHeader">
+            <summary>
+            UserModulePermissionsCustomHeader
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ProjectModulePermissionsCustomHeader">
+            <summary>
+            ProjectModulePermissionsCustomHeader
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ICustomHeaderSystem">
+            <summary>
+            ICustomHeaderSystem
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Authorization">
+            <summary>
+            Authorization.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.IdentityService">
+            <summary>
+            IdentityService.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ProjectService">
+            <summary>
+            ProjectService.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.IdentityServiceURL">
+            <summary>
+            IdentityServiceURL.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ProjectServiceURL">
+            <summary>
+            ProjectServiceURL.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.AppJsonContentType">
+            <summary>
+            Content Type application/json.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.SeperatorWhiteSpace">
+            <summary>
+            Seperator White Space.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.All">
+            <summary>
+            All.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Admin">
+            <summary>
+            Admin.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.CEOCOO">
+            <summary>
+            CEOCOO
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.SystemAdmin">
+            <summary>
+            Super Admin.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Role">
+            <summary>
+            Role.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Permissions">
+            <summary>
+            Permissions.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.SeparatorPipe">
+            <summary>
+            Pipe Separator.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.SeperatorQuestion">
+            <summary>
+            Question mark Separator.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.SeperatorBackSlash">
+            <summary>
+            Slash Separator.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.CatchAll">
+            <summary>
+            CatchAll.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.UnAuthorized">
+            <summary>
+            UnAuthorized.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.NotFound">
+            <summary>
+            Not Found.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Anonymous">
+            <summary>
+            Anonymous.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.Accept">
+            <summary>
+            Accept.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.CorsPolicy">
+            <summary>
+            Cors Policy.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ClaimPreferredUsername">
+            <summary>
+            JWT token claim - Preferred User Name.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ClaimPreferredAppname">
+            <summary>
+            JWT token claim - Preferred User Name.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ClaimApplicationClientId">
+            <summary>
+            JWT token claim - Preferred User Name.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ClaimObjectId">
+            <summary>
+            JWT token claim - Object Id.
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowTypeNotification">
+            <summary>
+            Workflow Subscription Filter Type
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.EmailTypeNotification">
+            <summary>
+            Email Subscription Filter Type
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.PushNotificationTypeNotification">
+            <summary>
+            Push Notification Filter Type
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.NotificationTypeNotification">
+            <summary>
+            Notification Subscription Filter Type
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.ProjectTypeNotification">
+            <summary>
+            Project Subscription Filter Type
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.CreateUserAllocationWorkflowAction">
+            <summary>
+            USER_ALLOCATION_WORKFLOW Action Name
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.UserAllocationEmailAction">
+            <summary>
+            USER_ALLOCATION_EMAIL Action Name
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WF_TASK_TITLE_EMPLOYEE_ALLOCATION_REVIEWER_APPROVAL">
+            <summary>
+            Titles For Employee Allocation Workflow
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WORKFLOW_MODULE_EMPLOYEE_ALLOCATION">
+            <summary>
+            WORKFLOW MODULE
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WORKFLOW_SUB_MODULE_EMPLOYEE_ALLOCATION">
+             <summary>
+            WORKFLOW SUB_MODULE
+             </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WORKFLOW_STATUS_EMPLOYEE_ALLOCATION_REVIEW_PENDING_REVIEWER">
+            <summary>
+            WORKFLOW STATUS
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WORKFLOW_NAME_UPDATE_ALLOCATION_BY_ID">
+            <summary>
+            WORKFLOW NAME
+            </summary>
+        </member>
+        <member name="F:Gateway.API.Constants.WorkflowConstants.WORKFLOW_ENTITY_TYPE_UPDATE_ALLOCATION_RESPONSE">
+            <summary>
+            WORKFLOW ENTITY_TYPE
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.Permission">
+            <summary>
+            Permissions.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.Permission.BannerAccess">
+            <summary>
+            Gets or sets BannerAccess.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.Permission.ModuleName">
+            <summary>
+            Gets or sets ModuleName.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.Permission.PermissionName">
+            <summary>
+            Gets or sets PermissionName.
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.ResourcePermissionMapping">
+            <summary>
+            ResourcePermissionMapping.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ResourcePermissionMapping.Path">
+            <summary>
+            Gets or sets Path.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ResourcePermissionMapping.Method">
+            <summary>
+            Gets or sets HttpMethods.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ResourcePermissionMapping.CheckProjectPermission">
+            <summary>
+            Check Project Permission
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ResourcePermissionMapping.AdditionalAllowedRoles">
+            <summary>
+            Gets or sets AdditionalAllowedRoles.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ResourcePermissionMapping.ModuleActionMapping">
+            <summary>
+            Gets or sets ModuleActionMapping.
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.ModuleActionMapping">
+            <summary>
+            ModuleActionMapping.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ModuleActionMapping.Module">
+            <summary>
+            Gets or sets Module.
+            </summary>
+        </member>
+        <member name="P:Gateway.API.Dtos.ModuleActionMapping.Action">
+            <summary>
+            Gets or sets Action.
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.UserInfoDTO">
+            <summary>
+            UserInfoDTO
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.UserInfoV4DTO">
+            <summary>
+            UserInfoV4DTO
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.ModulePermissionDTO">
+            <summary>
+            ModulePermissionDTO
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Dtos.PermissionLevel">
+            <summary>
+            Permission
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Helpers.AppInsightLogger`1">
+            <summary>
+            ApplicationInsight Logger.
+            </summary>
+            <typeparam name="TCategoryName">CategoryName.</typeparam>
+        </member>
+        <member name="M:Gateway.API.Helpers.AppInsightLogger`1.#ctor(Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gateway.API.Helpers.AppInsightLogger`1"/> class.
+            </summary>
+            <param name="configuration">configuration.</param>
+        </member>
+        <member name="M:Gateway.API.Helpers.AppInsightLogger`1.Log(Microsoft.Extensions.Logging.LogLevel,System.String,System.Object[])">
+            <summary>
+            Formats and writes a log message at the specified log level.
+            </summary>
+            <param name="logLevel">Log Level.</param>
+            <param name="message">Message.</param>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Gateway.API.Helpers.AppInsightLogger`1.Log(Microsoft.Extensions.Logging.LogLevel,System.Exception,System.String,System.Object[])">
+            <summary>
+            Formats and writes a log message at the specified log level.
+            </summary>
+            <param name="logLevel">Log Level.</param>
+            <param name="ex">Exception.</param>
+            <param name="message">Message.</param>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Gateway.API.Helpers.AppInsightLogger`1.Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.String,System.Object[])">
+            <summary>
+            Formats and writes a log message at the specified log level.
+            </summary>
+            <param name="logLevel">Log Level.</param>
+            <param name="eventId">Event Id.</param>
+            <param name="message">Message.</param>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Gateway.API.Helpers.AppInsightLogger`1.Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,System.Exception,System.String,System.Object[])">
+            <summary>
+            Formats and writes a log message at the specified log level.
+            </summary>
+            <param name="logLevel">Log Level.</param>
+            <param name="eventId">event Id.</param>
+            <param name="ex">Exception.</param>
+            <param name="message">Message.</param>
+            <param name="args">Arguments.</param>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ConfigurationHttpService.GetConfigurationByExpertiesNameAndGroupName(System.String,System.String)">
+            <summary>
+            NOT_IN_USE
+            </summary>
+            <param name="expertiesName"></param>
+            <param name="groupName"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ConfigurationHttpService.GetConfigurationGroupByGroupNameAndConfigType(System.String,System.String)">
+            <summary>
+            NOT_IN_USE
+            </summary>
+            <param name="groupName"></param>
+            <param name="configType"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Gateway.API.Helpers.HttpServices.IdentityHttpServices">
+            <summary>
+            IdentityHttpServices
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.IdentityHttpServices.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{Gateway.API.Helpers.HttpServices.IdentityHttpServices})">
+            <summary>
+            IdentityHttpServices constructor
+            </summary>
+            <param name="httpClient"></param>
+            <param name="config"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.IdentityHttpServices.GetUserInfo(System.String)">
+            <summary>
+            GetUserInfo
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.IdentityHttpServices.GetUserV4Info(System.String)">
+            <summary>
+            GetUserV4Info
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.IdentityHttpServices.GetUserModulePermissions(System.String)">
+            <summary>
+            GetUserModulePermissions
+            </summary>
+            <param name="email"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.IdentityHttpServices.GetUserModulePermissionsByRole(System.Collections.Generic.List{System.String})">
+            <summary>
+            GetUserModulePermissionsByRole
+            </summary>
+            <param name="roles"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Helpers.HttpServices.ProjectHttpService">
+            <summary>
+            ProjectHttpService
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ProjectHttpService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger{Gateway.API.Helpers.HttpServices.ProjectHttpService})">
+            <summary>
+            ProjectHttpService
+            </summary>
+            <param name="configuration"></param>
+            <param name="httpClient"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ProjectHttpService.AddUpdateProjectRequisitionAllocation(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            AddUpdateProjectRequisitionAllocation
+            </summary>
+            <param name="pipelineCode"></param>
+            <param name="jobCode"></param>
+            <param name="requisitionCountAdded"></param>
+            <param name="allocationCountAdded"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ProjectHttpService.GetProjectDetailsByPipelineCode(System.String,System.String)">
+            <summary>
+            GetProjectDetailsByPipelineCode
+            </summary>
+            <param name="pipelineCode"></param>
+            <param name="jobCode"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ProjectHttpService.GetRolesEmailByPipelineCodesAndRoles(System.Collections.Generic.List{Gateway.API.Dtos.PipelineCodeAndRolesDto})">
+            <summary>
+            GetRolesEmailByPipelineCodesAndRoles
+            </summary>
+            <param name="pipelineCodeAndRolesDto"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.ProjectHttpService.GetAllProjectRolesByCodes(Gateway.API.Dtos.PipelineCodeAndRolesDto)">
+            <summary>
+            GetAllProjectRolesByCodes
+            </summary>
+            <param name="pipelineCodeAndRolesDto"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Gateway.API.Helpers.HttpServices.SkillsHttpService">
+            <summary>
+            Skill Microservice Api
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.SkillsHttpService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="httpClient"></param>
+            <param name="config"></param>
+        </member>
+        <member name="M:Gateway.API.Helpers.HttpServices.SkillsHttpService.UpdateUserSkillStatusAfterWorkflow(System.Collections.Generic.List{Gateway.API.Dtos.UpdateUserSkillStatusAfterWorkflowRequestDTO})">
+            <summary>
+            Update User Skill Status After Supercoach/Co-supercoach accepts/rejects the skill
+            </summary>
+            <param name="requests"></param>
+            <returns></returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Gateway.API.Helpers.Utility">
+            <summary>
+            Utility Class.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Helpers.Utility.CheckIsValidJsonToken(System.String)">
+            <summary>
+            CheckIsValidJsonToken
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Helpers.Utility.CheckIsValidJsonObject(System.String)">
+            <summary>
+            CheckIsValidJsonObject
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Helpers.Utility.CheckIsValidJsonArray(System.String)">
+            <summary>
+            CheckIsValidJsonArray
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Middlewares.AuthorizationMiddleware1">
+            <summary>
+            AuthorizationMiddleware1
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.Collections.Generic.List{Gateway.API.Dtos.ResourcePermissionMapping},Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            AuthorizationMiddleware1
+            </summary>
+            <param name="config"></param>
+            <param name="resourcePermissionMapping"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.InvokePreAuthorizationMiddleware(Microsoft.AspNetCore.Http.HttpContext,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            InvokePreAuthorizationMiddleware
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.EnrichClaim(Microsoft.AspNetCore.Http.HttpContext,System.Security.Claims.ClaimsPrincipal,Gateway.API.Services.IUserAccessor,Gateway.API.Helpers.IHttpServices.IIdentityHttpServices)">
+            <summary>
+            EnrichClaim
+            </summary>
+            <param name="context"></param>
+            <param name="claims"></param>
+            <param name="userAccessor"></param>
+            <param name="identityHttpServices"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.GetProjectRoleWiseModulePermission(Microsoft.AspNetCore.Http.HttpContext,Gateway.API.Dtos.UserInfoDTO,Gateway.API.Helpers.IHttpServices.IIdentityHttpServices)">
+            <summary>
+            GetProjectRoleWiseModulePermission
+            </summary>
+            <param name="context"></param>
+            <param name="userObject"></param>
+            <param name="identityHttpServices"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.FillToken(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            FillToken
+            </summary>
+            <param name="meta"></param>
+            <param name="DTokens"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.InvokeAuthorizationMiddleware(Microsoft.AspNetCore.Http.HttpContext,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            InvokeAuthorizationMiddleware
+            </summary>
+            <param name="context"></param>
+            <param name="next"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.InvokeRolePermissionMiddleware(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke RolePermissionMiddleware
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.ThrowUnAuthorizedError(Microsoft.AspNetCore.Http.HttpContext,System.String)">
+            <summary>
+            ThrowUnAuthorizedError
+            </summary>
+            <param name="context"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Gateway.API.Middlewares.AuthorizationMiddleware1.GetPermissionForMatchedPath(System.String,System.String)">
+            <summary>
+            GetPermissionForMatchedPath
+            </summary>
+            <param name="requestPath"></param>
+            <param name="requestMethod"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Middlewares.CustomCorsMiddleware">
+            <summary>
+            CustomCorsMiddleware
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Middlewares.CustomCorsMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,System.Collections.Generic.List{System.String})">
+            <summary>
+            CustomCorsMiddleware
+            </summary>
+            <param name="next"></param>
+            <param name="trustedOrigins"></param>
+        </member>
+        <member name="M:Gateway.API.Middlewares.CustomCorsMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invoke
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.NotificatiionMiddleware.publishProjectNotification(System.Collections.Generic.List{Gateway.API.Dtos.NotificationPayload},Microsoft.Extensions.Logging.ILogger{Gateway.API.Middlewares.NotificatiionMiddleware})">
+            <summary>
+            publish the projectdetails messag to servicebus
+            </summary>
+            <param name="payload"></param>
+            <param name="logger"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.NotificatiionMiddleware.CreateProjectDetailsUpdateMessage(Gateway.API.Dtos.InitNotificationDTO,Microsoft.Extensions.Logging.ILogger{Gateway.API.Middlewares.NotificatiionMiddleware})">
+            <summary>
+            Create projectdetails message for publishing to service bus
+            </summary>
+            <param name="notificationParams"></param>
+            <param name="logger"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.NotificatiionMiddleware.publishWorkflow(System.Collections.Generic.List{Gateway.API.Dtos.NotificationPayload},Microsoft.Extensions.Logging.ILogger{Gateway.API.Middlewares.NotificatiionMiddleware})">
+            <summary>
+            Publish a workflow to topic
+            </summary>
+            <param name="payload"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Middlewares.NotificatiionMiddleware.publishNotification(System.Collections.Generic.List{Gateway.API.Dtos.NotificationPayload},Microsoft.Extensions.Logging.ILogger{Gateway.API.Middlewares.NotificatiionMiddleware})">
+            <summary>
+            Publush a notification can be push or email or both
+            </summary>
+            <param name="payload"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Middlewares.TokenAuthenticationMiddleware">
+            <summary>
+            TokenAuthenticationMiddleware
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Middlewares.TokenAuthenticationMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            TokenAuthenticationMiddleware constructore 
+            </summary>
+            <param name="next"></param>
+        </member>
+        <member name="M:Gateway.API.Middlewares.TokenAuthenticationMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Middleware invike method
+            </summary>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Program">
+            <summary>
+            Program class file is a place where we create a host for the web application.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Program.Main(System.String[])">
+            <summary>
+             It is the entry point of our app.
+            </summary>
+            <param name="args">Command line arguments.</param>
+        </member>
+        <member name="M:Gateway.API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            Creates Host Builder.
+            </summary>
+            <param name="args">arguments.</param>
+            <returns>Host Builder.</returns>
+        </member>
+        <member name="F:Gateway.API.ServiceLayerHelper.Constants.Constants.CreateUserAllocationWorkflowAction">
+            <summary>
+            USER_ALLOCATION_WORKFLOW Action Name
+            </summary>
+        </member>
+        <member name="T:Gateway.API.Services.IUserAccessor">
+            <summary>
+            User Accessor interface.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetToken">
+            <summary>
+            Gets jwt token.
+            </summary>
+            <returns>Jwt token string.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetUserId">
+            <summary>
+            Gets Id of the loggedin user.
+            </summary>
+            <returns>User Id.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetEmail">
+            <summary>
+            Gets email of the loggedin user.
+            </summary>
+            <returns>email Id.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetName">
+            <summary>
+            Get the name of the loggedin user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetPermissions(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.List{System.String},Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Get the Permissions of the loggedin user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Services.IUserAccessor.GetRoles(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Get the Roles of the loggedin user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Gateway.API.Services.UserAccessor">
+            <summary>
+            User Accessor.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gateway.API.Services.UserAccessor"/> class.
+            </summary>
+            <param name="httpContextAccessor">Http Context Accessor.</param>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetToken">
+            <summary>
+            Gets jwt token.
+            </summary>
+            <returns>jwt token string.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetCustomSystemClaimHeader">
+            <summary>
+            Get Custom Claim added only for system access like in scheduler
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetUserId">
+            <summary>
+            Gets Id of the loggedin user.
+            </summary>
+            <returns>User Id.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetEmail">
+            <summary>
+            Gets email of the loggedin user.
+            </summary>
+            <returns>Email Id.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetName">
+            <summary>
+            Get Name of user
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetPermissions(Microsoft.AspNetCore.Http.HttpContext,System.Collections.Generic.List{System.String},Microsoft.Extensions.Logging.ILogger)">
+            <summary>
+            Gets Permissions of the loggedin user.
+            </summary>
+            <returns>List of permissions.</returns>
+        </member>
+        <member name="M:Gateway.API.Services.UserAccessor.GetRoles(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Gets roles of the loggedin user.
+            </summary>
+            <returns>List of roles.</returns>
+        </member>
+        <member name="T:Gateway.API.Startup">
+            <summary>
+            Startup class, to be used while creating web host builder.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Gateway.API.Startup"/> class.
+            </summary>
+            <param name="configuration">Configuration.</param>
+        </member>
+        <member name="P:Gateway.API.Startup.Configuration">
+            <summary>
+            Gets Configuration.
+            </summary>
+        </member>
+        <member name="M:Gateway.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services">Services Collection.</param>
+        </member>
+        <member name="M:Gateway.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.Extensions.Logging.ILoggerFactory)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app">Application Builder.</param>
+            <param name="env">WebHost Environment.</param>
+            <param name="loggerFactory">loggerFactory</param>
+        </member>
+    </members>
+</doc>

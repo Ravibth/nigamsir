@@ -1,0 +1,65 @@
+.market-card-value {
+  color: #4f2d7f !important;
+  font-weight: bolder;
+}
+
+.card-title {
+  font-size: 26px !important;
+  /* font-family: "GT Walsheim Pro" !important; */
+  font-weight: bold !important;
+}
+
+.market-title-container {
+  padding-top: "10px";
+  padding-bottom: "10px";
+}
+
+.description-header {
+  margin-bottom: 5px;
+}
+
+.description-data {
+  color: #787878 !important;
+}
+
+.sortIcon-btn {
+  color: #00a7b5;
+  font-weight: bold;
+  font-size: 16px !important;
+  cursor: pointer;
+}
+
+.select-control-market {
+  padding-left: 10px !important;
+}
+
+.marketplace-interest-grid .ag-root-wrapper {
+  border-radius: 10px !important;
+}
+
+.marketplace-designation-grid .ag-root-wrapper {
+  border-radius: 10px !important;
+}
+
+.select-control-market .MuiOutlinedInput-root {
+  border-radius: 10px !important;
+  color: #00a7b5 !important;
+}
+
+.select-control-market .MuiOutlinedInput-notchedOutline {
+  border-color: #00a7b5 !important;
+}
+
+.select-control-market .MuiButtonBase-root {
+  border-color: #00a7b5 !important;
+}
+
+.tool-marketplace {
+  font-size: 20px !important;
+  color: #00a7b5 !important;
+}
+
+.title-legend {
+  display: flex;
+  align-items: center;
+}

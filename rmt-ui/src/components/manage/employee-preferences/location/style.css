@@ -1,0 +1,95 @@
+* {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+}
+.location-container {
+  border: 1px solid lightgray !important;
+  border-radius: 10px;
+  padding: 16px;
+  position: relative !important;
+  min-height: 250px;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px 1px 3px rgba(0, 0, 0, 0.08);
+  background-color: #f2f5ff !important;
+}
+.add-button {
+  color: #4f2d7f !important;
+  font-size: 16px;
+  border-color: #4f2d7f !important;
+  font-weight: 550 !important;
+  text-transform: capitalize !important;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  border-radius: 10px !important;
+}
+.add-button-disabled {
+  color: gray !important;
+  font-size: 16px;
+  border-color: gray !important;
+  font-weight: 550 !important;
+  text-transform: capitalize !important;
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  border-radius: 10px !important;
+}
+.add-button-container {
+  position: absolute !important;
+  bottom: 10px;
+}
+input {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+}
+
+/* .delete-icon:disabled {
+  color: aliceblue;
+} */
+.preference-title {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  color: #000;
+  /* font-family: GT Walsheim Pro !important; */
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.Information-Icon {
+  /* font-family: "GT Walsheim Pro, Medium" !important; */
+  color: #4f2d7f !important;
+  font-size: 12px;
+}
+.delete-container-main {
+  display: flex !important;
+  justify-content: space-around !important;
+}
+.textbox-container {
+  height: 230px !important;
+  overflow-y: auto;
+}
+/* .textbox-container::-webkit-scrollbar
+{
+  display: none;
+} */
+/* .textbox-container::-webkit-scrollbar-thumb {
+  background: #FF0000;
+} */
+.textbox-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+.textbox-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+
+.textbox-container::-webkit-scrollbar-thumb {
+  background: #4f2d7f;
+}
+
+/* Handle on hover */
+
+.textbox-container::-webkit-scrollbar-thumb:hover {
+  background: #4f2d7f;
+}
+.container{
+  margin-top: 2px !important;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,12 @@
+.all-activation-switch {
+  /* color: #00a7b5 !important; */
+}
+
+.config-name {
+  font-size: 15px !important;
+  /* font-family: "GT Walsheim Pro" !important; */
+  font-weight: 550 !important;
+  display: flex;
+  padding: 5px 0px 2px 0px;
+  text-transform: capitalize !important;
+}

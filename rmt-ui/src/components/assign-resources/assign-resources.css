@@ -1,0 +1,29 @@
+.resource-header {
+  padding-top: 40px !important;
+  font-weight: 600 !important;
+  color: black !important;
+  /* font-family: GT Walsheim Pro !important; */
+}
+.column-header {
+  padding-top: 40px !important;
+  font-weight: 550 !important;
+  color: rgb(121, 121, 121) !important;
+  /* font-family: GT Walsheim Pro !important; */
+}
+
+.delete-icon {
+  color: #4f2d7f !important;
+}
+
+.noOfResources {
+  width: 150px !important;
+  padding-right: 40px !important;
+}
+
+.table-row-body .MuiTableCell-root {
+  padding: 0px 10px 0px 16px;
+}
+
+.table-row-header .MuiTableCell-root {
+  padding: 16px 16px 0px 16px;
+}

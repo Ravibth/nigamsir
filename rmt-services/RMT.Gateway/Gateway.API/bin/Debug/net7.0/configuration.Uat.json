@@ -1,0 +1,3270 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Budget/ActualPlannedResourceView",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Budget/ActualPlannedResourceView",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Budget/AllcoatedActualGraph/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Budget/AllcoatedActualGraph/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Budget/BudgetDesignationWise/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Budget/BudgetDesignationWise/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Budget/BudgetOverview/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Budget/BudgetOverview/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Budget/UpdateDesignationCost",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Budget/UpdateDesignationCost",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/BulkRequisition/BulkUploadRequisition",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/BulkRequisition/BulkUploadRequisition",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/BulkRequisition/WcgtValidation",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/BulkRequisition/WcgtValidation",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetAllBuExpertiesDict",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetAllBuExpertiesDict",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetAllBusinessMaster",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetAllBusinessMaster",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetAllRUMasters",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetAllRUMasters",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetAllSMEGMasters",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetAllSMEGMasters",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetConfigurationByConfigGroupConfigKeyAndConfigType",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetConfigurationByConfigGroupConfigKeyAndConfigType",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetConfigurationGroupByGroupNameAndConfigType",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetConfigurationGroupByGroupNameAndConfigType",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetConfigurationMaster",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetConfigurationMaster",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetExpertiesConfigurationByExpertiesNameAndConfigGroup",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetExpertiesConfigurationByExpertiesNameAndConfigGroup",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetExpertiesMastersByBUId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetExpertiesMastersByBUId",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/LogContent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/LogContent",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/UpdateConfiguration",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/UpdateConfiguration",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/UpdateConfigurationBreakup",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/UpdateConfigurationBreakup",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Configuration/GetApplicationLevelSettings",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/GetApplicationLevelSettings",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/AddEmployeeProjectMapping/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/AddEmployeeProjectMapping/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/get-employee-profile/{emailId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/get-employee-profile/{emailId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/update-employee-profile",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/update-employee-profile",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetAllPreferenceMasteer/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/GetAllPreferenceMasteer/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetEmpByProjectMapping/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/GetEmpByProjectMapping/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetEmployeePreferenceByEmail/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/GetEmployeePreferenceByEmail/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/GetEmployeePreferenceByEmails/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/GetEmployeePreferenceByEmails/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Employee/UpdateEmployeePreference/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/UpdateEmployeePreference/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Job/GetConfirmedPerDayHoursByDate/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Job/GetConfirmedPerDayHoursByDate/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Job/GetJobAllocationMapping/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Job/GetJobAllocationMapping/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/AddProjectToMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/AddProjectToMarketPlace",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/CreateOrUpdateEmpProjectInterestScore",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/CreateOrUpdateEmpProjectInterestScore",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetAllEmpProjectInterestScore",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetAllEmpProjectInterestScore",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetAllMarketPlaceFilters",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetAllMarketPlaceFilters",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetAllProjectDetailsForMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetAllProjectDetailsForMarketPlace",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetAllRequisitionByProjectCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetAllRequisitionByProjectCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetListOfUsersInterestedByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetListOfUsersInterestedByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetProjectListedInMarketplaceByProjectListingDate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetProjectListedInMarketplaceByProjectListingDate",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/GetProjectDetailsByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/GetProjectDetailsByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/RefreshEmpProjectInterestScore",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/RefreshEmpProjectInterestScore",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/SubmitEmpProjectInterest",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/SubmitEmpProjectInterest",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/UpdateExpiredMarketPlaceProjects",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/UpdateExpiredMarketPlaceProjects",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/MarketPlace/UpdateMarketPlaceProjectDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/UpdateMarketPlaceProjectDetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NamedAllocation/GetResourceByName/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/NamedAllocation/GetResourceByName/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NamedAllocation/SubmitResourceAllocateToProject/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/NamedAllocation/SubmitResourceAllocateToProject/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NavigationMenu/GetContextMenuByRoles/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/NavigationMenu/GetContextMenuByRoles/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/NavigationMenu/GetMenuByRoles/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/NavigationMenu/GetMenuByRoles/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/GetLoggedInUserAllNotificationsCount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/GetLoggedInUserAllNotificationsCount",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/GetLoggedInUserNotifications",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/GetLoggedInUserNotifications",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/GetNotificationSubscription",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/GetNotificationSubscription",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/GetNotificationTemplate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/GetNotificationTemplate",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/MarkNotificationsAsRead",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/MarkNotificationsAsRead",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/MarkAllNotificationsAsRead",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/MarkAllNotificationsAsRead",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/PostNewNotification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/PostNewNotification",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/SendNotification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/SendNotification",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Notification/SubscribeToNotification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/SubscribeToNotification",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/AddJustification",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/AddJustification",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/UpdateProjectRolesForSupercoachDelegate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/UpdateProjectRolesForSupercoachDelegate",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/AddProjectUserWithRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/AddProjectUserWithRole",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/ChangeCodeForProject",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/ChangeCodeForProject",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/CreateOrUpdatePublishedFieldForMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/CreateOrUpdatePublishedFieldForMarketPlace",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/CreateProject",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/CreateProject",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetActiveFieldForMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetActiveFieldForMarketPlace",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAll",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/getAllProjects",
+      "UpstreamHttpMethod": [ "Get" ],
+      "Key": "getAllProjects"
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllEmployeesExcludingEmployessWithRoles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllEmployeesExcludingEmployessWithRoles",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllJobCodesForPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllJobCodesForPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllProjectByBUandExpertise",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllProjectByBUandExpertise",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllProjectByCreationDate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllProjectByCreationDate",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllProjectRolesByCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllProjectRolesByCodes",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllProjectsForBudget",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllProjectsForBudget",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllProjectsForBudgetByJobCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllProjectsForBudgetByJobCodes",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAllUsersExcludingEmployessWithRoles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAllUsersExcludingEmployessWithRoles",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetAppRolesEmailByPipelineCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetAppRolesEmailByPipelineCodes",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetBasiProjectDetailRequestorByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetBasiProjectDetailRequestorByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetEmployeeListingProjectDataByPipelineCodes/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetEmployeeListingProjectDataByPipelineCodes/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetEmployeeRoleByByPipelineJobCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetEmployeeRoleByByPipelineJobCodes",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetMultipleProjectsByCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetMultipleProjectsByCodes",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetOfferingSolutionsByJobCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetOfferingSolutionsByJobCode",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectBudget/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectBudget/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectBudget/{projectCode}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectBudget/{projectCode}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectByCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectByCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectDetailsAsPerPipelineCodeAndUserRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectDetailsAsPerPipelineCodeAndUserRole",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectDetailsForEmployee",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectDetailsForEmployee",
+      "UpstreamHttpMethod": [ "Get" ],
+      "RouteClaimsRequirement": {
+        "UserRoles": "SystemAdmin, Employee"
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectDetailsForRequestor/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectDetailsForRequestor/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectFilterOptionsQuery",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectFilterOptionsQuery",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectFullDetailsByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectFullDetailsByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectListDataByUser",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectListDataByUser",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectRolesByEmails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectRolesByEmails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectsByRequestor/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectsByRequestor/{email}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetPublishedFieldByprojectCodeForMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetPublishedFieldByprojectCodeForMarketPlace",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetRequestorEmailsForAllocationWorkflow",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetRequestorEmailsForAllocationWorkflow",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetResourceRequestorEmailsByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetResourceRequestorEmailsByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetResourceRequestorEmailsListByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetResourceRequestorEmailsListByPipelineCode",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetResourceReviewerEmailsByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetResourceReviewerEmailsByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetRolesEmailByPipelineCodesAndRoles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetRolesEmailByPipelineCodesAndRoles",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/ProjectActivationStatusChange",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/ProjectActivationStatusChange",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/ProjectActualBudgetOverShoot",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/ProjectActualBudgetOverShoot",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/RefreshProjectCompetency",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/RefreshProjectCompetency",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/RemoveProjectUserWithRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/RemoveProjectUserWithRole",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/SetIsRequisitionCreationallowed",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/SetIsRequisitionCreationallowed",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/SetPublishedToMarketPlace",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/SetPublishedToMarketPlace",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/UpdateProjectBudgetStatus",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/UpdateProjectBudgetStatus",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/UpdateProjectDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/UpdateProjectDetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/UpdateProjectRollOverStatus/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/UpdateProjectRollOverStatus/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/UpdateProjectSuspensionStatus",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/UpdateProjectSuspensionStatus",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/ReplaceProjectsSuperCoachRole",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/ReplaceProjectsSuperCoachRole",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Project/GetProjectListDataByEmailId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/GetProjectListDataByEmailId",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/v1/capacity-utilization-overview-chart",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Reports/v1/capacity-utilization-overview-chart",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/v1/refresh-employee-allocation",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Reports/v1/refresh-employee-allocation",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/v1/refresh-materilized-views",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Reports/v1/refresh-materilized-views",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/v1/scheduled-vs-variance-chart",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Reports/v1/scheduled-vs-variance-chart",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Reports/v1/summary-statistics-chart",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Reports/v1/summary-statistics-chart",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/AddBulkRequisitions/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/AddBulkRequisitions/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/DeleteRequisitionById/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/DeleteRequisitionById/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/GetAllRequisitionByProjectCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/GetAllRequisitionByProjectCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/GetRequisitionDetailsByRequisitionId/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/GetRequisitionDetailsByRequisitionId/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/IsRequisitionExistsInProjectCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/IsRequisitionExistsInProjectCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/SubmitRequisitionForProjectCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/SubmitRequisitionForProjectCode/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Requisition/UpdateRequisition/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Requisition/UpdateRequisition/",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/CommonResourceAllocation/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/CommonResourceAllocation/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/CreateResourceAllocation",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/CreateResourceAllocation",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/DeleteAllocationByRequisitionId/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/DeleteAllocationByRequisitionId/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/DoesUserHaveAnyFutureOrOngoingAllocations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/DoesUserHaveAnyFutureOrOngoingAllocations",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetActiveAllocationByPipeLineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetActiveAllocationByPipeLineCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllAllocationByPipelineCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllAllocationByPipelineCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllocatedHoursRatioByPipelineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllocatedHoursRatioByPipelineCode/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllocationByID/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllocationByID/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllocationInformationByLeaves",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllocationInformationByLeaves",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllocationsByEmail/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllocationsByEmail/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAllocationsByEmailorClients/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAllocationsByEmailorClients/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetAvaiableHoursByEmailId/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetAvaiableHoursByEmailId/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetCurrentUserAllocationCalander",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetCurrentUserAllocationCalander",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetCurrentUserAllocationCalanderFilterOptions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetCurrentUserAllocationCalanderFilterOptions",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetMultipleAllocationsByRequisitionIDs/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetMultipleAllocationsByRequisitionIDs/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetProjectsByEmployeeEmail/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetProjectsByEmployeeEmail/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetProjectsByEmployeeEmailAndPipelineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetProjectsByEmployeeEmailAndPipelineCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/v2/GetProjectsByPipelineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/v2/GetProjectsByPipelineCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetProjectsByPipelineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetProjectsByPipelineCode/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetPublishedActiveAllocationByPipeLineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetPublishedActiveAllocationByPipeLineCode/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetRequisitionByEMailPipeline/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetRequisitionByEMailPipeline/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetResourceAllocationByGuid/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetResourceAllocationByGuid/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetResourceAllocationByProjectCode/{query}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetResourceAllocationByProjectCode/{query}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetRolloverUsersTimeline/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetRolloverUsersTimeline/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetSkillByEmailJobCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetSkillByEmailJobCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetSystemSuggestionsByRequisitionId/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetSystemSuggestionsByRequisitionId/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetUsersTimeline/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetUsersTimeline/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/GetUsersTimelineForMultipleDates/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/GetUsersTimelineForMultipleDates/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/NewResourceAllocationMove/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/NewResourceAllocationMove/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/ReleaseResourceByGuid/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/ReleaseResourceByGuid/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/RemoveUsersAllDraftAllocations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/RemoveUsersAllDraftAllocations",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/ResourceAllocationDayGroup/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/ResourceAllocationDayGroup/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/ResourceAllocationDetailsByGuid",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/ResourceAllocationDetailsByGuid",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/RolloverAllocationByPipelineCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/RolloverAllocationByPipelineCode/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/SuspendAllocation/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/SuspendAllocation/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateAllocationByID/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateAllocationByID/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateAllocationStatusInResourceAllocationDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateAllocationStatusInResourceAllocationDetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateListOfAllocationStatusInResourceAllocationDetails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateListOfAllocationStatusInResourceAllocationDetails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateProjectJobCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateProjectJobCode",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdatePublishAllocationActualEfforts",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdatePublishAllocationActualEfforts",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateResourceAllocations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateResourceAllocations",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ResourceAllocation/UpdateRollOverAllocations/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/ResourceAllocation/UpdateRollOverAllocations/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/SameTeamAllocation/GetAllocationByJobCode/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/SameTeamAllocation/GetAllocationByJobCode/",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/GetAllSkill",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/GetAllSkill",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/GetSkiilCategoryMaster",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/GetSkiilCategoryMaster",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/GetSkillByName",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/GetSkillByName",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/GetUserApprovedSkillByEmail",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/GetUserApprovedSkillByEmail",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/SearchSkillsByNameOrCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/SearchSkillsByNameOrCode",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/GetAllSkillBySkillCodeOrName",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/GetAllSkillBySkillCodeOrName",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/SubmitSKill",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/SubmitSKill",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/UpdateSkill",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/UpdateSkill",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Skill/UpdateSkillStatus",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/UpdateSkillStatus",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Timesheet/GetDraftTimesheet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Timesheet/GetDraftTimesheet",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserSkills/AddUpdateUserSkill",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UserSkills/AddUpdateUserSkill",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserSkills/GetUserSkillsByEmail",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UserSkills/GetUserSkillsByEmail",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserSkills/GetUserSkillsWithProficiency",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UserSkills/GetUserSkillsWithProficiency",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/UserSkills/UpdateUserSkillStatusAfterWorkflow",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/UserSkills/UpdateUserSkillStatusAfterWorkflow",
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetBUTreeMappingList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetBUTreeMappingList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetBUTreeMappingListByMID",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetBUTreeMappingListByMID",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetClientLegalEntityList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetClientLegalEntityList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetClientList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetClientList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetClientListByJobCodes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetClientListByJobCodes",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetCompetencyList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetCompetencyList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetDesignationList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetDesignationList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeeByParam",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeeByParam",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeeLeaves",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeeLeaves",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeeList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeeList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetHolidayList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetHolidayList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetHolidaysListByParams",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetHolidaysListByParams",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetJobByJobCode",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetJobByJobCode",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetJobList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetJobList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetLeaveList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetLeaveList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetLeavesInfo",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetLeavesInfo",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetLocationList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetLocationList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetPipelineList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetPipelineList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetProjectBudgetByModifiedDateRange",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetProjectBudgetByModifiedDateRange",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetResignedAndAbscondedUsersWithLastAvailableDay",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetResignedAndAbscondedUsersWithLastAvailableDay",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetSectorIndustryList",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetSectorIndustryList",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetTimesheet",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetTimesheet",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetTimesheetGroup",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetTimesheetGroup",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeeBySuperCoachOrCSC",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeeBySuperCoachOrCSC",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetAllSuperCoach",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetAllSuperCoach",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateBudget",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateBudget",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateBUEfficiencyLeader",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateBUEfficiencyLeader",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateBUTreeMappings",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateBUTreeMappings",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateClientLegalEntitys",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateClientLegalEntitys",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateClients",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateClients",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateCompetency",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateCompetency",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateDesignations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateDesignations",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateEmployees",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateEmployees",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateHolidays",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateHolidays",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateJobs",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateJobs",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateLeaves",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateLeaves",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateLocations",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateLocations",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdatePipelines",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdatePipelines",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateRateMaster",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateRateMaster",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/UpdateSectorIndustries",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/UpdateSectorIndustries",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeesForPortfolio",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeesForPortfolio",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetPortfolioFiltersOptions",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetPortfolioFiltersOptions",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/WcgtData/GetEmployeesForPortfolioReport",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WcgtData/GetEmployeesForPortfolioReport",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-allocation-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Allocations/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-configuration-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Configuration/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-employee-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Employee/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Identity/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-marketplace-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/MarketPlace/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Notification/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-project-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Project/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-report-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Report/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-skill-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Skill/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-wcgt-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/WCGT/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/health",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/Workflow/health",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/hub",
+      "DownstreamScheme": "wss",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/hub"
+    },
+    {
+      "DownstreamPathTemplate": "/hub/negotiate",
+      "DownstreamScheme": "http",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-notification-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/hub/negotiate"
+    },
+    {
+      "DownstreamPathTemplate": "/identity/modulePermission/permissionMappings",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/modulePermission/permissionMappings",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/modulePermission/role/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/modulePermission/role/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/modulePermission/role?{role}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/modulePermission/role?roleName={role}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/role",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/role",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/{emailId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/{emailId}",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/add-supercoach-delegate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/add-supercoach-delegate",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/supercoach-and-delegates-list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/supercoach-and-delegates-list",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/all?",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/all?",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/all?{role}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/all?roles={role}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/GetUsersByEmails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/GetUsersByEmails",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/GetUsersByEmails",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/GetUsersByEmails",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/list",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/list",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/multiuser/v1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/multiuser/v1",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/removeUserRoleByEmail",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/removeUserRoleByEmail",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/status/v2/",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/status/v2/",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/update",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/update",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/v1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/v1",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/v1/bulkAddUserRoles",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/v1/bulkAddUserRoles",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/v2/{emailId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/v2/{emailId}",
+      "UpstreamHttpMethod": [ "Put" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/v4/{emailId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/v4/{emailId}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/identity/user/v5/{name}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-identity-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/identity/user/v5/{name}",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/update-supercoach-and-delegate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/update-supercoach-and-delegate",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/GetWorkflowSuperCoachTask",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/GetWorkflowSuperCoachTask",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/bulk/update-workflow",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/bulk/update-workflow",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/employee-allocation-termination",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/employee-allocation-termination",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/getCommentsByItemId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/getCommentsByItemId",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/GetEmployeeTaskCountByQuery",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/GetEmployeeTaskCountByQuery",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/GetEmployeeWithdrawlTaskByQuery",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/GetEmployeeWithdrawlTaskByQuery",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/getMultipleTasksByByQuery",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/getMultipleTasksByByQuery",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/getMySkillTasksAssigned",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/getMySkillTasksAssigned",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/GetWorkflowTasksDetailsByQuery",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/GetWorkflowTasksDetailsByQuery",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/query",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/query",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/refresh-workflow-task-assignment",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/refresh-workflow-task-assignment",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/terminate-inprogress-workflow-by-ItemId",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/terminate-inprogress-workflow-by-ItemId",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/update-workflow",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/update-workflow",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/workflowTasks/query",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/workflowTasks/query",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "DownstreamPathTemplate": "/workflow/v1/workflowTasks/queryByWorkflowStatusAndTaskStatus",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "rms-workflow-service.uat-rms.svc.cluster.local",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/gateway/workflow/v1/workflowTasks/queryByWorkflowStatusAndTaskStatus",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": ["getAllProjects"],
+      "UpstreamPathTemplate": "/gateway/getAllProjects",
+      "UpstreamHttpMethod": ["Get"]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:44323/"
+  }
+}

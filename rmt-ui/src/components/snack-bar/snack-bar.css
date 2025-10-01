@@ -1,0 +1,4 @@
+.error-message-display-snackbar {
+  display: grid !important;
+  justify-items: start !important;
+}

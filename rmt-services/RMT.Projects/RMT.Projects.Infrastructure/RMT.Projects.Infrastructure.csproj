@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Repositories\Base\**" />
+    <EmbeddedResource Remove="Repositories\Base\**" />
+    <None Remove="Repositories\Base\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230809072840_dataupdated.cs" />
+    <Compile Remove="Migrations\20230809072840_dataupdated.Designer.cs" />
+    <Compile Remove="Migrations\20231020135827_dbrevert2.cs" />
+    <Compile Remove="Migrations\20231020135827_dbrevert2.Designer.cs" />
+    <Compile Remove="Migrations\20231020142019_chnages20oct.cs" />
+    <Compile Remove="Migrations\20231020142019_chnages20oct.Designer.cs" />
+    <Compile Remove="Migrations\20231020154653_changes20-oct.cs" />
+    <Compile Remove="Migrations\20231020154653_changes20-oct.Designer.cs" />
+    <Compile Remove="Migrations\20231212200502_dataseed-dockerdata.cs" />
+    <Compile Remove="Migrations\20231212200502_dataseed-dockerdata.Designer.cs" />
+    <Compile Remove="Repositories\MasterRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RMT.Projects.Domain\RMT.Projects.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

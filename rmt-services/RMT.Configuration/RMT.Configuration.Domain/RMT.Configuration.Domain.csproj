@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entities\BusinessUnitMaster.cs" />
+    <Compile Remove="Entities\Bu_Experties_Grp.cs" />
+    <Compile Remove="Entities\ExpertiesMaster.cs" />
+    <Compile Remove="Entities\RUMaster.cs" />
+    <Compile Remove="Entities\SMEGMaster.cs" />
+    <Compile Remove="Repositories\IMasterRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>

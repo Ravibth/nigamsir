@@ -1,0 +1,100 @@
+.edit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.saving-indicator {
+    padding: 10px;
+    background-color: #fff3cd;
+    color: #856404;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.actions-div{
+    display: flex;
+    gap: 8px;
+}
+
+/* Container for action buttons */
+.actions-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Base icon button style */
+.icon-btn {
+  padding: 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+}
+
+/* Sizes */
+.icon-btn--small {
+  width: 32px;
+  height: 32px;
+}
+
+.icon-btn--primary {
+  color: #1976d2;
+}
+
+.icon-btn--default {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+/* States */
+.icon-btn:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  transform: scale(1.05);
+}
+
+.icon-btn:active {
+  transform: scale(0.95);
+}
+
+.icon-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+ 
+
+.supercoach-grid {
+  padding-left: 10px;
+}
+

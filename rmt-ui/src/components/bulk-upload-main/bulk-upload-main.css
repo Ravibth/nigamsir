@@ -1,0 +1,196 @@
+.reload-button {
+  margin-top: 20px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.file-name-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+}
+
+.upload-box-back {
+  align-items: start;
+  align-content: center;
+  display: grid;
+  max-width: 772px;
+  background-color: #ebebeb;
+  border-radius: 20px;
+  padding: 40px 60px;
+}
+
+.upload-box {
+  width: 40.25rem;
+  align-items: center;
+  display: flex;
+  border: 3px dashed rgba(112, 112, 112, 0.6);
+  text-align: center;
+  color: rgb(74, 50, 118);
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.upload-text {
+  color: 707070;
+  padding-bottom: 20px;
+}
+
+.displayNone {
+  display: none;
+}
+
+.progressDisplay {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.progressDisplay .progress {
+  align-items: center;
+  background-color: rgb(174, 161, 198) !important;
+  width: 80% !important;
+}
+
+.file-upload-fail {
+  font-size: 15px;
+  line-height: 24px;
+  color: #fa1010;
+}
+
+.fail-msg {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.CrossIcon {
+  margin-left: 5px;
+}
+
+.m-t-40 {
+  margin-top: 14px;
+}
+
+.aggrid-invalid-fileupload {
+  width: 100%;
+  height: 80vh;
+  padding: 0px 10px;
+}
+
+.rag-red {
+  background-color: lightcoral;
+}
+
+.template-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.icon-hover:hover {
+  color: #f26416;
+}
+
+.back-container {
+  width: 200px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.submit-container {
+  width: 100px;
+}
+
+.main-container-submit {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.success-status-icon {
+  color: #50c878 !important;
+}
+
+.error-status-icon {
+  color: #ec0000 !important;
+}
+
+.backuploadbtn {
+  text-transform: initial !important;
+  font-size: 17px !important;
+  /* font-family: GT Walsheim Pro !important; */
+  padding: 0px 6px !important;
+}
+
+.backuploadarrow {
+  font-size: 22px !important;
+}
+
+.bulk-upload-title {
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.radio-group-main {
+  display: flex;
+  justify-content: center;
+}
+
+.aggrid-invalid-fileupload .ag-root-wrapper {
+  border-radius: 10px !important;
+}
+
+.chrome-note {
+  display: inline-grid;
+  font-size: 16px;
+  padding: 0;
+}
+
+.note-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.warning-container {
+  padding-top: 15px;
+  font-size: 15px;
+}
+
+.browse-btn-main .MuiButton-root {
+  width: 40%;
+}
+
+.Upload-data {
+  display: flex;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.bulk-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.bulkUploadInfo {
+  justify-content: center;
+}
+
+.uploadedFile {
+  color: #725799 !important;
+}

@@ -1,0 +1,6019 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WCGT.API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/WcgtData/UpdateClientLegalEntitys": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientLegalEntityListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientLegalEntityListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientLegalEntityListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateClients": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTClientDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ClientListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateLocations": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLocationDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLocationDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLocationDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LocationListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LocationListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LocationListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateDesignations": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateSectorIndustries": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SectorIndustryListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SectorIndustryListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SectorIndustryListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateBUTreeMappings": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BUTreeMappingListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BUTreeMappingListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BUTreeMappingListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateBUEfficiencyLeader": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/BUEfficiencyLeaderDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/BUEfficiencyLeaderDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/BUEfficiencyLeaderDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUEfficiencyLeaderResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUEfficiencyLeaderResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUEfficiencyLeaderResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateCompetency": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTCompetencyDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTCompetencyDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTCompetencyDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CompetencyResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CompetencyResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CompetencyResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateHolidays": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTHolidayDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTHolidayDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTHolidayDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HolidayListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HolidayListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/HolidayListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateLeaves": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLeaveDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLeaveDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTLeaveDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateEmployees": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateJobs": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JobListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JobListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JobListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdatePipelines": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTPipelineDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTPipelineDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTPipelineDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PipelineListResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PipelineListResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/PipelineListResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateBudget": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBudgetDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBudgetDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTBudgetDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BudgetResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BudgetResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/BudgetResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/UpdateRateMaster": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationRateMasterDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationRateMasterDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GTDesignationRateMasterDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationRateMasterResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationRateMasterResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DesignationRateMasterResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetClientLegalEntityList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientLegalEntityDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetClientList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTClientDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetClientListByJobCodes": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetJobCodeClientDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetJobCodeClientDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetJobCodeClientDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetLocationList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLocationDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLocationDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLocationDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetDesignationList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTDesignationDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTDesignationDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTDesignationDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetSectorIndustryList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTSectorIndustryDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetBUTreeMappingList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTBUTreeMappingDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetBUTreeMappingListByMID": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "mid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTBUExpertiesGroupDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTBUExpertiesGroupDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTBUExpertiesGroupDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetHolidayList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetHolidaysListByParams": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetHolidaysByParamListQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetHolidaysByParamListQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetHolidaysByParamListQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTHolidayDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetLeaveList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeeLeaves": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetLeavesInfo": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LeaveParamsDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveReport"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveReport"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/LeaveReport"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetLeavesDetailsByCreateDate": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "createDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTLeaveDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeeList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetCompetencyList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "competency_leader_mid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTCompetencyDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTCompetencyDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTCompetencyDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeeByParam": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "emp_mid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "emp_emailid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTEmployeeDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetPipelineList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTPipelineDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTPipelineDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTPipelineDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetJobList": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "inputDTO",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTJobDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTJobDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTJobDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetJobByJobCode": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "pipelineCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "jobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GTJobDTO"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetTimesheet": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "JobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "employeecode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimesheetDesignationResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimesheetDesignationResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TimesheetDesignationResponse"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetTimesheetGroup": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "JobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "TimeOption",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "StartDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "EndDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtTimesheetGroup"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtTimesheetGroup"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtTimesheetGroup"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetResourceTimesheetGroup": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "JobCode",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "StartDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "EndDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtResoureTimesheetGroup"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtResoureTimesheetGroup"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WcgtResoureTimesheetGroup"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetRateByDesignation": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GetRateDesignationRequestDTO"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GetRateDesignationRequestDTO"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/GetRateDesignationRequestDTO"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RateDesignationDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RateDesignationDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/RateDesignationDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetResignedAndAbscondedUsersWithLastAvailableDay": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayResponseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayResponseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetResignedAndAbscondedUsersWithLastAvailableDayResponseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetUserLeaveHolidayResponseForSystemSuggestion": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserLeaveHolidayResponseQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserLeaveHolidayResponseQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetUserLeaveHolidayResponseQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetUserLeaveHolidayResponseWithUserMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetUserLeaveHolidayResponseWithUserMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GetUserLeaveHolidayResponseWithUserMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetProjectBudgetByModifiedDateRange": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "startDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "endDate",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeeBySuperCoachOrCSC": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "parameters": [
+          {
+            "name": "emp_mid",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/GTEmployeeDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetAllSuperCoach": {
+      "get": {
+        "tags": [
+          "WcgtData"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperCoach"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperCoach"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SuperCoach"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeesForPortfolio": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeLeavesHolidayAndAvailabity"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeLeavesHolidayAndAvailabity"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeLeavesHolidayAndAvailabity"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetPortfolioFiltersOptions": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/WcgtData/GetEmployeesForPortfolioReport": {
+      "post": {
+        "tags": [
+          "WcgtData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioReportQuery"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioReportQuery"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GetEmployeesForPortfolioReportQuery"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeesForPortfolioReportDTO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeesForPortfolioReportDTO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeesForPortfolioReportDTO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BUEfficiencyLeaderDTO": {
+        "type": "object",
+        "properties": {
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_efficiency_mid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BUTreeMappingListResponse": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "bu_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_efficiency_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BudgetResponse": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "hour": {
+            "type": "number",
+            "format": "double"
+          },
+          "rate": {
+            "type": "number",
+            "format": "double"
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClientLegalEntityListResponse": {
+        "type": "object",
+        "properties": {
+          "par_aid": {
+            "type": "string",
+            "nullable": true
+          },
+          "para_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ClientListResponse": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_client": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "legal_entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "CompetencyResponse": {
+        "type": "object",
+        "properties": {
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyLeaderMID": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DesignationListResponse": {
+        "type": "object",
+        "properties": {
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DesignationRateMasterResponse": {
+        "type": "object",
+        "properties": {
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ratePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeLeavesHolidayAndAvailabity": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "super_coach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "co_super_coach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id_uid": {
+            "type": "string",
+            "nullable": true
+          },
+          "available_hrs": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "holiday_hrs": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leave_hrs": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "allocation_hrs": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "availability": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clientgroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "client": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "co_supercoach_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "working_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeListResponse": {
+        "type": "object",
+        "properties": {
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "company_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "first_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "middle_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "last_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "joining_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "reporting_partner_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "group_head_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "specical_day": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "resignation_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "proposed_lwd": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "employee_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "education_qualification": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/education_qualification"
+            },
+            "nullable": true
+          },
+          "professional_qualification": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/professional_qualification"
+            },
+            "nullable": true
+          },
+          "past_employment_details": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PastEmploymentDetails"
+            },
+            "nullable": true
+          },
+          "language": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/language"
+            },
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeesForPortfolioReportDTO": {
+        "type": "object",
+        "properties": {
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "cosupercoach": {
+            "type": "string",
+            "nullable": true
+          },
+          "cosupercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "officelocation": {
+            "type": "string",
+            "nullable": true
+          },
+          "availablevsallocated": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocatedhours": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "netavailablehours": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clientgroup": {
+            "type": "string",
+            "nullable": true
+          },
+          "client": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobname": {
+            "type": "string",
+            "nullable": true
+          },
+          "workingDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "week": {
+            "type": "string",
+            "nullable": true
+          },
+          "month": {
+            "type": "string",
+            "nullable": true
+          },
+          "weeklyHours": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer",
+              "format": "int32"
+            },
+            "nullable": true
+          },
+          "period": {
+            "type": "string",
+            "nullable": true
+          },
+          "periodType": {
+            "type": "string",
+            "nullable": true
+          },
+          "periodStart": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "periodEnd": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTBUEfficiencyLeaderResponse": {
+        "type": "object",
+        "properties": {
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_efficiency_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTBUExpertiesGroupDTO": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "offerings": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "solutions": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTBUTreeMappingDTO": {
+        "type": "object",
+        "properties": {
+          "bu": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "bu_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_efficiency_leader_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTBudgetDTO": {
+        "type": "object",
+        "properties": {
+          "pipelineCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "hour": {
+            "type": "number",
+            "format": "double"
+          },
+          "rate": {
+            "type": "number",
+            "format": "double"
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTClientDTO": {
+        "type": "object",
+        "properties": {
+          "client_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_client": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "legal_entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTClientLegalEntityDTO": {
+        "type": "object",
+        "properties": {
+          "par_aid": {
+            "type": "string",
+            "nullable": true
+          },
+          "para_desc": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTCompetencyDTO": {
+        "type": "object",
+        "properties": {
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyLeaderMID": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTDesignationDTO": {
+        "type": "object",
+        "properties": {
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTDesignationRateMasterDTO": {
+        "type": "object",
+        "properties": {
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "ratePerHour": {
+            "type": "number",
+            "format": "double"
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTEmployeeDTO": {
+        "type": "object",
+        "properties": {
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "company_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "first_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "middle_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "last_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "joining_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "reporting_partner_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "group_head_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "specical_day": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "resignation_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "proposed_lwd": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "employee_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "education_qualification": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/education_qualification"
+            },
+            "nullable": true
+          },
+          "professional_qualification": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/professional_qualification"
+            },
+            "nullable": true
+          },
+          "past_employment_details": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PastEmploymentDetails"
+            },
+            "nullable": true
+          },
+          "language": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/language"
+            },
+            "nullable": true
+          },
+          "location": {
+            "$ref": "#/components/schemas/Location"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTHolidayDTO": {
+        "type": "object",
+        "properties": {
+          "holiday_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "holiday_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "holiday_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "cr_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTJobDTO": {
+        "type": "object",
+        "properties": {
+          "pipeline_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "parent_job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "asst_incharge": {
+            "type": "string",
+            "nullable": true
+          },
+          "entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_client": {
+            "type": "string",
+            "nullable": true
+          },
+          "market": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_market": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "billing_currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_chargeable": {
+            "type": "boolean"
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "closed_job": {
+            "type": "boolean"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "jobBudgetValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "agreedJobFee": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "client_group_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "recurring_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_roles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GTJobRoleDTO"
+            },
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTJobRoleDTO": {
+        "type": "object",
+        "properties": {
+          "user_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_empname": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_emailid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_role": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTLeaveDTO": {
+        "type": "object",
+        "properties": {
+          "unique_leave_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "leave_end_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "start_date_half": {
+            "type": "string",
+            "nullable": true
+          },
+          "end_date_half": {
+            "type": "string",
+            "nullable": true
+          },
+          "applied_days": {
+            "type": "number",
+            "format": "double"
+          },
+          "comp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_type_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTLocationDTO": {
+        "type": "object",
+        "properties": {
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "region_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTPipelineDTO": {
+        "type": "object",
+        "properties": {
+          "pipeline_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "project_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "project_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "expected": {
+            "type": "string",
+            "nullable": true
+          },
+          "win_probablity": {
+            "type": "string",
+            "nullable": true
+          },
+          "won_reason": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "creation_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "won_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "recurring": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "nrccstatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "finalproposedfee": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "finalproposedope": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "won_expected_recovery": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "contact_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_service_partner_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_roles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/GTPipelineRoleDTO"
+            },
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTPipelineRoleDTO": {
+        "type": "object",
+        "properties": {
+          "user_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_empname": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_emailid": {
+            "type": "string",
+            "nullable": true
+          },
+          "user_role": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GTSectorIndustryDTO": {
+        "type": "object",
+        "properties": {
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetEmployeesForPortfolioQuery": {
+        "type": "object",
+        "properties": {
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "pageSize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pageNumber": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "availablity": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "grade": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "designation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "employeename": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "supercoach": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "cosupercoach": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientname": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientgroupname": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "business_unit_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "userDecorator": {
+            "$ref": "#/components/schemas/UserDecorator"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetEmployeesForPortfolioReportQuery": {
+        "type": "object",
+        "properties": {
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "availablity": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "grade": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "designation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "employeename": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "supercoach": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "cosupercoach": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientname": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "clientgroupname": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "business_unit_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "competency_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "periodType": {
+            "$ref": "#/components/schemas/ReportPeriodType"
+          },
+          "userDecorator": {
+            "$ref": "#/components/schemas/UserDecorator"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetHolidaysByParamListQuery": {
+        "type": "object",
+        "properties": {
+          "holidayParamsDTOs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/HolidayParamsDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetJobCodeClientDTO": {
+        "type": "object",
+        "properties": {
+          "job_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_client": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "legal_entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetRateDesignationRequestDTO": {
+        "type": "object",
+        "properties": {
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetResignedAndAbscondedUsersWithLastAvailableDayQuery": {
+        "type": "object",
+        "properties": {
+          "emails": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetResignedAndAbscondedUsersWithLastAvailableDayResponseDto": {
+        "type": "object",
+        "properties": {
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "uemail_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "last_available_day": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetUserLeaveHolidayResponseQuery": {
+        "type": "object",
+        "properties": {
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetUserLeaveHolidayResponseWithUserMaster": {
+        "type": "object",
+        "properties": {
+          "emp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "holiday_hours": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "leave_hours": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HolidayListResponse": {
+        "type": "object",
+        "properties": {
+          "holiday_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "holiday_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "holiday_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "cr_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HolidayParamsDTO": {
+        "type": "object",
+        "properties": {
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "holidayStartDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "JobListResponse": {
+        "type": "object",
+        "properties": {
+          "pipeline_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "parent_job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "asst_incharge": {
+            "type": "string",
+            "nullable": true
+          },
+          "entity": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_client": {
+            "type": "string",
+            "nullable": true
+          },
+          "market": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_market": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "billing_currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_chargeable": {
+            "type": "boolean"
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "closed_job": {
+            "type": "boolean"
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "jobBudgetValue": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "agreedJobFee": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "client_group_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "recurring_type": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LeaveListResponse": {
+        "type": "object",
+        "properties": {
+          "unique_leave_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "leave_end_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "start_date_half": {
+            "type": "string",
+            "nullable": true
+          },
+          "end_date_half": {
+            "type": "string",
+            "nullable": true
+          },
+          "applied_days": {
+            "type": "number",
+            "format": "double"
+          },
+          "comp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_type_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LeaveParamsDTO": {
+        "type": "object",
+        "properties": {
+          "emp_emailid": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LeaveReport": {
+        "type": "object",
+        "properties": {
+          "leave_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "employee_email": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_hours": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "leave_type": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Location": {
+        "type": "object",
+        "properties": {
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "region_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LocationListResponse": {
+        "type": "object",
+        "properties": {
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "region_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ModulePermissionDTO": {
+        "type": "object",
+        "properties": {
+          "module_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "module_id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "permissions": {
+            "$ref": "#/components/schemas/PermissionLevel"
+          },
+          "is_assigned": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PastEmploymentDetails": {
+        "type": "object",
+        "properties": {
+          "name_of_employer": {
+            "type": "string",
+            "nullable": true
+          },
+          "from": {
+            "type": "string",
+            "nullable": true
+          },
+          "to": {
+            "type": "string",
+            "nullable": true
+          },
+          "last_designation_held": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PermissionLevel": {
+        "type": "object",
+        "properties": {
+          "read": {
+            "type": "boolean"
+          },
+          "update": {
+            "type": "boolean"
+          },
+          "create": {
+            "type": "boolean"
+          },
+          "delete": {
+            "type": "boolean"
+          },
+          "approve": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PipelineListResponse": {
+        "type": "object",
+        "properties": {
+          "pipeline_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "project_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "project_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "expected": {
+            "type": "string",
+            "nullable": true
+          },
+          "win_probablity": {
+            "type": "string",
+            "nullable": true
+          },
+          "won_reason": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_location_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_location_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "creation_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "won_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "recurring": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_status": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_description": {
+            "type": "string",
+            "nullable": true
+          },
+          "nrccstatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "finalproposedfee": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "finalproposedope": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "won_expected_recovery": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "contact_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_group_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "client_service_partner_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "start_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "end_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "bu_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "offering_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "solution_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RateDesignationDTO": {
+        "type": "object",
+        "properties": {
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "ratePerHour": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReportPeriodType": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "SectorIndustryListResponse": {
+        "type": "object",
+        "properties": {
+          "industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "sub_industry_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean"
+          },
+          "isfailed": {
+            "type": "boolean"
+          },
+          "failed_message": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SuperCoach": {
+        "type": "object",
+        "properties": {
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "company_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "reporting_partner_mid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimesheetDesignationResponse": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "employeecode": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeename": {
+            "type": "string",
+            "nullable": true
+          },
+          "datelog": {
+            "type": "string",
+            "format": "date"
+          },
+          "totaltime": {
+            "type": "number",
+            "format": "double"
+          },
+          "client": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "gradename": {
+            "type": "string",
+            "nullable": true
+          },
+          "chargeableflag": {
+            "type": "string",
+            "nullable": true
+          },
+          "rate": {
+            "type": "number",
+            "format": "double"
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "modifiedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "modifiedby": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserDecorator": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "emp_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "service_line": {
+            "type": "string",
+            "nullable": true
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "co_supercoach_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "co_supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "uemail_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "competencyId": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "app_permissions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ModulePermissionDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WcgtResoureTimesheetGroup": {
+        "type": "object",
+        "properties": {
+          "empcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "empname": {
+            "type": "string",
+            "nullable": true
+          },
+          "totaltime": {
+            "type": "number",
+            "format": "double"
+          },
+          "timesheetcost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WcgtTimesheetGroup": {
+        "type": "object",
+        "properties": {
+          "monthname": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "totaltime": {
+            "type": "number",
+            "format": "double"
+          },
+          "timesheetcost": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "education_qualification": {
+        "type": "object",
+        "properties": {
+          "qualification": {
+            "type": "string",
+            "nullable": true
+          },
+          "institution_name_location": {
+            "type": "string",
+            "nullable": true
+          },
+          "month_year_of_passing": {
+            "type": "string",
+            "nullable": true
+          },
+          "area_of_specialisation": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "language": {
+        "type": "object",
+        "properties": {
+          "language_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "read": {
+            "type": "string",
+            "nullable": true
+          },
+          "write": {
+            "type": "string",
+            "nullable": true
+          },
+          "speak": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "professional_qualification": {
+        "type": "object",
+        "properties": {
+          "qualification": {
+            "type": "string",
+            "nullable": true
+          },
+          "institution_name_location": {
+            "type": "string",
+            "nullable": true
+          },
+          "month_year_of_passing": {
+            "type": "string",
+            "nullable": true
+          },
+          "area_of_specialisation": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

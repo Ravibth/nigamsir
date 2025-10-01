@@ -1,0 +1,18 @@
+.delegate-header {
+  font-weight: 600 !important;
+  font-size: 18px !important;
+  /* font-family: GT Walsheim Pro !important; */
+  display: flex !important;
+}
+
+.delegate-main-container {
+  padding: "8px 16px" !important;
+}
+
+.delegate-control .MuiAutocomplete-root {
+  background-color: #fff !important;
+}
+
+.delegate-control .MuiOutlinedInput-notchedOutline {
+  border-radius: 4px !important;
+}

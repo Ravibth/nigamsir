@@ -1,0 +1,6 @@
+.helper-text-main .MuiFormHelperText-root {
+  font-size: 16px;
+  color: black;
+  font-family: "GtWalsheimFont", sans-serif, Arial !important;
+  word-wrap: break-word;
+}

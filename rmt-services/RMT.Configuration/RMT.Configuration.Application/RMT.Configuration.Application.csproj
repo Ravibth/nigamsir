@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Handlers\CommandHandlers\CreateBuExpertiesGroupCommandHandler.cs" />
+    <Compile Remove="Handlers\CommandHandlers\CreateBusinessUnitMasterCommandHandler.cs" />
+    <Compile Remove="Handlers\CommandHandlers\CreateExpertiesMasterCommandHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetAllBuExpertiesDictQueryHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetAllBusinessUnitMasterQueryHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetAllExpertiesByBUIdQueryHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetAllExpertiesQueryHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetRUQueryHandler.cs" />
+    <Compile Remove="Handlers\QueryHandlers\GetSMEGQueryHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RMT.Configuration.Infrastructure\RMT.Configuration.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="HttpServices\DTOs\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+.question {
+  width: 100%;
+  height: 700px;
+}
+
+.question-container {
+  width: 99%;
+  height: 100%;
+}
+
+.legend-text-color {
+  color: "black";
+}
+
+.label-text {
+  // fill: "white"
+}
+.heading {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.main-toggle-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chart-tabular-data {
+  text-align: center;
+  margin-top: 13%;
+}
+
+.chartWidth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
+.main-reports-graph-container .MuiPaper-root {
+  margin-left: 15px !important;
+  border-radius: 10px !important;
+}

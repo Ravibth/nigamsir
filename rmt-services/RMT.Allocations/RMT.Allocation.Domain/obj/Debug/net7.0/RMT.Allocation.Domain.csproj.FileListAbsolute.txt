@@ -1,0 +1,12 @@
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\bin\Debug\net7.0\RMT.Allocation.Domain.deps.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\bin\Debug\net7.0\RMT.Allocation.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\bin\Debug\net7.0\RMT.Allocation.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.AssemblyInfoInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.AssemblyInfo.cs
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.csproj.CoreCompileInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.sourcelink.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\refint\RMT.Allocation.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\RMT.Allocation.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Allocations\RMT.Allocation.Domain\obj\Debug\net7.0\ref\RMT.Allocation.Domain.dll

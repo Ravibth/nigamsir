@@ -1,0 +1,55 @@
+import { Autocomplete, TextField } from "@mui/material";
+import React from "react";
+import { Controller } from "react-hook-form";
+
+const ControllerAutoCompleteTextField = (props: any) => {
+  return (
+    <Controller
+      name={props.name}
+      control={props.control}
+      defaultValue={props.defaultValue}
+      rules={{ required: props.required === false ? props.required : true }}
+      render={({ field }) => {
+        return (
+          <Autocomplete
+            value={field.value}
+            options={props.options}
+            freeSolo={props.freeSolo}
+            disabled={props.disabled}
+            readOnly={props.isReadOnlyModeActive}
+            // className={"input-field-group" + props.className}
+            className={
+              props.required
+                ? "input-field-group required_field"
+                : "input-field-group"
+            }
+            renderInput={(params) => (
+              <TextField
+                onBlur={field.onBlur}
+                label={props.label}
+                className={
+                  props.required
+                    ? "input-field-group required_field"
+                    : "input-field-group"
+                }
+                {...params}
+                error={props.error}
+                helperText={props.helperText}
+              />
+            )}
+            onChange={(_, data) => {
+              field.onChange(data);
+              props.onChange(data);
+              return data;
+            }}
+            // onKeyDown={(e) => {
+            //   props.onKeyDown(e);
+            //   return e;
+            // }}
+          />
+        );
+      }}
+    />
+  );
+};
+export default ControllerAutoCompleteTextField;

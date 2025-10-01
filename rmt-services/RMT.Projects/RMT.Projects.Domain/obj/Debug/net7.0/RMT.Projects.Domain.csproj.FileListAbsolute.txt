@@ -1,0 +1,13 @@
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.deps.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.csproj.AssemblyReference.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.AssemblyInfoInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.AssemblyInfo.cs
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.csproj.CoreCompileInputs.cache
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.sourcelink.json
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\refint\RMT.Projects.Domain.dll
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.pdb
+C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\ref\RMT.Projects.Domain.dll

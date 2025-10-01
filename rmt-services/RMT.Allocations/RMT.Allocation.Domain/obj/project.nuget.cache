@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "B5kbuTIeD5Q=",
+  "dgSpecHash": "EA6b5f62llk=",
   "success": true,
-  "projectFilePath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Allocations\\RMT.Allocation.Domain\\RMT.Allocation.Domain.csproj",
+  "projectFilePath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Allocations\\RMT.Allocation.Domain\\RMT.Allocation.Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

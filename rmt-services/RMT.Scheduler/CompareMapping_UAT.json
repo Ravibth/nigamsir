@@ -1,0 +1,647 @@
+{
+  "config": {
+    "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=dbName; Uid=appuser; Pwd=password",
+    "destinationConnection": "Server=(localdb)\\ProjectsV13;Database=CloudInstance;Trusted_Connection=True;",
+    "maxAttempts": "3",
+    "batchSize": 100
+  },
+  "schedularLogs": {
+    "DBName": "uat-rms_configuration",
+    "TableName": "SchedularLog",
+    "Connection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_configuration;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;"
+  },
+  "mappings": [
+    {
+      "NodeTitle": "Node-1;for pipeline to project movement", // for pipeline to project movement
+      "isExecutable": true, //true
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Pipelines",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select DISTINCT(p.pipeline_id) as dist_pipeline,p.*, j.is_chargeable , j.job_code ,j.job_name ,j.start_date as job_start_date, CASE WHEN j.end_date IS NOT NULL THEN j.end_date::date WHEN (j.end_date IS NULL AND j.closed_job = false) THEN  (NOW() + interval '18 months')::date ELSE NOW()::date END as job_end_date ,j.isactive as job_activation_status,j.closed_job as job_closed_status, null  as revenue_id ,null as ru_name ,b.bu_id as bu_id_mapping ,b.bu as bu_name ,null as expertise_id , null as expertise_name ,  null as sme_group_id,null as sme_group,b.offering_id as offering_id_mapping , b.offering as offering_mapping ,  b.solution_id as solution_id_mapping,b.solution as solution_mapping,clients.client_id as client_id,clients.job_client as client_name,clients.client_group_name as client_group_name,clients.legal_entity as legal_entity,sectorIndustry.industry_name as industry_name,sectorSubIndustry.sub_industry_name as sub_industry_name,  locations.location_name as location_name , null as sme_name , true as defaultactive from \"Pipelines\" as p left join (select Distinct bu , bu_id , offering , offering_id , solution , solution_id from \"BUTreeMappings\") as b on p.solution_id = b.solution_id left join \"Clients\" as clients on p.client_id = clients.client_id left join (select DISTINCT(industry_id),industry_name   from \"SectorIndustrys\") as sectorIndustry on p.industry_id = sectorIndustry.industry_id left join (select DISTINCT(sub_industry_id),sub_industry_name   from \"SectorIndustrys\") as sectorSubIndustry on p.sub_industry_id = sectorSubIndustry.sub_industry_id left join \"Locations\" as locations on p.location_id = locations.location_id left join \"Jobs\" as j on p.job_id = j.job_id ",
+      "sourceFilterQuery": " p.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_project",
+      "destinationTableName": "Projects",
+      "destinationTableNameAs": null,
+      "destinationConnection": " Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT * FROM \"Projects\" where \"PipelineCode\" = {{pipeline_code}} and  \"JobCode\" is null ",
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "IsInsertCheck": "SELECT * FROM \"Projects\" WHERE \"PipelineCode\"  {{ = pipeline_code}} AND (\"JobCode\"  {{ = job_code}} OR  \"JobCode\" IS NULL )",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "ComparingColumns": "start_date:StartDate:PROJECT_ROLL_FORWARD:datetime|pipeline_status:PipelineStatus:PROJECT_STATUS_CHANGE", //start date may lead to project roll forward
+      "eventsOnInsert": null,
+      "columnMapping": "job_code:JobCode|job_name:JobName|pipeline_code:PipelineCode|pipeline_name:PipelineName|client_name:ClientName|client_id:ClientId|sme_name:Sme|sme_group:Smeg|pipeline_description:Description|location_name:Location|pipeline_status:PipelineStage|pipeline_status:PipelineStatus|ru_name:RevenueUnit|bu_name:bu|expertise_name:Expertise|industry_name:Industry|sub_industry_name:Subindustry|createdby:CreatedBy|modifiedby:ModifiedBy|modifiedat:ModifiedAt:datetime|createdat:CreatedAt:datetime|client_group_name:ClientGroup|legal_entity:LegalEntity|defaultactive:IsActive:bool|is_chargeable:ChargableType|recurring:ProjectType|start_date:StartDate|end_date:EndDate|bu_id_mapping:BUId|offering_id_mapping:OfferingsId|offering_mapping:Offerings|solution_id_mapping:SolutionsId|solution_mapping:Solutions",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "CreatedAt|CreatedBy|IsActive"
+    },
+    //PIPELINE_ROLES SYNC TO PROJECT_ROLES TODO:- UNCOMMENT_LATER 2
+    {
+      "NodeTitle": "Node-2;for pipelineroles to projectrole movement", // for pipelineroles to projectrole movement
+      "isExecutable": true, //true
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "PipelineRoles",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select p.pipeline_code, j.job_code,j.is_chargeable as job_charge_type ,CONCAT(pr.\"user_mid\" , '__' , pr.\"user_emailid\") as user_with_empid, CASE WHEN LOWER(user_role) = LOWER('engagement_leader_empid') AND j.is_chargeable = true THEN 'EngagementLeader' WHEN LOWER(user_role) = LOWER('signing_partner_empid') AND j.is_chargeable = true THEN 'CSP' WHEN LOWER(user_role) = LOWER('lead_generator_empid') THEN 'LeadGenerator' WHEN LOWER(user_role) = LOWER('asst_incharge') THEN 'AssignmentIncharge' WHEN LOWER(user_role) = LOWER('engagement_leader_empid') AND ( j.is_chargeable = false  OR j.is_chargeable IS NULL ) THEN 'JobManager' WHEN LOWER(user_role) = LOWER('signing_partner_empid') AND ( j.is_chargeable = false OR j.is_chargeable IS NULL ) THEN 'SMEGLeader' WHEN LOWER(user_role) = LOWER('enquiry_owner') THEN 'EO' ELSE user_role END  AS user_transformed_role  , CASE WHEN LOWER(user_role) = LOWER('engagement_leader_empid') THEN 'ResourceRequestor' WHEN LOWER(user_role) = LOWER('signing_partner_empid') THEN 'Reviewer' WHEN LOWER(user_role) = LOWER('enquiry_owner') THEN 'ResourceRequestor' ELSE null END AS user_application_role ,p.job_id, pr.*  from \"PipelineRoles\" as pr left join \"Pipelines\" as p on pr.\"pipeline_id\" = p.\"pipeline_id\" left join \"Jobs\" as j on p.job_id = j.job_id ", //done implemented
+      "sourceFilterQuery": " pr.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_project",
+      "destinationTableName": "ProjectRoles",
+      "destinationTableNameAs": "pr",
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select roles.* , p.\"PipelineCode\" as PipelineCode , p.\"JobCode\" as JobCode , CONCAT(p.\"PipelineCode\" , '_' ,p.\"JobCode\" ,'_' ,roles.\"User\",'_',roles.\"Role\") as Pipeline_Job_User_Role from \"ProjectRoles\" as roles left join \"Projects\" as p on roles.\"ProjectId\" = p.\"Id\" WHERE \"PipelineCode\" = {{pipeline_code}} AND \"JobCode\" is null AND \"User\" ={{user_with_empid}} AND \"Role\" ={{user_transformed_role}} ", //done implemented
+      "ComparingColumns": null,
+      "primaryKey": ":SELECT \"Id\" as \"ProjectId\" FROM \"Projects\" as p WHERE p.\"IsActive\" = true and p.\"PipelineCode\"  {{ = pipeline_code}} AND p.\"JobCode\" {{ = job_code}}:integer:SQL|user_transformed_role:Role", //need to add is Active or not
+      "columnsToCompare": "pipeline_code:PipelineCode|user_transformed_role:Role",
+      "IsInsertCheck": "select p.\"PipelineCode\" as PipelineCode , p.\"JobCode\" ,  pr.* from \"ProjectRoles\" as pr left join \"Projects\" as p on pr.\"ProjectId\" = p.\"Id\" where \"PipelineCode\"  {{ = pipeline_code}} and \"JobCode\"  {{ = job_code}} and p.\"IsActive\" = true and \"Role\"  {{ = user_transformed_role}} and pr.\"IsActive\" = true",
+      "columnMapping": "SELECT \"Projects\".\"Id\" as ProjectId FROM \"Projects\" WHERE \"Projects\".\"IsActive\" = true and \"Projects\".\"PipelineCode\"  {{ = pipeline_code}} AND \"Projects\".\"JobCode\" {{ = job_code}}:ProjectId:integer:SQL|user_with_empid:User|user_empname:UserName|user_transformed_role:Role|modifiedat:ModifiedAt:datetime|createdat:CreatedAt:datetime|modifiedby:ModifiedBy|createdby:CreatedBy|isactive:IsActive:bool|user_application_role:ApplicationRole",
+      "UpdateCondition": "Id:integer",
+      "comparingColumns": "user_with_empid:User:PROJECT_PIPELINE_ROLE_UPDATE",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "ProjectId|CreatedAt|CreatedBy"
+    },
+    //JOBS SYNC TO PROJECT WHERE PIPELINE_CODE IS NULL IN DESTINATION 3
+    //{
+    //  "NodeTitle": "Node-3;",
+    //  "isExecutable": false, // not needed
+    //  "sourceDBName": "uat-rms_wcgt",
+    //  "sourceTableName": "Jobs",
+    //  "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+    //  "sourceSelectQuery": "select j.*,b.ru_name as revenue_name , locations.location_name as job_location_name , b.expertise as expertise_name , b.sme_group as sme_group_name, pipelines.pipeline_name as pipeline_name  from \"Jobs\" as j left join \"BUTreeMappings\"  as b on j.revenue_id = b.revenue_id left join \"Locations\"  as locations on j.job_location_id = locations.location_id left join \"Pipelines\" as pipelines on pipelines.job_id = j.job_id ", //done implemented
+    //  "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}' ",
+    //  "destinationDBName": "uat-rms_project",
+    //  "destinationTableName": "Projects",
+    //  "destinationTableNameAs": null,
+    //  "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+    //  //"destinationSelectQuery": "SELECT * FROM \"Projects\"", //done implemented
+    //  "destinationSelectQuery": "SELECT * FROM \"Projects\" WHERE \"PipelineCode\" = {{pipeline_code}} AND (\"JobCode\" = {{job_code}} OR  \"JobCode\" IS NULL ) AND \"IsActive\" = TRUE ", //done implemented
+    //  //"InClause": "pipeline_code:PipelineCode",
+    //  //"InClauseOperator": "AND",
+    //  //"primaryKey": ":SELECT * FROM \"Projects\" as p WHERE p.\"PipelineCode\" = {{PipelineCode}} AND p.\"JobCode\"= {{JobCode}}:SQL|pipeline_code:PipelineCode|job_id:JobCode|user_emailid:User|user_role:Role",
+    //  "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+    //  "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+    //  "comparingColumns": "start_date:StartDate:PROJECT_ROLL_FORWARD:datetime",
+    //  "IsInsertCheck": "SELECT * FROM \"Projects\" WHERE \"PipelineCode\"  {{ = pipeline_code}} AND (\"JobCode\"  {{ = job_code}} OR  \"JobCode\" IS NULL ) AND \"IsActive\" = TRUE",
+    //  //"DestinationIsActiveColumnRequired": true,
+    //  //"DestinationIsActiveColumnName": "IsActive",
+    //  "isSyncToBeMade": true,
+    //  "isInsertToBeMade": true,
+    //  "isUpdateToBeMade": true,
+    //  "columnMapping": "job_code:JobCode|pipeline_code:PipelineCode|job_name:JobName|job_description:Description|start_date:StartDate|end_date:EndDate|job_client:ClientName|job_location_name:JobLocation|expertise_name:Expertise|sme_group_name:Sme|revenue_name:RevenueUnit|pipeline_name:PipelineName|modifiedby:ModifiedBy|createdby:CreatedBy|createdat:CreatedAt:datetime|modifiedat:ModifiedAt:datetime|isactive:IsActive:bool|is_chargeable:ChargableType",
+    //  "UpdateCondition": "Id:integer",
+    //  //"destinationInsertQuery": "INSERT INTO {{SOURCE_DESTINATION_NAME}} (user_emailid:$$User,user_empname:$$UserName,user_role:$$Role, :ProjectId:INTEGER) VALUES ( $$, $$, $$,SELECT \"Projects\".\"Id\" as \'ProjectId\' FROM \"Projects\" WHERE \"Projects\".\"PipelineCode\" = {{pipeline_code}} AND \"Projects\".\"IsActive\" = true )",
+    //  "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+    //  "batchSize": null,
+    //  "OffSetColumn": null,
+    //  "IgnoreOnUpdate": "CreatedAt|CreatedBy"
+    //
+    //},
+    ////SYNC JOB TO PROJECT 4
+    {
+      "NodeTitle": "Node-4;for job to project movement", // for job to project movement
+      "isExecutable": true, //true
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select CASE WHEN j.end_date IS NOT NULL THEN j.end_date::date WHEN (j.end_date IS NULL AND j.closed_job = false) THEN  (NOW() + interval '18 months')::date ELSE NOW()::date END as updated_end_date, CASE WHEN j.pipeline_code is NULL THEN j.job_code ELSE j.pipeline_code END as pipeline_code_updated, j.*, null as revenue_name , locations.location_name as job_location_name , b.bu_id as bu_id , b.bu as bu_name, null as expertise_name , null as sme_group_name, b.offering_id as offering_id_mapping , b.offering as offering_mapping , b.solution_id as solution_id_mapping, b.solution as solution_mapping, pipelines.pipeline_name as pipeline_name , sectorIndustry.industry_name as industry_name , sectorSubIndustry.sub_industry_name as sub_industry_name , clientInfo.client_group_name as client_group_name , clientInfo.job_client as client_name , clientInfo.legal_entity as legal_entity , null as sme_name , true as defaultactive from \"Jobs\" as j left join (select Distinct bu , bu_id , offering , offering_id , solution , solution_id from \"BUTreeMappings\") as b on j.solution_id = b.solution_id left join \"Locations\" as locations on j.job_location_id = locations.location_id left join \"Clients\" as clientInfo on j.job_client = clientInfo.client_id left join (select DISTINCT(industry_id),industry_name from \"SectorIndustrys\") as sectorIndustry on j.industry_id = sectorIndustry.industry_id left join (select DISTINCT(sub_industry_id),sub_industry_name from \"SectorIndustrys\") as sectorSubIndustry on j.sub_industry_id = sectorSubIndustry.sub_industry_id left join \"Pipelines\" as pipelines on pipelines.pipeline_id = j.pipeline_id ",
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_project",
+      "destinationTableName": "Projects",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT * FROM \"Projects\" WHERE \"PipelineCode\" = {{pipeline_code_updated}} AND (\"JobCode\" = {{job_code}} OR  \"JobCode\" IS NULL ) ", //done implemented
+      "primaryKey": "pipeline_code_updated:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code_updated:PipelineCode|job_code:JobCode",
+      "comparingColumns": "start_date:StartDate:PROJECT_ROLL_FORWARD:datetime|isactive:ProjectActivationStatus:PROJECT_ACTIVATION_STATUS_EVENT:bool|closed_job:ProjectClosureState:PROJECT_CLOSURE_STATUS_EVENT:bool",
+      "IsInsertCheck": "SELECT * FROM \"Projects\" WHERE \"PipelineCode\"  {{ = pipeline_code_updated}} AND (\"JobCode\"  {{ = job_code}} OR  \"JobCode\" IS NULL )",
+      "DestinationIsActiveColumnRequired": true,
+      "DestinationIsActiveColumnName": "IsActive",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_id:JobId|job_code:JobCode|pipeline_code_updated:PipelineCode|job_name:JobName|job_description:Description|start_date:StartDate|updated_end_date:EndDate|client_name:ClientName|job_client:ClientId|client_group_name:ClientGroup|job_location_name:JobLocation|job_location_name:Location|industry_name:Industry|sub_industry_name:Subindustry|expertise_name:Expertise|sme_name:Sme|sme_group_name:Smeg|pipeline_name:PipelineName|modifiedby:ModifiedBy|createdby:CreatedBy|createdat:CreatedAt:datetime|modifiedat:ModifiedAt:datetime|defaultactive:IsActive:bool|isactive:ProjectActivationStatus:bool|closed_job:ProjectClosureState:bool|is_chargeable:ChargableType|job_location_name:DeliveryLocation|bu_name:bu|revenue_name:RevenueUnit|recurring_type:ProjectType|legal_entity:LegalEntity|bu_id:BUId|offering_id_mapping:OfferingsId|offering_mapping:Offerings|solution_id_mapping:SolutionsId|solution_mapping:Solutions",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "CreatedAt|CreatedBy|IsActive"
+    },
+    //JOB_ROLES TO PROJECT_ROLES (INSERT_WORKING + UPDATE_WORKING)  5
+    {
+      "NodeTitle": "Node-5;for JobRole to ProjectRole movement", // for JobRole to ProjectRole movement
+      "isExecutable": true, //true
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "JobRoles",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select CASE WHEN jobs.pipeline_code IS NULL THEN jobs.job_code ELSE jobs.pipeline_code END AS pipeline_code , jr.* ,CONCAT(jr.\"user_mid\" , '__' , jr.\"user_emailid\") as user_with_empid,  jobs.job_code , CASE WHEN LOWER(user_role) = LOWER('engagement_leader_empid') AND jobs.is_chargeable = true THEN 'EngagementLeader' WHEN LOWER(user_role) = LOWER('signing_partner_empid') AND jobs.is_chargeable = true THEN 'CSP' WHEN LOWER(user_role) = LOWER('lead_generator_empid') THEN 'LeadGenerator' WHEN LOWER(user_role) = LOWER('asst_incharge') THEN 'AssignmentIncharge' WHEN LOWER(user_role) = LOWER('engagement_leader_empid') AND ( jobs.is_chargeable = false OR jobs.is_chargeable is null ) THEN 'JobManager' WHEN LOWER(user_role) = LOWER('signing_partner_empid') AND ( jobs.is_chargeable = false OR jobs.is_chargeable is NULL ) THEN 'SMEGLeader' WHEN LOWER(user_role) = LOWER('enquiry_owner') THEN 'EO' ELSE user_role END AS user_transformed_role , CASE WHEN LOWER(user_role) = LOWER('engagement_leader_empid') THEN 'ResourceRequestor' WHEN LOWER(user_role) = LOWER('signing_partner_empid') THEN 'Reviewer' WHEN LOWER(user_role) = LOWER('enquiry_owner') THEN 'ResourceRequestor' ELSE null END AS user_application_role  from \"JobRoles\" as jr left join \"Jobs\" as jobs on jr.job_id = jobs.job_id ", //done implemented
+      "sourceFilterQuery": " jr.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_project",
+      "destinationTableName": "ProjectRoles",
+      "destinationTableNameAs": "pr",
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT pr.*, proj.\"PipelineCode\" , proj.\"JobCode\" FROM \"ProjectRoles\" as pr left join \"Projects\" as proj on pr.\"ProjectId\" = proj.\"Id\" ", //done implemented
+      "primaryKey": ":SELECT \"Id\" as \"ProjectId\" FROM \"Projects\" as p WHERE p.\"IsActive\" = true and p.\"PipelineCode\"  {{ = pipeline_code}} AND p.\"JobCode\" {{ = job_code}}:integer:SQL|user_transformed_role:Role",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode|user_transformed_role:Role",
+      "IsInsertCheck": "SELECT pr.* , p.\"PipelineCode\" as PipelineCode , p.\"JobCode\" as JobCode FROM \"ProjectRoles\" as pr left join \"Projects\" as p on pr.\"ProjectId\" = p.\"Id\" where \"PipelineCode\"  {{ = pipeline_code}} and \"JobCode\"  {{ = job_code}} and p.\"IsActive\" = true and \"Role\"  {{ = user_transformed_role}}  and pr.\"IsActive\" = true ;",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "columnMapping": "SELECT \"Projects\".\"Id\" as ProjectId FROM \"Projects\" WHERE \"Projects\".\"IsActive\" = true and \"Projects\".\"PipelineCode\" {{ = pipeline_code}} AND \"Projects\".\"JobCode\"  {{ = job_code}}:ProjectId:integer:SQL|user_with_empid:User|user_transformed_role:Role|user_empname:UserName|createdby:CreatedBy|modifiedby:ModifiedBy|modifiedat:ModifiedAt:datetime|createdat:CreatedAt:datetime|user_application_role:ApplicationRole|isactive:IsActive:bool",
+      "comparingColumns": "user_with_empid:User:PROJECT_ROLE_UPDATE",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "ProjectId|CreatedAt|CreatedBy"
+    },
+    //BUDGET SYNC 6
+    {
+      "NodeTitle": "Node-6;for budget to Project Budget movement", // for budget to Project Budget movement
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Budget",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select CASE WHEN \"PipelineCode\" IS NULL THEN \"JobCode\" ELSE \"PipelineCode\" END as updated_pipeline_code , * from \"Budget\" WHERE \"IsActive\" = true ", //done implemented
+      "sourceFilterQuery": " \"ModifiedAt\" >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_project",
+      "destinationTableName": "ProjectBudget",
+      "destinationTableNameAs": "pb",
+      "destinationConnection": " Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select p.\"PipelineCode\" as pipeline_code,p.\"JobCode\" as job_code, pb.* from \"ProjectBudget\" as pb left join \"Projects\" as p on pb.\"ProjectId\" = p.\"Id\" WHERE p.\"PipelineCode\"  {{ = updated_pipeline_code}} AND pb.\"Grade\"    {{ = Grade}} AND (p.\"JobCode\"  {{ = JobCode}} OR p.\"JobCode\" is null) AND pb.\"IsActive\" = true ",
+      "primaryKey": "updated_pipeline_code:PipelineCode|JobCode:JobCode|Grade:Grade",
+      "columnsToCompare": "updated_pipeline_code:PipelineCode|JobCode:JobCode|Grade:Grade|Hour:BudgetedHour|Rate:RatePerHour|Hour:OriginalBudgetedHour|Rate:OriginalRatePerHour",
+      "IsInsertCheck": " select p.\"PipelineCode\" as pipeline_code,p.\"JobCode\" as job_code, pb.* from \"ProjectBudget\" as pb left join \"Projects\" as p on pb.\"ProjectId\" = p.\"Id\" WHERE p.\"PipelineCode\"  {{ = updated_pipeline_code}} AND pb.\"Grade\"    {{ = Grade}} AND p.\"JobCode\"  {{ = JobCode}}  AND pb.\"IsActive\" = true ",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "ComparingColumns": "", //start date may lead to project roll forward
+      "eventsOnInsert": "",
+      "columnMapping": "SELECT \"Projects\".\"Id\" as ProjectId FROM \"Projects\" WHERE \"Projects\".\"PipelineCode\"  {{ = updated_pipeline_code}} AND \"Projects\".\"JobCode\" {{ = JobCode}}:ProjectId:integer:SQL|updated_pipeline_code:PipelineCode|JobCode:JobCode|Rate:RatePerHour|Hour:BudgetedHour|IsActive:IsActive:bool|CreatedBy:CreatedBy|ModifiedBy:ModifiedBy|CreatedAt:CreatedAt:datetime|ModifiedAt:ModifiedAt:datetime|Grade:Grade|Hour:OriginalBudgetedHour|Rate:OriginalRatePerHour",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "ProjectId|CreatedBy|CreatedAt|OriginalBudgetedHour|OriginalRatePerHour"
+    },
+    //REQUSITION:-  7
+    {
+      "NodeTitle": "Node-7;for job to requisition movement", // for job to requisition movement
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select * from \"Jobs\" as j WHERE j.pipeline_code IS NOT NULL ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "Requisition",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"Requisition\" WHERE \"PipelineCode\" IN ({{pipeline_code}}) AND  \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //RESOURCEALLOCATION  8
+    {
+      "NodeTitle": "Node-8;not needed", // not needed
+      "isExecutable": false, // not needed
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select * from \"Jobs\" as j ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "ResourceAllocation",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"ResourceAllocation\" WHERE \"PipelineCode\" IN ({{pipeline_code}}) AND \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //RESOURCEALLOCATIONDAYS  9
+    {
+      "NodeTitle": "Node-9;not needed", // not needed
+      "isExecutable": false,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select j.* , p.pipeline_name from \"Jobs\" as j left join \"Pipelines\" as p on j.job_id = p.job_id ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "ResourceAllocationDays",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"ResourceAllocationDays\" WHERE \"PipelineCode\" IN ({{pipeline_code}}) AND \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName|pipeline_name:PipelineName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //RESOURCEALLOCATIONDETAILS 10
+    {
+      "NodeTitle": "Node-10;not needed", // not needed
+      "isExecutable": false,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select j.* , p.pipeline_name from \"Jobs\" as j left join \"Pipelines\" as p on j.job_id = p.job_id ", //done implemented
+      "sourceFilterQuery": "j.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "ResourceAllocationDetails",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"ResourceAllocationDetails\" WHERE \"PipelineCode\" IN ({{pipeline_code}}) AND  \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName|pipeline_name:PipelineName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //EMPLOYEEPROJECTINTREST SYNC 11
+    {
+      "NodeTitle": "Node-11;for job to marketplace interest movement", // for job to marketplace interest movement
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select j.* , p.pipeline_name from \"Jobs\" as j left join \"Pipelines\" as p on j.job_id = p.job_id WHERE j.pipeline_code IS NOT NULL ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_marketplace",
+      "destinationTableName": "EmpProjectInterest",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_marketplace;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"EmpProjectInterest\" WHERE \"PipelineCode\" in ({{pipeline_code}}) AND  \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName|pipeline_name:PipelineName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //MarketPlaceProjectDetail SYNC 12
+    {
+      "NodeTitle": "Node-12;for job to marketplaceProject movement", // for job to marketplaceProject movement
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Jobs",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select j.* , p.pipeline_name from \"Jobs\" as j left join \"Pipelines\" as p on j.job_id = p.job_id WHERE j.pipeline_code IS NOT NULL ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_marketplace",
+      "destinationTableName": "MarketPlaceProjectDetail",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_marketplace;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"MarketPlaceProjectDetail\" WHERE  \"PipelineCode\" in ({{pipeline_code}}) AND  \"JobCode\" is null AND \"IsActive\" = true ", //done implemented
+      "primaryKey": "pipeline_code:PipelineCode|job_code:JobCode",
+      "columnsToCompare": "pipeline_code:PipelineCode|job_code:JobCode",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "job_code:JobCode|job_name:JobName|pipeline_name:PipelineName",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //EMPLOYEES TO USERS (NOT WORKING)  13
+    {
+      "NodeTitle": "Node-13;for employee to user movement", // for employee to user movement
+      "isExecutable": true, //true
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Employees",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select DISTINCT(emp.employee_mid) as employee_unique_id , CONCAT(emp.\"employee_mid\" , '__' , emp.\"email_id\") as user_with_empid , competencies.\"CompetencyId\" as competency_id , competencies.\"CompetencyName\" as competency_name , CASE WHEN length(emp2.\"employee_mid\") > 1 THEN CONCAT(emp2.\"employee_mid\" , '__' , emp2.\"email_id\") WHEN length(emp3.\"employee_mid\") > 1 THEN CONCAT(emp3.\"employee_mid\" , '__' , emp3.\"email_id\") ELSE '' END as supercoach_name , CASE WHEN length(emp3.\"employee_mid\") > 1 THEN CONCAT(emp3.\"employee_mid\" , '__' , emp3.\"email_id\") ELSE '' END as co_supercoach_name , CASE WHEN length(emp2.\"employee_mid\") > 1 THEN emp2.\"employee_mid\" WHEN length(emp3.\"employee_mid\") > 1 THEN emp3.\"employee_mid\" ELSE '' END as supercoach_midvalue , emp.* , locations.location_name , bu_tree.bu as bu_name , designations.designation_name as designation_name , designations.grade as grade , ratedesignation.\"RatePerHour\" as rateperhour from \"Employees\" as emp left join \"Locations\" as locations on emp.location_id = locations.location_id left join (select DISTINCT bu , bu_id from \"BUTreeMappings\") as bu_tree on emp.business_unit_id = bu_tree.bu_id left join \"Designations\" as designations on emp.designation_id = designations.designation_id  left join \"RateDesignationMaster\" as ratedesignation on designations.grade = ratedesignation.grade and emp.\"CompetencyId\" = ratedesignation.\"CompetencyId\" left join \"Competencies\" as competencies on competencies.\"CompetencyId\" = emp.\"CompetencyId\" left join \"Employees\" as emp2 on emp.supercoach_mid = emp2.employee_mid left join \"Employees\" as emp3 on emp.reporting_partner_mid = emp3.employee_mid ", //done implemented
+      "sourceFilterQuery": " emp.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USERS",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT * FROM \"USERS\" WHERE \"employee_id\" IN ({{employee_mid}}) AND \"is_active\" = true ", //done implemented
+      "InClause": "employee_mid:employee_id",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "employee_mid:employee_id",
+      "columnsToCompare": "employee_mid:employee_id",
+      "columnMapping": "name:name|user_with_empid:email_id|email_id:uemail_id|employee_mid:employee_id|employee_code:emp_code|first_name:fname|last_name:lname|designation_name:designation|grade:grade|location_name:location|bu_name:business_unit|modifiedby:updated_by|modifiedat:updated_at:datetime|createdby:created_by|createdat:created_at:datetime|isactive:is_active:bool|supercoach_midvalue:supercoach_mid|supercoach_name:supercoach_name|reporting_partner_mid:co_supercoach_mid|co_supercoach_name:co_supercoach_name|reporting_partner_mid:reporting_partner_mid|employee_status:employee_status|resignation_date:employee_resignation_date|proposed_lwd:employee_last_working_date|competency_name:competency|competency_id:competencyId",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": "designation_name:designation:DESIGNATION_CHANGE_EVENT|employee_status:employee_status:EMPLOYEE_STATUS_CHANGE_EVENT|supercoach_midvalue:supercoach_mid:EMPLOYEE_SUPERCOACH_CHANGE|reporting_partner_mid:co_supercoach_mid:EMPLOYEE_CO_SUPERCOACH_CHANGE",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by"
+    },
+    //ASSIGN EMPLOYEE ROLE TO USERROLE  14
+    {
+      "NodeTitle": "Node-14;for user to userRole movement to assign Employe Role", // for user to userRole movement to assign Employe Role
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_identity",
+      "sourceTableName": "USERS",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select Distinct(\"employee_id\") as unique_employee_id , 'Employee' as user_role, * from \"USERS\" WHERE \"is_active\" = true ", //done implemented
+      "sourceFilterQuery": " updated_at >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select * from \"USER_ROLE\" WHERE \"user\" IN ({{email_id}})  ", //done implemented
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "email_id:user|user_role:role",
+      "columnsToCompare": "email_id:user|user_role:role",
+      "columnMapping": "id:id:guid|email_id:user|user_role:role|unique_employee_id:employee_id|is_active:is_active:bool|updated_by:updated_by|created_at:created_at:datetime|updated_at:updated_at:datetime|created_by:created_by",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": null,
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    },
+    //ASSIGN BU ROLES TO USERROLE 15
+    {
+      "NodeTitle": "Node-15;for leader to LeaderRole movement fro Role assignment", // for leader to LeaderRole movement fro Role assignment
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "BUTreeMappings",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " SELECT DISTINCT(m.\"leader_id\") as leader_mid, m.* ,true as is_active, CONCAT(e.employee_mid , '__' , e.email_id) as user_with_empid , e.email_id as \"user_email_id\" FROM ( select distinct \"bu_leader_mid\" as leader_id , 'Leaders' as entity_application_role FROM public.\"BUTreeMappings\" where bu_leader_mid is NOT NULL AND isactive = true Union Select distinct \"offering_leader_mid\" as leader_id, 'Leaders' as entity_application_role FROM public.\"BUTreeMappings\" where offering_leader_mid is NOT NULL AND isactive = true Union Select distinct \"solution_leader_mid\" as leader_id, 'Leaders' as entity_application_role FROM public.\"BUTreeMappings\" where solution_leader_mid is NOT NULL AND isactive = true Union Select distinct \"bu_efficiency_leader_mid\" as leader_id, 'Leaders' as entity_application_role FROM public.\"BUTreeMappings\" where bu_efficiency_leader_mid is NOT NULL AND isactive = true ) as m left join \"Employees\" as e ON m.\"leader_id\" = e.\"employee_mid\" ", //done implemented
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select * from \"USER_ROLE\" WHERE \"user\" IN ({{user_with_empid}})  ", //done implemented
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "user_with_empid:user|entity_application_role:role",
+      "columnsToCompare": "user_with_empid:user|entity_application_role:role",
+      "columnMapping": "id:id:guid|user_with_empid:user|entity_application_role:role|leader_mid:employee_id|is_active:is_active:bool|updated_by:updated_by|created_at:created_at:datetime|updated_at:updated_at:datetime|created_by:created_by",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": null,
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    },
+    //ASSIGN SUPERCOACH ROLE TO USERROLE  16
+    {
+      "NodeTitle": "Node-16;for user to UserRole movement for SuperCoach role assignment", // for user to UserRole movement for SuperCoach role assignment
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_identity",
+      "sourceTableName": "USERS",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select distinct us1.\"supercoach_mid\" as s_coach_mid , 'SuperCoach' as entity_application_role , us2.\"email_id\" as user_with_empid , us2.\"uemail_id\" as user_email_id , true as is_active from \"USERS\" as us1 left join \"USERS\" as us2 on us1.\"supercoach_mid\" = us2.\"employee_id\" WHERE us1.status = true AND us1.supercoach_mid IS NOT NULL AND (us2.\"email_id\" IS NOT NULL OR us2.\"uemail_id\" IS NOT NULL ) UNION select distinct us1.\"co_supercoach_mid\" as s_coach_mid , 'SuperCoach' as entity_application_role , us2.\"email_id\" as user_with_empid , us2.\"uemail_id\" as user_email_id , true as is_active from \"USERS\" as us1 left join \"USERS\" as us2 on us1.\"co_supercoach_mid\" = us2.\"employee_id\" WHERE us1.status = true AND us1.co_supercoach_mid IS NOT NULL AND (us2.\"email_id\" IS NOT NULL OR us2.\"uemail_id\" IS NOT NULL ) ",
+      "sourceFilterQuery": " us1.updated_at >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select * from \"USER_ROLE\" WHERE \"user\" IN ({{user_with_empid}})  ", //done implemented
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "user_with_empid:user|entity_application_role:role",
+      "columnsToCompare": "user_with_empid:user|entity_application_role:role",
+      "columnMapping": "id:id:guid|user_with_empid:user|entity_application_role:role|s_coach_mid:employee_id|is_active:is_active:bool|updated_by:updated_by|created_at:created_at:datetime|updated_at:updated_at:datetime|created_by:created_by",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": null,
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    },
+    //ASSIGN PROJECT ROLES TO APPLICATION ROLES 17
+    {
+      "NodeTitle": "Node-17;for ProjectRole to ApplicationRole movement", // for ProjectRole to ApplicationRole movement assign project role to application role
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_project",
+      "sourceTableName": "Role",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_project;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select Distinct \"User\" as user_with_empid  , \"ApplicationRole\" as identity_roles ,SPLIT_PART(\"User\",'__' , 1) as employee_id, \"IsActive\" from \"ProjectRoles\" WHERE  ( \"CreatedBy\" = 'system.@gt.com' OR \"ModifiedBy\" = 'system.@gt.com' ) AND \"IsActive\" = true AND \"ApplicationRole\" is NOT NULL ", //done implemented
+      "sourceFilterQuery": " \"ModifiedAt\" >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT * FROM \"USER_ROLE\" WHERE \"user\" IN ({{user_with_empid}})  ", //done implemented implemented for insert opration
+      "InClause": "",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "user_with_empid:user|identity_roles:role",
+      "columnsToCompare": "user_with_empid:user|identity_roles:role",
+      "DestinationIsActiveColumnName": "is_active",
+      "columnMapping": "Id:id:guid|user_with_empid:user|identity_roles:role|employee_id:employee_id|ModifiedBy:updated_by|CreatedAt:created_at:datetime|ModifiedAt:updated_at:datetime|CreatedBy:created_by|IsActive:is_active:bool",
+      "UpdateCondition": "",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    },
+    //RateMaster to allocation days
+    //RESOURCEALLOCATIONDAYS  18
+    {
+      "NodeTitle": "Node-18;for grade wise rate update to allocation", // for grade wise rate update to allocation table
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "designationgraderateview",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select * from \"designationgraderateview\" as j  ", //done implemented
+      "sourceFilterQuery": " j.modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "PublishedResAllocDays",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "SELECT \"RequisitionId\", \"PublishedResAllocId\", \"Efforts\", \"EmailId\", \"Requisition\".\"PipelineCode\",\"Requisition\".\"JobCode\", \"RatePerHour\", \"Currency\", \"AllocationDate\",\"Requisition\".\"Designation\" FROM public.\"PublishedResAllocDays\" JOIN \"Requisition\"  on \"PublishedResAllocDays\".\"RequisitionId\" = \"Requisition\".\"Id\" WHERE \"Designation\" IN ({{designation_name}}) AND \"IsActive\" = true ",
+      "primaryKey": "designation_name:Designation", //need to add is Active or not
+      "columnsToCompare": "designation_name:Designation",
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnMapping": "RatePerHour:RatePerHour",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null,
+      "extraValueCondtion": " FROM public.\"Requisition\"",
+      "extraWhereCondtion": " AND \"RequisitionId\" = \"Requisition\".\"Id\" AND \"AllocationDate\" >= CURRENT_DATE"
+    },
+    //LEAVE ADD EVENT 19
+    {
+      "NodeTitle": "Node-19;for sending leave notofictaion only", //for sending leave notofictaion only
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Leaves",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select * from \"Leaves\" as l   ", //done implemented
+      "sourceFilterQuery": " l.createdat :: Date = NOW() :: Date ",
+      "destinationDBName": "uat-rms_wcgt",
+      "destinationTableName": "Leaves",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"Leaves\" WHERE 1 = 2 ",
+      "primaryKey": "leave_id:leave_id", //need to add is Active or not
+      "columnsToCompare": "leave_id:leave_id",
+      "isSyncToBeMade": false,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": false,
+      "eventsOnInsert": "EMPLOYEE_LEAVE_EVENT",
+      "columnMapping": "",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //COMPETENCY MASTER TO SKILLS 20
+    {
+      "NodeTitle": "Node-20;for sending competency to skill", //for sending leave notofictaion only
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Competencies",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select comp.\"CompetencyId\" as competency_id , comp.\"CompetencyName\" as competency_name , * from \"Competencies\" as comp   ", //done implemented
+      "sourceFilterQuery": " comp.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_skilldb",
+      "destinationTableName": "SkillMapping",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_skilldb;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"SkillMapping\" WHERE \"CompetencyId\" IN ({{competency_id}}) AND \"IsActive\" = true  ",
+      "primaryKey": "competency_id:CompetencyId", //need to add is Active or not
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnsToCompare": "competency_id:CompetencyId|competency_name:Competency",
+      "columnMapping": "competency_name:Competency",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //COMPETENCY MASTER TO REQUISITION 21
+    {
+      "NodeTitle": "Node-21;for sending competency to requisition", //for sending leave notofictaion only
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Competencies",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "select comp.\"CompetencyId\" as competency_id , comp.\"CompetencyName\" as competency_name , * from \"Competencies\" as comp   ", //done implemented
+      "sourceFilterQuery": " comp.modifiedat >= '{{syncStartTime}}' ",
+      "destinationDBName": "uat-rms_allocation",
+      "destinationTableName": "Requisition",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_allocation;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": "select * from \"Requisition\" WHERE \"CompetencyId\" IN ({{competency_id}}) AND \"IsActive\" = true  ",
+      "primaryKey": "competency_id:CompetencyId", //need to add is Active or not
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": false,
+      "isUpdateToBeMade": true,
+      "columnsToCompare": "competency_id:CompetencyId|competency_name:Competency",
+      "columnMapping": "competency_name:Competency",
+      "UpdateCondition": "Id:integer",
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": null
+    },
+    //ASSIGN COMPETENCY LEADER ROLE TO USERROLE  22
+    {
+      "NodeTitle": "Node-22;for user to Competency Leader movement for Leader role assignment", // for user to UserRole movement for SuperCoach role assignment
+      "isExecutable": true,
+      "sourceDBName": "uat-rms_wcgt",
+      "sourceTableName": "Competencies",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_wcgt;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": "SELECT DISTINCT \"CompetencyLeaderMID\" as employee_mid , \"Employees\".email_id ,CONCAT(\"Employees\".employee_mid , '__' ,\"Employees\".email_id ) as user_with_empid , 'Leaders'  as entity_application_role , true as is_active  FROM \"Competencies\" left join \"Employees\" on \"Employees\".employee_mid = \"Competencies\".\"CompetencyLeaderMID\" WHERE \"Competencies\".\"isactive\" = true ",
+      "sourceFilterQuery": " \"Competencies\".modifiedat >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select * from \"USER_ROLE\" WHERE \"user\" IN ({{user_with_empid}})  ", //done implemented
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "user_with_empid:user|entity_application_role:role",
+      "columnsToCompare": "user_with_empid:user|entity_application_role:role",
+      "columnMapping": "employee_mid:id:guid|user_with_empid:user|entity_application_role:role|employee_mid:employee_id|is_active:is_active:bool|modifiedby:updated_by|createdat:created_at:datetime|modifiedat:updated_at:datetime|createdby:created_by",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": null,
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    },
+    //ASSIGN SKILL SUPERCOACH ROLE TO USERROLE  23
+    {
+      "NodeTitle": "Node-23;for user to UserRole movement for skill SuperCoach role assignment", // for user to UserRole movement for SuperCoach role assignment
+      "isExecutable": false,
+      "sourceDBName": "uat-rms_identity",
+      "sourceTableName": "USERS",
+      "sourceConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "sourceSelectQuery": " select distinct us1.\"supercoach_mid\" as s_coach_mid , 'SkillSuperCoach' as entity_application_role , us2.\"email_id\" as user_with_empid , us2.\"uemail_id\" as user_email_id , true as is_active from \"USERS\" as us1 left join \"USERS\" as us2 on us1.\"supercoach_mid\" = us2.\"employee_id\" WHERE us1.status = true AND us1.supercoach_mid IS NOT NULL AND (us2.\"email_id\" IS NOT NULL OR us2.\"uemail_id\" IS NOT NULL ) UNION select distinct us1.\"co_supercoach_mid\" as s_coach_mid , 'SkillSuperCoach' as entity_application_role , us2.\"email_id\" as user_with_empid , us2.\"uemail_id\" as user_email_id , true as is_active from \"USERS\" as us1 left join \"USERS\" as us2 on us1.\"co_supercoach_mid\" = us2.\"employee_id\" WHERE us1.status = true AND us1.co_supercoach_mid IS NOT NULL AND (us2.\"email_id\" IS NOT NULL OR us2.\"uemail_id\" IS NOT NULL ) ",
+      "sourceFilterQuery": " us1.updated_at >= '{{syncStartTime}}'  ",
+      "destinationDBName": "uat-rms_identity",
+      "destinationTableName": "USER_ROLE",
+      "destinationTableNameAs": null,
+      "destinationConnection": "Server=f74062f8ddd2.rmsdev-db.private.postgres.database.azure.com;Database=uat-rms_identity;UserId=rmsdevdba;Password=K$u7!6fa(p_yMt;Timeout=300;CommandTimeout=300;",
+      "destinationSelectQuery": " select * from \"USER_ROLE\" WHERE \"user\" IN ({{user_with_empid}})  ", //done implemented
+      "isSyncToBeMade": true,
+      "isInsertToBeMade": true,
+      "isUpdateToBeMade": true,
+      "primaryKey": "user_with_empid:user|entity_application_role:role",
+      "columnsToCompare": "user_with_empid:user|entity_application_role:role",
+      "columnMapping": "id:id:guid|user_with_empid:user|entity_application_role:role|s_coach_mid:employee_id|is_active:is_active:bool|updated_by:updated_by|created_at:created_at:datetime|updated_at:updated_at:datetime|created_by:created_by",
+      "UpdateCondition": "Id:integer",
+      "ComparingColumns": null,
+      "columnsToUpdate": "Status:'Synced':string|IsProcessed:'true':bool",
+      "batchSize": null,
+      "OffSetColumn": null,
+      "IgnoreOnUpdate": "created_at|created_by|id"
+    }
+  ]
+}

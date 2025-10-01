@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20240220100127_employee-allocation-view.cs" />
+    <Compile Remove="Migrations\20240220100127_employee-allocation-view.Designer.cs" />
+    <Compile Remove="Migrations\20240220124453_index-employee-allocation-view.cs" />
+    <Compile Remove="Migrations\20240220124453_index-employee-allocation-view.Designer.cs" />
+    <Compile Remove="Migrations\20240501083644_employeeallocationview-update1.cs" />
+    <Compile Remove="Migrations\20240501083644_employeeallocationview-update1.Designer.cs" />
+    <Compile Remove="Migrations\20240522110231_employee_allocation_timesheet-v2.cs" />
+    <Compile Remove="Migrations\20240522110231_employee_allocation_timesheet-v2.Designer.cs" />
+    <Compile Remove="Migrations\20240522112611_index-employee-allocation-view-v2.cs" />
+    <Compile Remove="Migrations\20240522112611_index-employee-allocation-view-v2.Designer.cs" />
+    <Compile Remove="Migrations\20240703221612_employee_allocation_timesheetv3.cs" />
+    <Compile Remove="Migrations\20240703221612_employee_allocation_timesheetv3.Designer.cs" />
+    <Compile Remove="Migrations\20240709094429_employee_working_days-v1.cs" />
+    <Compile Remove="Migrations\20240709094429_employee_working_days-v1.Designer.cs" />
+    <Compile Remove="Migrations\20240709094743_employee_allocation_timesheet-v4.cs" />
+    <Compile Remove="Migrations\20240709094743_employee_allocation_timesheet-v4.Designer.cs" />
+    <Compile Remove="Migrations\20240719091705_employee_allocation_timesheetv5.cs" />
+    <Compile Remove="Migrations\20240719091705_employee_allocation_timesheetv5.Designer.cs" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Npgsql" Version="7.0.6" />
+		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+	</ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RMT.Reports.Domain\RMT.Reports.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

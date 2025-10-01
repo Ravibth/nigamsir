@@ -1,0 +1,103 @@
+
+@url = http://localhost:5003
+
+POST http://localhost:5002/employee HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"test1",
+    "fname":"test",
+    "lname":"test"
+}
+################################ Get Module Permission By Email Id 
+
+GET http://localhost:5003/identity/user/email/Aayush.Garg@expdiginetdev.onmicrosoft.com http/1.1
+
+Content-Type: application/json
+
+
+################################ Get all Module Permission
+
+GET  {{url}}/identity/modulePermission/permissionMappings
+
+Content-Type: application/json
+
+################################ add user
+
+POST {{url}}/identity/user/v1
+Content-Type: application/json
+
+{
+  "email_id": "namesame@gmail.com",
+  "roles": ["Business SPOC","Approvers"],
+  "name": "Emely Dare",
+  "fname": "Jaden",
+  "lname": "Douglas",
+  "service_line": "Internal",
+  "designation": "Employee",
+  "status": true
+}
+
+
+### Update User Role
+
+PUT http://localhost:5003/identity/user/v2/Suman.Pathak@DevStagenet.onmicrosoft.com HTTP/1.1
+
+Content-Type: application/json
+
+{"roles": ["Admin"]}
+
+
+###
+
+GET http://localhost:7000/identity/user/all?limit=10&skip=0&name=ayu&
+
+# GET http://localhost:7000/identity/user/all?limit=0&name= for all users.
+
+Content-Type: application/json
+
+### Get module permssions by role id
+
+GET {{url}}/identity/modulePermission/role?roleName=Approvers,Admin
+
+Content-Type: application/json
+
+### Add Designation Role Mapping
+
+Post http://localhost:7000/identity/designationRole/v1  HTTP/1.1
+Content-Type: application/json
+
+{
+    "designation" : "AM",
+    "role_id" : 5
+}
+
+## APPR -1, Business SPOC -2, ADMIN-3,COE Tech Team -4,Client and Engagement creator -5
+## Engagement creator -6, Engagement Contributor - 7
+
+
+### Get all designation role mappings
+Get http://localhost:7000/identity/designationRole/v1
+Content-Type: application/json
+
+
+
+### Get all  role 
+Get {{url}}/identity/role/
+Content-Type: application/json
+
+# 2
+
+###
+Put http://localhost:7000/identity/designationRole/v1/1  HTTP/1.1
+Content-Type: application/json
+
+{
+    "designation" : "partners",
+  "role_id":1
+}
+
+### fetch user by role v2
+GET http://localhost:7000/identity/user/users/v2/Admin  HTTP/1.1
+Content-Type: application/json
+

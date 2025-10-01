@@ -1,0 +1,3010 @@
+[
+  {
+    "path": "/gateway/Allocations/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Budget/ActualPlannedResourceView",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Budget/AllcoatedActualGraph/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Budget/BudgetDesignationWise/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Budget/BudgetOverview/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      },
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Budget/UpdateDesignationCost",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/BulkRequisition/BulkUploadRequisition",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "create"
+      },
+      {
+        "module": "Requisition",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/BulkRequisition/WcgtValidation",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "create"
+      },
+      {
+        "module": "Requisition",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetAllBuExpertiesDict",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetAllBusinessMaster",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetAllRUMasters",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetAllSMEGMasters",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetConfigurationByConfigGroupConfigKeyAndConfigType",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetConfigurationGroupByGroupNameAndConfigType",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetConfigurationMaster",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetExpertiesConfigurationByExpertiesNameAndConfigGroup",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/GetExpertiesMastersByBUId",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/LogContent",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/UpdateConfiguration",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Configurations",
+        "action": "create"
+      },
+      {
+        "module": "Configurations",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Configuration/UpdateConfigurationBreakup",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Configurations",
+        "action": "create"
+      },
+      {
+        "module": "Configurations",
+        "action": "update"
+      }
+    ]
+  },
+   {
+    "path": "/gateway/Configuration/GetApplicationLevelSettings",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/AddEmployeeProjectMapping/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/get-employee-profile/{catchAll}",
+    "Method": [ "GET" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/update-employee-profile",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/GetAllPreferenceMasteer/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "My Preferences",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/GetEmpByProjectMapping/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/GetEmployeePreferenceByEmail/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "My Preferences",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/GetEmployeePreferenceByEmails/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Employee/UpdateEmployeePreference/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "My Preferences",
+        "action": "create"
+      },
+      {
+        "module": "My Preferences",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/hub",
+    "Method": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/hub/negotiate",
+    "Method": [ "GET", "POST", "PUT", "DELETE", "OPTIONS" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Identity/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/modulePermission/permissionMappings",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/modulePermission/role/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/role",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/removeUserRoleByEmail",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/{catchAll}",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Roles and Permissions",
+        "action": "create"
+      },
+      {
+        "module": "Roles and Permissions",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/all",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/GetUsersByEmails",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/GetUsersByEmails",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/list",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/multiuser/v1",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+
+  {
+    "path": "/gateway/identity/user/status/v2",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/update",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Roles and Permissions",
+        "action": "create"
+      },
+      {
+        "module": "Roles and Permissions",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/v1",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Roles and Permissions",
+        "action": "create"
+      },
+      {
+        "module": "Roles and Permissions",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/v1/bulkAddUserRoles",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      },
+      {
+        "module": "Assign Additional Delegate",
+        "action": "create"
+      },
+      {
+        "module": "Assign Additional Delegate",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/v2/{catchAll}",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Roles and Permissions",
+        "action": "create"
+      },
+      {
+        "module": "Roles and Permissions",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/v4/{catchAll}",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/v5/{catchAll}",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Job/GetConfirmedPerDayHoursByDate/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Job/GetJobAllocationMapping/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/AddProjectToMarketPlace",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/CreateOrUpdateEmpProjectInterestScore",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "create"
+      },
+      {
+        "module": "Marketplace",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetAllEmpProjectInterestScore",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetAllMarketPlaceFilters",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetAllProjectDetailsForMarketPlace",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetAllRequisitionByProjectCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetListOfUsersInterestedByPipelineCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetProjectListedInMarketplaceByProjectListingDate",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/GetProjectDetailsByPipelineCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/UpdateProjectRolesForSupercoachDelegate",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/RefreshEmpProjectInterestScore",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/SubmitEmpProjectInterest",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "create"
+      },
+      {
+        "module": "Marketplace",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/UpdateExpiredMarketPlaceProjects",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "create"
+      },
+      {
+        "module": "Marketplace",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/MarketPlace/UpdateMarketPlaceProjectDetails",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "create"
+      },
+      {
+        "module": "Marketplace",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/NamedAllocation/GetResourceByName/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/NamedAllocation/SubmitResourceAllocateToProject/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/NavigationMenu/GetContextMenuByRoles/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/NavigationMenu/GetMenuByRoles/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/GetLoggedInUserAllNotificationsCount",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/GetLoggedInUserNotifications",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/GetNotificationSubscription",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/GetNotificationTemplate",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/MarkNotificationsAsRead",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/MarkAllNotificationsAsRead",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+
+  {
+    "path": "/gateway/Notification/PostNewNotification",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/SendNotification",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Notification/SubscribeToNotification",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/AddJustification",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/AddProjectUserWithRole",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/ChangeCodeForProject",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/CreateOrUpdatePublishedFieldForMarketPlace",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/CreateProject",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetActiveFieldForMarketPlace",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllEmployeesExcludingEmployessWithRoles",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetAllJobCodesForPipelineCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllProjectByBUandExpertise",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllProjectByCreationDate",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllProjectRolesByCodes",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/getAllProjects",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllProjectsForBudget",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllProjectsForBudgetByJobCodes",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetAllUsersExcludingEmployessWithRoles",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetAppRolesEmailByPipelineCodes",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetBasiProjectDetailRequestorByPipelineCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetEmployeeListingProjectDataByPipelineCodes/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetEmployeeRoleByByPipelineJobCodes",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetMultipleProjectsByCodes",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetOfferingSolutionsByJobCode",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": false,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectBudget/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectBudget/{catchAll}",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectByCode",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectDetailsAsPerPipelineCodeAndUserRole",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectDetailsForEmployee",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectDetailsForRequestor/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectFilterOptionsQuery",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectFullDetailsByPipelineCode",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectListDataByUser",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectRolesByEmails",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectsByRequestor/{catchAll}",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetPublishedFieldByprojectCodeForMarketPlace",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Marketplace",
+        "action": "create"
+      },
+      {
+        "module": "Marketplace",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetRequestorEmailsForAllocationWorkflow",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetResourceRequestorEmailsByPipelineCode",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetResourceRequestorEmailsListByPipelineCode",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/GetResourceReviewerEmailsByPipelineCode",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetRolesEmailByPipelineCodesAndRoles",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Project/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/ProjectActivationStatusChange",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/ProjectActualBudgetOverShoot",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/RefreshProjectCompetency",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/RemoveProjectUserWithRole",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/SetIsRequisitionCreationallowed",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/SetPublishedToMarketPlace",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/UpdateProjectBudgetStatus",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "create"
+      },
+      {
+        "module": "Project Budget",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/UpdateProjectDetails",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      },
+      {
+        "module": "Assign Additional Delegate",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/UpdateProjectRollOverStatus/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/UpdateProjectSuspensionStatus",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Project Details",
+        "action": "create"
+      },
+      {
+        "module": "Project Details",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Report/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Reports/v1/capacity-utilization-overview-chart",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Reports",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Reports/v1/refresh-employee-allocation",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Reports/v1/refresh-materilized-views",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Reports/v1/scheduled-vs-variance-chart",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Reports",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Reports/v1/summary-statistics-chart",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Reports",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Requisition/AddBulkRequisitions/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Requisition/DeleteRequisitionById/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "delete"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Requisition/GetAllRequisitionByProjectCode/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Requisition/GetRequisitionDetailsByRequisitionId/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Requisition/IsRequisitionExistsInProjectCode/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Requisition/SubmitRequisitionForProjectCode/",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "create"
+      },
+      {
+        "module": "Requisition",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Requisition/UpdateRequisition/",
+    "Method": [ "Put" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Requisition",
+        "action": "create"
+      },
+      {
+        "module": "Requisition",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/CommonResourceAllocation/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/CreateResourceAllocation",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/DeleteAllocationByRequisitionId/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "delete"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/DoesUserHaveAnyFutureOrOngoingAllocations",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetActiveAllocationByPipeLineCode/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllAllocationByPipelineCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocatedHoursRatioByPipelineCode/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocatedHoursRatioByPipelineCodeAndRoles/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocationByID/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocationInformationByLeaves",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocationsByEmail/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAllocationsByEmailorClients/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetAvaiableHoursByEmailId/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetCurrentUserAllocationCalander",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetCurrentUserAllocationCalanderFilterOptions",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetMultipleAllocationsByRequisitionIDs/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetProjectsByEmployeeEmail/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Listing",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetProjectsByEmployeeEmailAndPipelineCode/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetProjectsByPipelineCode/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/v2/GetProjectsByPipelineCode/",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetPublishedActiveAllocationByPipeLineCode",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetRequisitionByEMailPipeline/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetResourceAllocationByGuid/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetResourceAllocationByProjectCode/{catchAll}",
+    "Method": [ "Get" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetRolloverUsersTimeline/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetSkillByEmailJobCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetSystemSuggestionsByRequisitionId/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetUsersTimeline/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/GetUsersTimelineForMultipleDates/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/NewResourceAllocationMove/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/ReleaseResourceByGuid/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/RemoveUsersAllDraftAllocations",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/ResourceAllocationDayGroup/",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/ResourceAllocationDetailsByGuid",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/RolloverAllocationByPipelineCode/",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/SuspendAllocation/",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateAllocationByID/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateAllocationStatusInResourceAllocationDetails",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateListOfAllocationStatusInResourceAllocationDetails",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateProjectJobCode",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "create"
+      },
+      {
+        "module": "Allocation",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdatePublishAllocationActualEfforts",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateResourceAllocations",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/ResourceAllocation/UpdateRollOverAllocations/",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/SameTeamAllocation/GetAllocationByJobCode/",
+    "Method": [ "Post" ],
+    "CheckProjectPermission": true,
+    "moduleActionMapping": [
+      {
+        "module": "Allocation",
+        "action": "read"
+      }
+    ],
+    "AdditionalAllowedRoles": [ "Leaders" ]
+  },
+  {
+    "path": "/gateway/Skill/GetAllSkill",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/GetSkiilCategoryMaster",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/GetSkillByName",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/GetUserApprovedSkillByEmail",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/SearchSkillsByNameOrCode",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/GetAllSkillBySkillCodeOrName",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/SubmitSKill",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Master",
+        "action": "create"
+      },
+      {
+        "module": "Skill Master",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/UpdateSkill",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Master",
+        "action": "create"
+      },
+      {
+        "module": "Skill Master",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Skill/UpdateSkillStatus",
+    "Method": [ "Put" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Master",
+        "action": "create"
+      },
+      {
+        "module": "Skill Master",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Test/Test",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Timesheet/GetDraftTimesheet",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/UserSkills/AddUpdateUserSkill",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Self Assessment",
+        "action": "create"
+      },
+      {
+        "module": "Skill Self Assessment",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/UserSkills/GetUserSkillsByEmail",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Self Assessment",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/UserSkills/GetUserSkillsWithProficiency",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/UserSkills/UpdateUserSkillStatusAfterWorkflow",
+    "Method": [ "PUT" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Self Assessment",
+        "action": "create"
+      },
+      {
+        "module": "Skill Self Assessment",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WCGT/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetBUTreeMappingList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetBUTreeMappingListByMID",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetClientLegalEntityList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetClientList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetClientListByJobCodes",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetCompetencyList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetDesignationList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeeByParam",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeeLeaves",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeeList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetHolidayList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetHolidaysListByParams",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetJobByJobCode",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetJobList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetLeaveList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetLeavesInfo",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetLocationList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetPipelineList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetProjectBudgetByModifiedDateRange",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetResignedAndAbscondedUsersWithLastAvailableDay",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetSectorIndustryList",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetTimesheet",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetTimesheetGroup",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Project Budget",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeeBySuperCoachOrCSC",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetAllSuperCoach",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetUserLeaveHolidayResponseForSystemSuggestion",
+    "Method": [ "POST" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateBudget",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateBUEfficiencyLeader",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateBUTreeMappings",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateClientLegalEntitys",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateClients",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateCompetency",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateDesignations",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateEmployees",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateHolidays",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateJobs",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateLeaves",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateLocations",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdatePipelines",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateRateMaster",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/UpdateSectorIndustries",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Workflow/health",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/GetWorkflowSuperCoachTask",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/update-supercoach-and-delegate",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/add-supercoach-delegate",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/identity/user/supercoach-and-delegates-list",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/bulk/update-workflow",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/employee-allocation-termination",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/getCommentsByItemId",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Self Assessment",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/GetEmployeeTaskCountByQuery",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/GetEmployeeWithdrawlTaskByQuery",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/getMultipleTasksByByQuery",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/getMySkillTasksAssigned",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Skill Review",
+        "action": "create"
+      },
+      {
+        "module": "Skill Review",
+        "action": "update"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/GetWorkflowTasksDetailsByQuery",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/query",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/refresh-workflow-task-assignment",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/terminate-inprogress-workflow-by-ItemId",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/update-workflow",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/workflowTasks/query",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/workflow/v1/workflowTasks/queryByWorkflowStatusAndTaskStatus",
+    "Method": [ "Get" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeesForPortfolio",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetPortfolioFiltersOptions",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/WcgtData/GetEmployeesForPortfolioReport",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "All"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectListDataByEmailId",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/GetProjectListDataByEmailId",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "read"
+      }
+    ]
+  },
+  {
+    "path": "/gateway/Project/ReplaceProjectsSuperCoachRole",
+    "Method": [ "Post" ],
+    "moduleActionMapping": [
+      {
+        "module": "Anonymous",
+        "action": "read"
+      }
+    ]
+  }
+]

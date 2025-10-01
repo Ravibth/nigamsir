@@ -1,0 +1,560 @@
+[
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetApplicationLevelSettings",
+    "RelativePath": "api/Configuration/GetApplicationLevelSettings",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "keys",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.Dictionary\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetConfigurationByConfigGroupConfigKeyAndConfigType",
+    "RelativePath": "api/Configuration/GetConfigurationByConfigGroupConfigKeyAndConfigType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.Response.ConfigurationGroupResponse, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetConfigurationGroupByGroupNameAndConfigType",
+    "RelativePath": "api/Configuration/GetConfigurationGroupByGroupNameAndConfigType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.Response.ConfigurationGroupResponse, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetConfigurationGroupMaster",
+    "RelativePath": "api/Configuration/GetConfigurationGroupMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configKey",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.ConfigurationGroupMaster, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetConfigurationMasterList",
+    "RelativePath": "api/Configuration/GetConfigurationMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "configGroup",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configKey",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.ConfigurationMaster, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetProjectConfigurationByExpertiesNameAndConfigGroup",
+    "RelativePath": "api/Configuration/GetExpertiesConfigurationByExpertiesNameAndConfigGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "expertiesName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "configurationGroup",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.ProjectConfiguration, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "GetProjectConfigurationByConfigGroupAndConfigType",
+    "RelativePath": "api/Configuration/GetProjectConfigurationByConfigGroupAndConfigType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ConfigGroup",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConfigType",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.ProjectConfiguration, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "LogContent",
+    "RelativePath": "api/Configuration/LogContent",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loggerDTO",
+        "Type": "RMT.Configuration.Application.Handlers.CommandHandlers.LoggerCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "UpdateConfigGroupAndProjectConfiguration",
+    "RelativePath": "api/Configuration/UpdateConfiguration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateConfiguration",
+        "Type": "RMT.Configuration.Application.DTOs.ApplicationConfigurationDTOs.UpdateConfigurationDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.ProjectConfiguration, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.ConfigurationController",
+    "Method": "UpdateConfigurationBreakup",
+    "RelativePath": "api/Configuration/UpdateConfigurationBreakup",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.DTO.UpdateConfigurationBreakupRequestDTO, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetAllContextMenuMaster",
+    "RelativePath": "api/NavigationMenu/GetAllContextMenuMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.NavigationDTOs.ContextMenuMasterDTO, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetAllMenuMaster",
+    "RelativePath": "api/NavigationMenu/GetAllMenuMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Domain.Entities.MenuMaster, RMT.Configuration.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetContextMenuByRoles",
+    "RelativePath": "api/NavigationMenu/GetContextMenuByRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleNames",
+        "Type": "System.String[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.NavigationDTOs.ContextMenuMasterDTO, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetMenuByRoles",
+    "RelativePath": "api/NavigationMenu/GetMenuByRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleNames",
+        "Type": "System.String[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.NavigationDTOs.MenuMasterDTO, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetRoleContextMenuByFilter",
+    "RelativePath": "api/NavigationMenu/GetRoleContextMenuByFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "menuId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.NavigationDTOs.RoleContextMenuDTO, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "GetRoleMenuByFilter",
+    "RelativePath": "api/NavigationMenu/GetRoleMenuByFilter",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "menuId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Configuration.Application.DTOs.NavigationDTOs.RoleMenuDTO, RMT.Configuration.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "UpdateContextMenuMaster",
+    "RelativePath": "api/NavigationMenu/UpdateContextMenuMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createMenuMasterDTO",
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.ContextMenuMasterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.ContextMenuMasterDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "UpdateMenuMaster",
+    "RelativePath": "api/NavigationMenu/UpdateMenuMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createMenuMasterDTO",
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.MenuMasterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.MenuMasterDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "UpdateRoleContextMenuItem",
+    "RelativePath": "api/NavigationMenu/UpdateRoleContextMenuItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleMenuDTO",
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.RoleContextMenuDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.RoleContextMenuDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Configuration.API.Controllers.NavigationMenuController",
+    "Method": "UpdateRoleMenuItem",
+    "RelativePath": "api/NavigationMenu/UpdateRoleMenuItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleMenuDTO",
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.RoleMenuDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Configuration.Application.DTOs.NavigationDTOs.RoleMenuDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

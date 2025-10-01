@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\AllocationDbContext1.cs" />
+    <Compile Remove="Migrations\20230803153825_inital3.cs" />
+    <Compile Remove="Migrations\20230803153825_inital3.Designer.cs" />
+    <Compile Remove="Migrations\20231020135252_dbrevert3.cs" />
+    <Compile Remove="Migrations\20231020135252_dbrevert3.Designer.cs" />
+    <Compile Remove="Migrations\20240515112753_sp_availability_check.cs" />
+    <Compile Remove="Migrations\20240515112753_sp_availability_check.Designer.cs" />
+    <Compile Remove="Migrations\20240515114810_systemsuggestionalgoupdate.cs" />
+    <Compile Remove="Migrations\20240515114810_systemsuggestionalgoupdate.Designer.cs" />
+    <Compile Remove="Migrations\20240515115038_systemAlgoUpdate.cs" />
+    <Compile Remove="Migrations\20240515115038_systemAlgoUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20240515115226_systemSuggestionUpdate.cs" />
+    <Compile Remove="Migrations\20240515115226_systemSuggestionUpdate.Designer.cs" />
+    <Compile Remove="Migrations\20240515115348_updatealgo.cs" />
+    <Compile Remove="Migrations\20240515115348_updatealgo.Designer.cs" />
+    <Compile Remove="Migrations\20240515115529_systemalgoskillfix.cs" />
+    <Compile Remove="Migrations\20240515115529_systemalgoskillfix.Designer.cs" />
+    <Compile Remove="Migrations\20240515121223_algoupdationforindsytrysubinsutry.cs" />
+    <Compile Remove="Migrations\20240515121223_algoupdationforindsytrysubinsutry.Designer.cs" />
+    <Compile Remove="Migrations\20240515121343_algoupdate30march.cs" />
+    <Compile Remove="Migrations\20240515121343_algoupdate30march.Designer.cs" />
+    <Compile Remove="Migrations\20240515121812_algomatchingvalueupdate.cs" />
+    <Compile Remove="Migrations\20240515121812_algomatchingvalueupdate.Designer.cs" />
+    <Compile Remove="Migrations\20240515122616_algofilterupdate.cs" />
+    <Compile Remove="Migrations\20240515122616_algofilterupdate.Designer.cs" />
+    <Compile Remove="Migrations\20240515122908_algofix1104.cs" />
+    <Compile Remove="Migrations\20240515122908_algofix1104.Designer.cs" />
+    <Compile Remove="Migrations\20240515122959_addisCheckedcolumnrequisitionparameters.cs" />
+    <Compile Remove="Migrations\20240515122959_addisCheckedcolumnrequisitionparameters.Designer.cs" />
+    <Compile Remove="Migrations\20240515123056_algoupdate1204.cs" />
+    <Compile Remove="Migrations\20240515123056_algoupdate1204.Designer.cs" />
+    <Compile Remove="Migrations\20240515123406_systemalgoupdate2904.cs" />
+    <Compile Remove="Migrations\20240515123406_systemalgoupdate2904.Designer.cs" />
+    <Compile Remove="Migrations\AllocationDbContextModelSnapshot - Copy.cs" />
+    <Compile Remove="Util\AddAllocationHistory.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RMT.Allocation.Domain\RMT.Allocation.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,1173 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RMT.Reports.API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Reports/v1/employee-allocations": {
+      "get": {
+        "tags": [
+          "Reports"
+        ],
+        "parameters": [
+          {
+            "name": "designation_name",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "business_unit",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "start_date",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "end_date",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeAllocationTimeSheetEntity"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeAllocationTimeSheetEntity"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmployeeAllocationTimeSheetEntity"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reports/v1/refresh-materilized-views": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reports/v1/refresh-employee-allocation": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "boolean"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reports/v1/capacity-utilization-overview-chart": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacityUtiliationOverviewRequestDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacityUtiliationOverviewRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacityUtiliationOverviewRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapacityUtiliationOverviewRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CapacityUtilizationOverviewResponseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CapacityUtilizationOverviewResponseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CapacityUtilizationOverviewResponseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reports/v1/scheduled-vs-variance-chart": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScheduledVsActualVarianceChartRequestDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScheduledVsActualVarianceChartRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScheduledVsActualVarianceChartRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ScheduledVsActualVarianceChartRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ScheduledVsActualVarianceChartResponseDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ScheduledVsActualVarianceChartResponseDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ScheduledVsActualVarianceChartResponseDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reports/v1/summary-statistics-chart": {
+      "post": {
+        "tags": [
+          "Reports"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SummaryStatisticsChartRequestDto"
+              }
+            },
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SummaryStatisticsChartRequestDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SummaryStatisticsChartRequestDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SummaryStatisticsChartRequestDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SummaryStatisticsChartResponseDto"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SummaryStatisticsChartResponseDto"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SummaryStatisticsChartResponseDto"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CapacityUtiliationOverviewRequestDto": {
+        "type": "object",
+        "properties": {
+          "businessUnit": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "competency": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "designation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CapacityUtilizationOverviewResponseDto": {
+        "type": "object",
+        "properties": {
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "actual_log_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "capacity": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "availability": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "actual_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "capacity_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "availability_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_hrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "net_leaves": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_percent": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_chargability_percent": {
+            "type": "number",
+            "format": "double"
+          },
+          "actual_chargability_percent": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmployeeAllocationTimeSheetEntity": {
+        "type": "object",
+        "properties": {
+          "employee_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "working_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme_group_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "service_line": {
+            "type": "string",
+            "nullable": true
+          },
+          "allocation_date": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "allocation_hours": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "actual_log_hours": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "job_chargeable": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "job_non_chargeable": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "capacity": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ScheduledVsActualVarianceChartRequestDto": {
+        "type": "object",
+        "properties": {
+          "businessUnit": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "competency": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "offering": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "solution": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "location": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "designation": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "reportType": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ScheduledVsActualVarianceChartResponseDto": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "competency": {
+            "type": "string",
+            "nullable": true
+          },
+          "actual_log_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "capacity": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "availability": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "actual_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "employee_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "capacity_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "availability_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "leave_hrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "net_leaves": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_percent": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_chargability_percent": {
+            "type": "number",
+            "format": "double"
+          },
+          "actual_chargability_percent": {
+            "type": "number",
+            "format": "double"
+          },
+          "supercoach_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "supercoach_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "csc_mid": {
+            "type": "string",
+            "nullable": true
+          },
+          "csc_name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SummaryStatisticsChartDataDto": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "nullable": true
+          },
+          "expertise": {
+            "type": "string",
+            "nullable": true
+          },
+          "business_unit": {
+            "type": "string",
+            "nullable": true
+          },
+          "sme_group_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "buId": {
+            "type": "string",
+            "nullable": true
+          },
+          "offerings": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutions": {
+            "type": "string",
+            "nullable": true
+          },
+          "offeringsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "solutionsId": {
+            "type": "string",
+            "nullable": true
+          },
+          "actual_log_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "capacity": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocation_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_hr": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_non_chargable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_hours": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "job_non_chargeable_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "availability": {
+            "type": "number",
+            "format": "double"
+          },
+          "allocated_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "actual_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "email_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "capacity_cost": {
+            "type": "number",
+            "format": "float"
+          },
+          "availability_cost": {
+            "type": "number",
+            "format": "double"
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "department": {
+            "type": "string",
+            "nullable": true
+          },
+          "designation_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "grade": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "pipeline_code_count": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "job_code": {
+            "type": "string",
+            "nullable": true
+          },
+          "job_code_count": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SummaryStatisticsChartRequestDto": {
+        "type": "object",
+        "properties": {
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "startDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "endDate": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "SummaryStatisticsChartResponseDto": {
+        "type": "object",
+        "properties": {
+          "totalProjectCount": {
+            "type": "number",
+            "format": "double"
+          },
+          "futureAllocationHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "jobAllocationsHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipelineAllocationsHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalAllocatedHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalAllocatedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalActualHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalActualCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeableAllocatedHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeableAllocatedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableAllocatedHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableAllocatedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "futureChargeableAllocatedHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "futureChargeableAllocatedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "futureNonChargeableAllocatedHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "futureNonChargeableAllocatedCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeAbleActualHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeAbleActualCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableActualHrs": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableActualCost": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeableAllocatedHrsCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeableAllocatedCostCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableAllocatedHrsCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableAllocatedCostCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeAbleActualHrsPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "chargeAbleActualCostPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableActualHrsPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "nonChargeableActualCostPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalAllocatedHrsCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalAllocatedCostCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityHrsCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityCostCurrent": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalActualHrsPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalActualCostPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityHrsPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCapacityCostPrevious": {
+            "type": "number",
+            "format": "double"
+          },
+          "summaryStatisticsData": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SummaryStatisticsChartDataDto"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

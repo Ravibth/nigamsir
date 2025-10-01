@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<AzureFunctionsVersion>v4</AzureFunctionsVersion>
+	</PropertyGroup>
+	<!-- TODO Warning check again for this -->
+	<PropertyGroup>
+		<_FunctionsSkipCleanOutput>true</_FunctionsSkipCleanOutput>
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Scheduler\NotificationScheduler.cs" />
+	  <Compile Remove="Scheduler\PendingTaskNotificationFunction.cs" />
+	  <Compile Remove="Scheduler\SuspendedProjectFunciton.cs" />
+	  <Compile Remove="Scheduler\TimesheetScheduler.cs" />
+	  <Compile Remove="Subscriptions\BudgetSubscription.cs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Azure.Storage.Blobs" Version="12.21.0" />
+		<PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
+		<PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="4.3.0" />
+		<PackageReference Include="Microsoft.Identity.Client" Version="4.60.3" />
+		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="7.0.1" />
+		<PackageReference Include="Microsoft.NET.Sdk.Functions" Version="4.5.0" />
+		<PackageReference Include="Npgsql" Version="7.0.6" />
+		<PackageReference Include="Oracle.ManagedDataAccess.Core" Version="23.6.1" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+		<PackageReference Include="Microsoft.Extensions.Azure" Version="1.7.1" />
+		<PackageReference Include="Azure.Messaging.ServiceBus" Version="7.16.2" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Update="CompareMapping_PROD.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="CompareMapping_QA.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="CompareMapping_UAT.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="CompareMapping_Local.json">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Update="host.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="local.settings.json">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+	 <ItemGroup>
+    <Folder Include="DTOs\Project\" />
+    <Folder Include="Subscriptions\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2136 @@
+[
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "ActualPlannedResourceView",
+    "RelativePath": "api/Budget/ActualPlannedResourceView",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.AcutalAllocatedBudgetResourceDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "ActualPlannedView",
+    "RelativePath": "api/Budget/AllcoatedActualGraph",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "timeoption",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.AllocationDayGroupResponseDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "DesignationBudget",
+    "RelativePath": "api/Budget/BudgetDesignationWise",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.DesignationBudget, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "BudgetOverview",
+    "RelativePath": "api/Budget/BudgetOverview",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "RMT.Allocation.Domain.DTO.Request.BudgetOverviewRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.BudgetOverviewDto, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "BudgetOverviewLimit",
+    "RelativePath": "api/Budget/BudgetOverviewLimit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Domain.DTO.BudgetOverviewLimit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BudgetController",
+    "Method": "UpdateDesignationCost",
+    "RelativePath": "api/Budget/UpdateDesignationCost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateRequest",
+        "Type": "RMT.Allocation.Application.Handlers.CommandHandlers.UpdateDesignationCostCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.Entities.UpdateDesignationCost, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BulkRequisitionController",
+    "Method": "BulkUploadRequisition",
+    "RelativePath": "api/BulkRequisition/BulkUploadRequisition",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bulkCreateRequisitionDTO",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.RequisitionDTOs.BulkCreateRequisitionDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Domain.DTO.Request.BulkRequistionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BulkRequisitionController",
+    "Method": "BulkUploadRequisitionValidation",
+    "RelativePath": "api/BulkRequisition/BulkUploadRequisitionValidation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bulkCreateRequisitionDTO",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.RequisitionDTOs.BulkCreateRequisitionDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.BulkRequisitionController",
+    "Method": "WcgtValidation",
+    "RelativePath": "api/BulkRequisition/WcgtValidation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bulkCreateRequisitionDTO",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.RequisitionDTOs.BulkCreateRequisitionDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.BulkUploadValidationResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.JobController",
+    "Method": "GetConfirmedPerDayHoursByDate",
+    "RelativePath": "api/Job/GetConfirmedPerDayHoursByDate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDto",
+        "Type": "RMT.Allocation.Application.Handlers.QueryHandlers.GetConfirmedPerDayHoursByDateQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.ResourceAllocationDTOs.EmployeePerDayAllocationDto, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.JobController",
+    "Method": "GetJobAllocationMapping",
+    "RelativePath": "api/Job/GetJobAllocationMapping",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDto",
+        "Type": "RMT.Allocation.Application.Handlers.QueryHandlers.GetJobAllocationMappingQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.JobAllocationMappingDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "DeleteRequisitionById",
+    "RelativePath": "api/Requisition/DeleteRequisitionById",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deleteRequisitionDTO",
+        "Type": "RMT.Allocation.Application.DTOs.RequisitionDTOs.DeleteRequistionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Application.Responses.DeleteRequisitionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "GetAllRequisitionByProjectCode",
+    "RelativePath": "api/Requisition/GetAllRequisitionByProjectCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagination",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentEmp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ScoreCalculationForRequisitionIdsAllowed",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsRequsitionFilterByProjectRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.emp_code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.designation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.service_line",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.roles",
+        "Type": "System.String[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.employee_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.uemail_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competencyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.business_unit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.grade",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.app_permissions",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.ModulePermissionDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.GetAllRequisitionByProjectCodeResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "GetAllRequisitionByProjectCodeForProjectDetails",
+    "RelativePath": "api/Requisition/GetAllRequisitionByProjectCodeForProjectDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagination",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "currentEmp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ScoreCalculationForRequisitionIdsAllowed",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsRequsitionFilterByProjectRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.emp_code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.designation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.service_line",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.roles",
+        "Type": "System.String[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.employee_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.uemail_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competencyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.business_unit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.grade",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.app_permissions",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.ModulePermissionDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.GetAllRequisitionByProjectCodeResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "GetPublishAllocationDetailsByDate",
+    "RelativePath": "api/Requisition/GetPublishAllocationDetailsByDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CreatedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "ModifiedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.PublishAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "GetRequisitionDetailsByDate",
+    "RelativePath": "api/Requisition/GetRequisitionDetailsByDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CreatedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "ModifiedAt",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.RequisitionResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "GetRequisitionDetailsByRequisitionId",
+    "RelativePath": "api/Requisition/GetRequisitionDetailsByRequisitionId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requisitionId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isRequsitionFilterByProjectRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.id",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.emp_code",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.designation",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.service_line",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.roles",
+        "Type": "System.String[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.role",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.co_supercoach_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.employee_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.uemail_id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competency",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.competencyId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.business_unit",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.location",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.grade",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserInfo.app_permissions",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.ModulePermissionDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Application.Responses.RequisitionResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "IsRequisitionExistsInProjectCode",
+    "RelativePath": "api/Requisition/IsRequisitionExistsInProjectCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobcode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "SubmitRequisitionForProjectCode",
+    "RelativePath": "api/Requisition/SubmitRequisitionForProjectCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createRequisitionDTO",
+        "Type": "RMT.Allocation.Application.DTOs.RequisitionDTOs.CreateRequisitionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Domain.DTO.Request.RequisitionRequest",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.RequisitionController",
+    "Method": "UpdateRequisition",
+    "RelativePath": "api/Requisition/UpdateRequisition",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateRequisitionDTO",
+        "Type": "RMT.Allocation.Application.DTOs.RequisitionDTOs.UpdateRequisitionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.RequisitionResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "CommonResourceAllocation",
+    "RelativePath": "api/ResourceAllocation/CommonResourceAllocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allResourceAllocationDTO",
+        "Type": "RMT.Allocation.Application.DTOs.CommonResourceAllocationDTOs.AllResourceAllocationDTO[]",
+        "IsRequired": true
+      },
+      {
+        "Name": "isDraft",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "DoesUserHaveAnyFutureOrOngoingAllocationsQuery",
+    "RelativePath": "api/ResourceAllocation/DoesUserHaveAnyFutureOrOngoingAllocations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emails",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetEmployeeTimelineForEmployeePortfolioReport",
+    "RelativePath": "api/ResourceAllocation/EmployeeTimelineForEmployeePortfolioReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "RMT.Allocation.Application.DTOs.GetEmployeeTimelineForEmployeePortfolioReportRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.EmployeePerDayTimelineForEmployeePortfolioDto, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetActiveAllocationByPipeLineCode",
+    "RelativePath": "api/ResourceAllocation/GetActiveAllocationByPipeLineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isAllocationDetailsFilterByUserRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.GetResourceAllocationDetailsListByCurrentUserRoleResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAllAllocationByPipelineCode",
+    "RelativePath": "api/ResourceAllocation/GetAllAllocationByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAllocatedHoursRatioByPipelineCode",
+    "RelativePath": "api/ResourceAllocation/GetAllocatedHoursRatioByPipelineCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.ProjectAllocatedHoursRatioDto, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAllocationDetailsByEmailAndLeaveDates",
+    "RelativePath": "api/ResourceAllocation/GetAllocationInformationByLeaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getAllocationByEmployeeEmailAndLeaveDTOs",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.ResourceAllocationDTOs.GetAllocationByEmployeeEmailAndLeaveDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.AllocationWithLeavesAndResourceRequestorsResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAllocationsByEmail",
+    "RelativePath": "api/ResourceAllocation/GetAllocationsByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EmpEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAllocationsByEmailorClients",
+    "RelativePath": "api/ResourceAllocation/GetAllocationsByEmailorClients",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getResourceAllocationByEmailQuery",
+        "Type": "RMT.Allocation.Application.Handlers.QueryHandlers.GetResourcesAllocationByEmailOrClientsQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetAvaiableHoursByEmailId",
+    "RelativePath": "api/ResourceAllocation/GetAvaiableHoursByEmailId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequisitionId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailId",
+        "Type": "System.String[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "TotalAvaibleHours",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "RequireWorkingHours",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "isPerDayHourAllocation",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.ResourceAvailable, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetCurrentUserAllocationCalander",
+    "RelativePath": "api/ResourceAllocation/GetCurrentUserAllocationCalander",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "args",
+        "Type": "RMT.Allocation.Application.DTOs.GetCurrentUserAllocationCalanderRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.EmployeeProject, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetCurrentUserAllocationCalanderFilterOptions",
+    "RelativePath": "api/ResourceAllocation/GetCurrentUserAllocationCalanderFilterOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Application.Responses.GetCurrentUserAllocationCalanderFilterOptionsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetMultipleAllocationsByRequisitionIDs",
+    "RelativePath": "api/ResourceAllocation/GetMultipleAllocationsByRequisitionIDs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ids",
+        "Type": "System.Guid[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.ResourceAllocationDetailsWithConsumedHours, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetProjectsByEmployeeEmailAndPipelineCode",
+    "RelativePath": "api/ResourceAllocation/GetProjectsByEmployeeEmailAndPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.EmployeeProject, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetProjectsByPipelineCode",
+    "RelativePath": "api/ResourceAllocation/GetProjectsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "emailId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.EmployeeProject, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetActivePublishedAllocationByPipeLineCode",
+    "RelativePath": "api/ResourceAllocation/GetPublishedActiveAllocationByPipeLineCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "RMT.Allocation.Application.DTOs.GetActivePublishedAllocationByPipeLineCodeRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetResourceAllocationByGuid",
+    "RelativePath": "api/ResourceAllocation/GetResourceAllocationByGuid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetResourceAllocationByProjectCode",
+    "RelativePath": "api/ResourceAllocation/GetResourceAllocationByProjectCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetResourceAllocationByProjectCodeList",
+    "RelativePath": "api/ResourceAllocation/GetResourceAllocationByProjectCodeList",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetSkillByEmailJobCode",
+    "RelativePath": "api/ResourceAllocation/GetSkillByEmailJobCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emailId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.SkillResponseDto, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetSystemSuggestionsByRequisitionId",
+    "RelativePath": "api/ResourceAllocation/GetSystemSuggestionsByRequisitionId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requisitionId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "limit",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pagination",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "parameter_value_pairs",
+        "Type": "System.String[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.SystemSuggestionResponseDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetUsersTimeline",
+    "RelativePath": "api/ResourceAllocation/GetUsersTimeline",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emails",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "start_date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "end_date",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.GetUsersTimelineResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetUsersTimelineForMultipleDates",
+    "RelativePath": "api/ResourceAllocation/GetUsersTimelineForMultipleDates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getUserTimelineRequest",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.GetUsersTimelineDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.Responses.GetUsersTimelineResponse, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "NewResourceAllocationMove",
+    "RelativePath": "api/ResourceAllocation/NewResourceAllocationMove",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "AllResourceAllocationDTO",
+        "Type": "RMT.Allocation.Application.DTOs.CommonResourceAllocationDTOs.NewJobCodeMoveDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "isDraft",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Application.DTOs.CommonResourceAllocationDTOs.NewJobCodeMoveResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetPublishedResourceAllocationDays",
+    "RelativePath": "api/ResourceAllocation/PublishedResourceAllocationDays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "RMT.Allocation.Application.Handlers.QueryHandlers.PublishedResourceAllocationDaysQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDaysResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "PublishResouceAllocationDayGrouped",
+    "RelativePath": "api/ResourceAllocation/PublishResouceAllocationDayGrouped",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.Entities.AllocationDayResourceGroup, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "ReleaseResourceByGuid",
+    "RelativePath": "api/ResourceAllocation/ReleaseResourceByGuid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "releaseResourceDTO",
+        "Type": "RMT.Allocation.Application.DTOs.RequisitionDTOs.ReleaseResourceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "RemoveUsersAllDraftAllocations",
+    "RelativePath": "api/ResourceAllocation/RemoveUsersAllDraftAllocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emails",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "ResourceAllocationDayGroup",
+    "RelativePath": "api/ResourceAllocation/ResourceAllocationDayGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TimeOption",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.AllocationDayGroupResponseDTO, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetResourceAllocationDetailsByGuid",
+    "RelativePath": "api/ResourceAllocation/ResourceAllocationDetailsByGuid",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "guid",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "RolloverAllocationByPipelineCode",
+    "RelativePath": "api/ResourceAllocation/RolloverAllocationByPipelineCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCodes",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.Request.ProjectRolloverRequestDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Application.DTOs.AllocationRolloverResponseDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "SuspendAllocation",
+    "RelativePath": "api/ResourceAllocation/SuspendAllocation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Collections.Generic.List\u00601[[System.Collections.Generic.KeyValuePair\u00602[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.Response.SuspendAllocationResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "UpdateAllocationStatusInResourceAllocationDetails",
+    "RelativePath": "api/ResourceAllocation/UpdateAllocationStatusInResourceAllocationDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allocationStatusRequest",
+        "Type": "RMT.Allocation.Domain.DTO.Request.AllocationStatusRadDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "UpdateListOfAllocationAndRequisitionStatusInResourceAllocationDetails",
+    "RelativePath": "api/ResourceAllocation/UpdateListOfAllocationStatusInResourceAllocationDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allocationStatusRequests",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.Request.AllocationStatusRadDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "RMT.Allocation.Domain.DTO.UpdateListOfAllocationDetailsStatusResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "UpdateProjectJobCode",
+    "RelativePath": "api/ResourceAllocation/UpdateProjectJobCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changeCodeDTO",
+        "Type": "RMT.Allocation.Application.DTOs.ChangeCodeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "UpdatePublishAllocationActualEfforts",
+    "RelativePath": "api/ResourceAllocation/UpdatePublishAllocationActualEfforts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.ResourceAllocationDTOs.UpdatePublishAllocationActualEffortsRequestDTO, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "UpdateResourceAllocations",
+    "RelativePath": "api/ResourceAllocation/UpdateResourceAllocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "allResourceAllocationDTO",
+        "Type": "RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.ResourceAllocationController",
+    "Method": "GetProjectsByPipelineCodV2",
+    "RelativePath": "api/ResourceAllocation/v2/GetProjectsByPipelineCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "emailId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "isAllocationDetailsFilterByUserRoles",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Application.DTOs.EmployeeProject, RMT.Allocation.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.SameTeamAllocationController",
+    "Method": "GetAllocationByJobCode",
+    "RelativePath": "api/SameTeamAllocation/GetAllocationByJobCode",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobCodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Infrastructure.DTOs.ResourceAllocationDetailsResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "RMT.Allocations.API.Controllers.TimesheetController",
+    "Method": "GetDraftTimesheet",
+    "RelativePath": "api/Timesheet/GetDraftTimesheet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dates",
+        "Type": "System.Collections.Generic.List\u00601[[System.DateTime, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[RMT.Allocation.Domain.DTO.DraftTimesheetResponse, RMT.Allocation.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,1253 @@
+[
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetAllSuperCoach",
+    "RelativePath": "api/WcgtData/GetAllSuperCoach",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.Entities.SuperCoach, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetBUTreeMappingList",
+    "RelativePath": "api/WcgtData/GetBUTreeMappingList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTBUTreeMappingDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetBUTreeMappingListByMID",
+    "RelativePath": "api/WcgtData/GetBUTreeMappingListByMID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WCGT.Infrastructure.DTOs.Base.GTBUExpertiesGroupDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetClientLegalEntityList",
+    "RelativePath": "api/WcgtData/GetClientLegalEntityList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTClientLegalEntityDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetClientList",
+    "RelativePath": "api/WcgtData/GetClientList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTClientDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetClientListByJobCodes",
+    "RelativePath": "api/WcgtData/GetClientListByJobCodes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobcodes",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.GetJobCodeClientDTO, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetCompetencyList",
+    "RelativePath": "api/WcgtData/GetCompetencyList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competency_leader_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTCompetencyDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetDesignationList",
+    "RelativePath": "api/WcgtData/GetDesignationList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTDesignationDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetEmployeeByParam",
+    "RelativePath": "api/WcgtData/GetEmployeeByParam",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emp_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "emp_emailid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WCGT.Infrastructure.DTOs.GTEmployeeDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetEmployeeBySuperCoachOrCSC",
+    "RelativePath": "api/WcgtData/GetEmployeeBySuperCoachOrCSC",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "emp_mid",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTEmployeeDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetLeavesByParamList",
+    "RelativePath": "api/WcgtData/GetEmployeeLeaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveParamsDTO",
+        "Type": "WCGT.Application.DTOs.LeaveParamsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTLeaveDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetEmployeeList",
+    "RelativePath": "api/WcgtData/GetEmployeeList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTEmployeeDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetEmployeesForPortfolio",
+    "RelativePath": "api/WcgtData/GetEmployeesForPortfolio",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetEmployeesForPortfolioQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.EmployeeLeavesHolidayAndAvailabity, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetEmployeesForPortfolioReport",
+    "RelativePath": "api/WcgtData/GetEmployeesForPortfolioReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetEmployeesForPortfolioReportQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.EmployeesForPortfolioReportDTO, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetHolidayList",
+    "RelativePath": "api/WcgtData/GetHolidayList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTHolidayDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetHolidayByParamList",
+    "RelativePath": "api/WcgtData/GetHolidaysListByParams",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "holidayParams",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetHolidaysByParamListQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTHolidayDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetJobByJobCode",
+    "RelativePath": "api/WcgtData/GetJobByJobCode",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "jobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "WCGT.Infrastructure.DTOs.GTJobDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetJobList",
+    "RelativePath": "api/WcgtData/GetJobList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTJobDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetLeaveList",
+    "RelativePath": "api/WcgtData/GetLeaveList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTLeaveDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetLeavesDetailsByCreateDate",
+    "RelativePath": "api/WcgtData/GetLeavesDetailsByCreateDate",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTLeaveDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetLeavesInfo",
+    "RelativePath": "api/WcgtData/GetLeavesInfo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveParamsDTO",
+        "Type": "WCGT.Application.DTOs.LeaveParamsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.Entities.LeaveReport, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetLocationList",
+    "RelativePath": "api/WcgtData/GetLocationList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTLocationDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetPipelineList",
+    "RelativePath": "api/WcgtData/GetPipelineList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTPipelineDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetPortfolioFiltersOptions",
+    "RelativePath": "api/WcgtData/GetPortfolioFiltersOptions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetEmployeesForPortfolioQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetProjectBudgetByModifiedDateRange",
+    "RelativePath": "api/WcgtData/GetProjectBudgetByModifiedDateRange",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "startDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetRateByDesignation",
+    "RelativePath": "api/WcgtData/GetRateByDesignation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.GetRateDesignationRequestDTO, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.DTOs.RateDesignationDTO, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetResignedAndAbscondedUsersWithLastAvailableDay",
+    "RelativePath": "api/WcgtData/GetResignedAndAbscondedUsersWithLastAvailableDay",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestQuery",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetResignedAndAbscondedUsersWithLastAvailableDayQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.GetResignedAndAbscondedUsersWithLastAvailableDayResponseDto, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetResourceTimesheetGroup",
+    "RelativePath": "api/WcgtData/GetResourceTimesheetGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.Entities.WcgtResoureTimesheetGroup, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetSectorIndustryList",
+    "RelativePath": "api/WcgtData/GetSectorIndustryList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inputDTO",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTSectorIndustryDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetTimesheet",
+    "RelativePath": "api/WcgtData/GetTimesheet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "employeecode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTOs.TimesheetDesignationResponse, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetTimesheetGroup",
+    "RelativePath": "api/WcgtData/GetTimesheetGroup",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JobCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TimeOption",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "StartDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "EndDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.Entities.WcgtTimesheetGroup, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "GetUserLeaveHolidayResponseQuery",
+    "RelativePath": "api/WcgtData/GetUserLeaveHolidayResponseForSystemSuggestion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "getUserLeaveHolidayResponseQuery",
+        "Type": "WCGT.Application.Handlers.QueryHandlers.GetUserLeaveHolidayResponseQuery",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Domain.DTO.GetUserLeaveHolidayResponseWithUserMaster, WCGT.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateBudget",
+    "RelativePath": "api/WcgtData/UpdateBudget",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "budgetDto",
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTBudgetDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.BudgetResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateBUEfficiencyLeader",
+    "RelativePath": "api/WcgtData/UpdateBUEfficiencyLeader",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buEfficiencyLeaderDTO",
+        "Type": "WCGT.Domain.DTO.BUEfficiencyLeaderDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.GTBUEfficiencyLeaderResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateBUTreeMappings",
+    "RelativePath": "api/WcgtData/UpdateBUTreeMappings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "buTreeMappingDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTBUTreeMappingDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.BUTreeMappingListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateClientLegalEntitys",
+    "RelativePath": "api/WcgtData/UpdateClientLegalEntitys",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientLegalEntityDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTClientLegalEntityDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.ClientLegalEntityListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateClients",
+    "RelativePath": "api/WcgtData/UpdateClients",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTClientDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.ClientListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateCompetency",
+    "RelativePath": "api/WcgtData/UpdateCompetency",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "competencyDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTCompetencyDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.CompetencyResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateDesignations",
+    "RelativePath": "api/WcgtData/UpdateDesignations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designationDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTDesignationDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.DesignationListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateEmployees",
+    "RelativePath": "api/WcgtData/UpdateEmployees",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employeeDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTEmployeeDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.EmployeeListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateHolidays",
+    "RelativePath": "api/WcgtData/UpdateHolidays",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "holidayDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTHolidayDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.HolidayListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateJobs",
+    "RelativePath": "api/WcgtData/UpdateJobs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jobDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTJobDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.JobListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateLeaves",
+    "RelativePath": "api/WcgtData/UpdateLeaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "leaveDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTLeaveDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.LeaveListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateLocations",
+    "RelativePath": "api/WcgtData/UpdateLocations",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTLocationDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.LocationListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdatePipelines",
+    "RelativePath": "api/WcgtData/UpdatePipelines",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pipelineDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTPipelineDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.PipelineListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateRateMaster",
+    "RelativePath": "api/WcgtData/UpdateRateMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "designationRate",
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Infrastructure.DTOs.GTDesignationRateMasterDTO, WCGT.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.DesignationRateMasterResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WCGT.API.Controllers.WcgtDataController",
+    "Method": "UpdateSectorIndustries",
+    "RelativePath": "api/WcgtData/UpdateSectorIndustries",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sectorIndustryDTO",
+        "Type": "WCGT.Infrastructure.DTOs.GTSectorIndustryDTO[]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[WCGT.Application.Responses.SectorIndustryListResponse, WCGT.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

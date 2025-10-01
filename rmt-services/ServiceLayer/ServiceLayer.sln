@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceLayer", "EmailAzureFunction\ServiceLayer.csproj", "{8428FD90-61D9-4DFC-8455-E33E1D5BC013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8428FD90-61D9-4DFC-8455-E33E1D5BC013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8428FD90-61D9-4DFC-8455-E33E1D5BC013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8428FD90-61D9-4DFC-8455-E33E1D5BC013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8428FD90-61D9-4DFC-8455-E33E1D5BC013}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ADB4CB9B-B544-4125-95EB-C29F190D31A3}
+	EndGlobalSection
+EndGlobal

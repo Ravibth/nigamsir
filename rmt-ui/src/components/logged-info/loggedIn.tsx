@@ -51,7 +51,7 @@ export default function BackgroundLetterAvatars() {
   };
   const logout = async () => {
     snackbarContext.displaySnackbar(
-      "You are being logged out of OptiWise..",
+      "You are being logged out of SPMS..",
       "success",
       6000
     );

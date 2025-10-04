@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj": {}
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj": {}
   },
   "projects": {
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj",
         "projectName": "RMT.Skill.API",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.API\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.API\\RMT.Skill.API.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj"
               },
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj"
               }
             }
           }
@@ -107,24 +107,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj",
         "projectName": "RMT.Skill.Application",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\RMT.Skill.Application.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -139,11 +139,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj"
               },
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj"
               }
             }
           }
@@ -231,24 +231,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj",
         "projectName": "RMT.Skill.Domain",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -344,24 +344,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj",
         "projectName": "RMT.Skill.Infrastructure",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\RMT.Skill.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -376,8 +376,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Skill\\RMT.Skill.Domain\\RMT.Skill.Domain.csproj"
               }
             }
           }
@@ -451,7 +451,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

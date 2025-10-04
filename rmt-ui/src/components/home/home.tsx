@@ -151,36 +151,7 @@ function Home(props: any) {
 
   return (
     <>
-      <FunctionBar
-        handleSchedulerView={handleSchedulerView}
-        handlePreviousClick={handlePreviousClick}
-        handleNextClick={handleNextClick}
-        selectDateHandler={selectDateHandler}
-        filterData={filterData}
-        defaultValue={filterDefaultValue}
-        selectedDataByFilter={selectedDataByFilter}
-        handleResetClick={handleResetClick}
-        searchQueryHandle={(e) => searchQueryHandler(e)}
-        setSearchRoles={setSearchRoles}
-        submittedFilterData={submittedFilterData}
-      />
-
-      <RequestorHome
-        currentView={currentView}
-        clickToday={isClickToday}
-        handleFilterData={handleFilterData}
-        submittedFilterData={submittedFilterData}
-        handlePreviousorNextClick={isClickPreviouorNext}
-        setPreviousorNextNone={() => {
-          setIsClickPreviouorNext(GC.NEXTPRE_CLICK.None);
-        }}
-        selectedDate={selectedDate}
-        SetupFilterDefaultValue={SetupFilterDefaultValue}
-        isEmployee={isEmployee}
-        searchQuery={searchQueryText}
-        pageLimitConst={pageLimitConst}
-        searchRoles={searchRoles}
-      ></RequestorHome>
+      Welcome to Home Page
     </>
   );
 }

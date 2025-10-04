@@ -136,7 +136,7 @@ function AgGridComponent(props: GridProps) {
         .map(column => column.getColId());
 
       const params = {
-        sheetName: " OptiWise",
+        sheetName: " SPMS",
         fileName: filename,
         columnKeys: columnsToExport
       };

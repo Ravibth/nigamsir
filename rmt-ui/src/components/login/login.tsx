@@ -17,7 +17,7 @@ const Login = () => {
     <div className="login-main">
       <div style={{ fontSize: "30px" }}>Loading...</div>
       <div style={{ display: "none" }}>
-        <h2>Welcome to OptiWise</h2>
+        <h2>Welcome to SPMS</h2>
         <div className="login-btn-main">
           <Button
             className="login-btn rmt-login-button"

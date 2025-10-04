@@ -10,3 +10,15 @@ C:\GTRMS\GTRMS\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.
 C:\GTRMS\GTRMS\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\refint\RMT.Reports.Domain.dll
 C:\GTRMS\GTRMS\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.pdb
 C:\GTRMS\GTRMS\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\ref\RMT.Reports.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\bin\Debug\net7.0\RMT.Reports.Domain.deps.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\bin\Debug\net7.0\RMT.Reports.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\bin\Debug\net7.0\RMT.Reports.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.AssemblyInfoInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.AssemblyInfo.cs
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.csproj.CoreCompileInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.sourcelink.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\refint\RMT.Reports.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\RMT.Reports.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Reports\RMT.Reports.Domain\obj\Debug\net7.0\ref\RMT.Reports.Domain.dll

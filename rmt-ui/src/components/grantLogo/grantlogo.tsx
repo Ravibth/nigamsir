@@ -9,7 +9,7 @@ const GrantLogoComp = () => {
       <Box
         component="img"
         sx={constant.LogoSxProps}
-        alt="OptiWise"
+        alt="SPMS"
         src={gtLogo}
       />
     </Link>

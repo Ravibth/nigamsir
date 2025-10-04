@@ -11,3 +11,16 @@ C:\GTRMS\GTRMS\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net
 C:\GTRMS\GTRMS\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\refint\RMT.MarketPlace.Domain.dll
 C:\GTRMS\GTRMS\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.pdb
 C:\GTRMS\GTRMS\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\ref\RMT.MarketPlace.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\bin\Debug\net7.0\RMT.MarketPlace.Domain.deps.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\bin\Debug\net7.0\RMT.MarketPlace.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\bin\Debug\net7.0\RMT.MarketPlace.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.csproj.AssemblyReference.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.AssemblyInfoInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.AssemblyInfo.cs
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.csproj.CoreCompileInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.sourcelink.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\refint\RMT.MarketPlace.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\RMT.MarketPlace.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.MarketPlace\RMT.MarketPlace.Domain\obj\Debug\net7.0\ref\RMT.MarketPlace.Domain.dll

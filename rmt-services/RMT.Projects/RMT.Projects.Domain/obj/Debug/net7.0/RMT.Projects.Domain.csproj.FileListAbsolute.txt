@@ -11,3 +11,16 @@ C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RM
 C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\refint\RMT.Projects.Domain.dll
 C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.pdb
 C:\GTRMS\GTRMS\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\ref\RMT.Projects.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.deps.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\bin\Debug\net7.0\RMT.Projects.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.csproj.AssemblyReference.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.AssemblyInfoInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.AssemblyInfo.cs
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.csproj.CoreCompileInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.sourcelink.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\refint\RMT.Projects.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\RMT.Projects.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Projects\RMT.Projects.Domain\obj\Debug\net7.0\ref\RMT.Projects.Domain.dll

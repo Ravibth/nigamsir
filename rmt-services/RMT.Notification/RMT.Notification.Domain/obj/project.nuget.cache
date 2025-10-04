@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z5xqA4zfRH4=",
+  "dgSpecHash": "sx2xRZDkEpE=",
   "success": true,
-  "projectFilePath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Notification\\RMT.Notification.Domain\\RMT.Notification.Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Notification\\RMT.Notification.Domain\\RMT.Notification.Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

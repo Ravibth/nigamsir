@@ -4046,23 +4046,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\": {},
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\RMT.MarketPlace.Domain.csproj",
+      "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\RMT.MarketPlace.Domain.csproj",
       "projectName": "RMT.MarketPlace.Domain",
-      "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\RMT.MarketPlace.Domain.csproj",
-      "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-      "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\obj\\",
+      "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\RMT.MarketPlace.Domain.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4120,7 +4120,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

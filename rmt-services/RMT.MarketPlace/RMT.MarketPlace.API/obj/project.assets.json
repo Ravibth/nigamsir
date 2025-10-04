@@ -3723,23 +3723,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ravindrakumar01\\.nuget\\packages\\": {},
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\RMT.MarketPlace.API.csproj",
+      "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\RMT.MarketPlace.API.csproj",
       "projectName": "RMT.MarketPlace.API",
-      "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\RMT.MarketPlace.API.csproj",
-      "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-      "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\obj\\",
+      "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\RMT.MarketPlace.API.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3754,11 +3754,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Application\\RMT.MarketPlace.Application.csproj": {
-              "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Application\\RMT.MarketPlace.Application.csproj"
+            "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Application\\RMT.MarketPlace.Application.csproj": {
+              "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Application\\RMT.MarketPlace.Application.csproj"
             },
-            "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Infrastructure\\RMT.MarketPlace.Infrastructure.csproj": {
-              "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Infrastructure\\RMT.MarketPlace.Infrastructure.csproj"
+            "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Infrastructure\\RMT.MarketPlace.Infrastructure.csproj": {
+              "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.MarketPlace\\RMT.MarketPlace.Infrastructure\\RMT.MarketPlace.Infrastructure.csproj"
             }
           }
         }
@@ -3833,7 +3833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

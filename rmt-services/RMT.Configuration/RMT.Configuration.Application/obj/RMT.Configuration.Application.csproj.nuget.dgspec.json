@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj": {}
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj": {}
   },
   "projects": {
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj",
         "projectName": "RMT.Configuration.Application",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\RMT.Configuration.Application.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj"
               }
             }
           }
@@ -83,24 +83,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj",
         "projectName": "RMT.Configuration.Domain",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -153,43 +153,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj": {
+    "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj",
+        "projectUniqueName": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj",
         "projectName": "RMT.Configuration.Infrastructure",
-        "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\ravindrakumar01\\.nuget\\packages\\",
-        "outputPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\obj\\",
+        "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\RMT.Configuration.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ravindrakumar01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -204,8 +190,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj": {
-                "projectPath": "C:\\GTRMS\\GTRMS\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj"
+              "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj": {
+                "projectPath": "C:\\DemoRMS\\nigamsir\\rmt-services\\RMT.Configuration\\RMT.Configuration.Domain\\RMT.Configuration.Domain.csproj"
               }
             }
           }
@@ -267,7 +253,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,3 +11,16 @@ C:\GTRMS\GTRMS\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RM
 C:\GTRMS\GTRMS\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\refint\RMT.Employee.Domain.dll
 C:\GTRMS\GTRMS\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.pdb
 C:\GTRMS\GTRMS\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\ref\RMT.Employee.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\bin\Debug\net7.0\RMT.Employee.Domain.deps.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\bin\Debug\net7.0\RMT.Employee.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\bin\Debug\net7.0\RMT.Employee.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.csproj.AssemblyReference.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.AssemblyInfoInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.AssemblyInfo.cs
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.csproj.CoreCompileInputs.cache
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.sourcelink.json
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\refint\RMT.Employee.Domain.dll
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\RMT.Employee.Domain.pdb
+C:\DemoRMS\nigamsir\rmt-services\RMT.Employee\RMT.Employee.Domain\obj\Debug\net7.0\ref\RMT.Employee.Domain.dll

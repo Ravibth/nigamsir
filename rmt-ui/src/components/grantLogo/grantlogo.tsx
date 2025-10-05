@@ -1,7 +1,7 @@
 import { Box, Link } from "@mui/material";
 import React from "react";
 import * as constant from "./constant";
-import gtLogo from "../../common/images/GTLOGO.png";
+import gtLogo from "../../common/images/SPMS.jpeg";
 
 const GrantLogoComp = () => {
   return (
